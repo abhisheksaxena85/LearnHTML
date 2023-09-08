@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p><b>HTML table tag</b> is used to display data in tabular form. There can be many columns in a row. <br><br>We can create a table to display data in tabular form, using &lt;table&gt; element, with the help of &lt;tr&gt;, &lt;td&gt;, and &lt;th&gt; elements. <br><br>In each table, table row is defined by &lt;tr&gt; tag, table header is defined by &lt;th&gt;, and table data is defined by &lt;td&gt; tags. <br><br>HTML tables are used to manage the layout of the page e.g. header section, navigation bar, body content, footer section etc. But it is recommended to use div tag over table to manage the layout of the page. </p>
+    <hr width="100%">
+
+    <h2>HTML Table Tags</h2>
+    <p>
+      <table border="1" style="border-collapse: collapse;" >
+        <tr><th>Tag</th> <th>Description</th></tr>
+        <tr><td>&lt;table&gt;</td> <td>It defines a table.</td></tr>
+
+        <tr><td>&lt;tr&gt;</td> <td>It defines a row in a table. </td></tr>
+        <tr><td>&lt;th&gt;</td> <td>It defines a header cell in a table.</td></tr>
+        <tr><td>&lt;td&gt;</td> <td>It defines a data cell in a table.</td></tr>
+        <tr><td>&lt;caption&gt;</td> <td>It defines the table caption.</td></tr>
+        <tr><td>&lt;colgroup&gt;</td> <td>It specifies a group of one or more columns in a table for formatting.</td></tr>
+        <tr><td>&lt;col&gt;</td> <td>It is used with &lt;colgroup&gt; element to specify column properties for each column.</td></tr>
+        <tr><td>&lt;tbody&gt;</td> <td>It is used to group the body content in table.</td></tr>
+
+        <tr><td>&lt;thead&gt;</td> <td>It is used to group the header content in table.</td></tr>
+        <tr><td>&lt;tfooter&gt;</td> <td>It is used to group the footer content in table.</td></tr>
+
+      </table>
+    </p>
+        <hr width="100%">
+        <h2>HTML Table Example</h2>
+        <p>Let's see the example of HTML table tag. It output is shown above.</p>
+
+        <h2 style="margin-bottom: 10px;">Example:</h2>
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;table border="1px"&gt;<br>
+                    &lt;tr&gt;
+                    &lt;th&gt;First_Name&lt;/th&gt;
+                    &lt;th&gt;Last_Name
+                    &lt;/th&gt; &lt;th&gt;Marks&lt;/th&gt;
+                    &lt;/tr&gt;
+<br>
+                    &lt;tr&gt;&lt;td&gt;Sonoo&lt;/td&gt;
+                    &lt;td&gt;Jaiswal&lt;/td&gt;
+                    &lt;td&gt;60&lt;/td&gt;
+
+                    <br>
+                    &lt;tr&gt;&lt;td&gt;James&lt;/td&gt;
+                    &lt;td&gt;William&lt;/td&gt;
+                    &lt;td&gt;80&lt;/td&gt;
+              <br>
+
+              &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;
+                    &lt;td&gt;Doe&lt;/td&gt;
+                    &lt;td&gt;80&lt;/td&gt;
+
+                    <br>&lt;/table&gt;<br>
+                </p>
+            </div>
+        </div>
+
+        <h2>Output:</h2>
+
+<table border="1px" style="padding: 0;">
+<tr> <th>First_Name</th> <th>Last_Name </th> <th>Marks</th> </tr>
+<tr><td>Sonoo</td> <td>Jaiswal</td> <td>60</td>
+<tr><td>James</td> <td>William</td> <td>80</td>
+<tr><td>John</td> <td>Doe</td> <td>80</td>
+</table>
+<p>In the above html table, there are 5 rows and columns = 5 * 3 = 15 values.</p>
+
+<h2>HTML Table with Border</h2>
+<p>There are two ways to specify border for HTML tables.
+  <ol type="1" style="margin: 0;">
+    <li>By Order attribute of table in HTML.</li>
+    <li>By border property in CSS.</li>
+  </ol>
+</p>
+<hr width="100%">
+<h2>1&rpar; HTML Border attribute</h2>
+<p>You can use border attribute of table tag in HTML to specify border. But it is not recommended now. </p>
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+          &lt;table border="1"&gt;<br>
+          &lt;tr&gt;
+          &lt;th&gt;First_Name&lt;/th&gt;
+          &lt;th&gt;Last_Name
+          &lt;/th&gt; &lt;th&gt;Marks&lt;/th&gt;
+          &lt;/tr&gt;
+<br>
+          &lt;tr&gt;&lt;td&gt;Sonoo&lt;/td&gt;
+          &lt;td&gt;Jaiswal&lt;/td&gt;
+          &lt;td&gt;60&lt;/td&gt;
+
+          <br>
+          &lt;tr&gt;&lt;td&gt;James&lt;/td&gt;
+          &lt;td&gt;William&lt;/td&gt;
+          &lt;td&gt;80&lt;/td&gt;
+    <br>
+
+    &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;
+          &lt;td&gt;Doe&lt;/td&gt;
+          &lt;td&gt;80&lt;/td&gt;
+
+          <br>&lt;/table&gt;<br>
+      </p>
+  </div>
+</div>
+<hr width="100%">
+
+<h2>2&rpar; CSS Border property</h2>
+<p>It is now recommended to use border property of CSS to specify border in table.</p>
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+          &lt;style&gt;<br>
+          table, th, td { <br>
+            &nbsp;&nbsp;border: 1px solid black;  <br>
+          } <br>
+          &lt;/style&gt;
+      </p>
+  </div>
+</div>
+
+<p>You can collapse all the borders in one border by border-collapse property. It will collapse the border into one.</p>
+
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+          &lt;style&gt;<br>
+          table, th, td { <br>
+            &nbsp;&nbsp;border: 1px solid black;  <br>
+            &nbsp;&nbsp;border-collapse: collapse;  <br>
+          } <br>
+          &lt;/style&gt;
+      </p>
+  </div>
+</div>
+
+<hr width="100%">
+<h2>HTML Table with cell padding</h2>
+<p>You can specify padding for table header and table data by two ways: </p>
+<ol type="1" style="margin: 0px;">
+  <li>By cellpadding attribute of table in HTML.</li>
+  <li>By padding property in CSS.</li>
+</ol>
+<p>The cellpadding attribute of HTML table tag is obselete now. It is recommended to use CSS. So let's see the code of CSS.</p>
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+          &lt;style&gt;<br>
+          table, th, td { <br>
+            &nbsp;&nbsp;&nbsp;border: 1px solid black;  <br>
+            &nbsp;&nbsp;&nbsp;border-collapse: collapse;  <br>
+          } <br>
+
+          th, td { <br>
+            &nbsp;&nbsp;&nbsp;padding: 10px;  <br>
+          } <br>
+          &lt;/style&gt;
+      </p>
+  </div>
+</div>
+
+<hr width="100%">
+<h2>HTML Table width</h2>
+<p>We can specify the HTML table width using the CSS width property. It can be specify in pixels or percentage. <br> <br> We can adjust our table width as per our requirement. Following is the example to display table with width.</p>
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+
+
+          table { <br>
+            &nbsp;&nbsp;&nbsp;width:100%;  <br>
+          } <br>
+
+      </p>
+  </div>
+</div>
+
+<br><br>
+
+<h1>Example:</h1>
+<br>
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &nbsp;&nbsp;&nbsp; &lt;head&gt;<br>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; Table &lt;/title&gt;<br>
+
+          
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-collapse: collapse;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:100%;<br>
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th, td {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid green;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:15px;<br>
+  
+  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+
+          &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+
+
+          &lt;body&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;table&gt;<br>
+
+
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+ 
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; 1 header &lt;/th&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; 2 header &lt;/th&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; 3 header &lt;/th&gt;<br>
+
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+              
+
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 1 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 2 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 3 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+
+
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 1 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 2 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 3 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+
+
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 1 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 2 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 3 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+
+
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 1 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 2 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 3 data &lt;/td&gt;<br>
+          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+
+
+
+          &nbsp;&nbsp;&nbsp;&lt;/table&gt;<br>
+          &lt;/body&gt;<br>
+
+
+          &lt;/html&gt;<br>
+      </p>
+  </div>
+</div>
+
+<h2>Output:</h2>
+<p><!DOCTYPE html>
+  <html>
+      <head>
+      <title> Table </title>
+      <style>
+          table {
+              border-collapse: collapse;             width:100%;
+          }
+          .table td, .table th{
+              border: 2px solid green;             padding:15px;
+          }
+      </style>
+     </head>
+  <body>
+    <div class="table">
+        
+     <table>
+      <tr>
+           <th> 1 header </th>
+           <th> 2 header </th>
+           <th> 3 header </th>
+      </tr>
+      <tr>
+           <td> 1 data </td>
+           <td> 2 data </td>
+           <td> 3 data </td>
+      </tr>
+      <tr>
+           <td> 1 data </td>
+           <td> 2 data </td>
+           <td> 3 data </td>
+      </tr>
+      <tr>
+           <td> 1 data </td>
+           <td> 2 data </td>
+           <td> 3 data </td>
+      </tr>
+      <tr>
+           <td> 1 data </td>
+           <td> 2 data </td>
+           <td> 3 data </td>
+      </tr>
+ </table>
+    </div>
+  </body>
+  </html></p>
+
+
+<hr width="100%">
+<h2>HTML Table width colspan</h2>
+<p>If you want to make a cell span more than one column, you can use the colspan attribute. <br> <br> It will divide one cell/row into multiple columns, and the number of columns depend on the value of colspan attribute. <br><br> Let's see the example that span two columns. </p>
+
+<h2>Example :</h2>
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+          &lt;table border="1px"&gt;<br>
+          &lt;tr&gt;
+          &lt;th colspan="2" &gt;First_Name&lt;/th&gt;
+          &lt;th&gt;Last_Name
+          &lt;/th&gt; &lt;th&gt;Marks&lt;/th&gt;
+          &lt;/tr&gt;
+<br>
+          &lt;tr&gt;&lt;td&gt;Sonoo&lt;/td&gt;
+          &lt;td&gt;Jaiswal&lt;/td&gt;
+          &lt;td&gt;60&lt;/td&gt;
+
+          <br>
+          &lt;tr&gt;&lt;td&gt;James&lt;/td&gt;
+          &lt;td&gt;William&lt;/td&gt;
+          &lt;td&gt;80&lt;/td&gt;
+    <br>
+
+    &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;
+          &lt;td&gt;Doe&lt;/td&gt;
+          &lt;td&gt;80&lt;/td&gt;
+
+          <br>&lt;/table&gt;<br>
+      </p>
+  </div>
+</div>
+
+<h2>Output:</h2> <br>
+<table border="1px">
+<tr> <th colspan="2" >First_Name</th> <th>Last_Name </th> </tr>
+<tr><td>Sonoo</td> <td>Jaiswal</td> <td>60</td>
+<tr><td>James</td> <td>William</td> <td>80</td>
+<tr><td>John</td> <td>Doe</td> <td>80</td>
+</table>
+<br>
+<hr width="100%">
+<h2>HTML Tables with rowspan</h2>
+<p>If you want to make a cell span more than one row, you can use the rowspan attribute. <br><br> It will divide a cell into multiple rows. The number of divided rows will depend on rowspan values. <br><br> Let's see the example that span two rows.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+  <div id="code_header">
+      <div id="code_title">
+          <img src="code (1).svg"/>
+          <p>Code Example</p>
+      </div>
+  </div>
+  <div id="code_body">
+      <p>
+          &lt;table border="1px"&gt;<br>
+          &lt;tr&gt;
+          &lt;th rowspan="2" &gt;First_Name&lt;/th&gt;
+          &lt;th&gt;Last_Name
+          &lt;/th&gt; &lt;th&gt;Marks&lt;/th&gt;
+          &lt;/tr&gt;
+<br>
+          &lt;tr&gt;&lt;td&gt;Sonoo&lt;/td&gt;
+          &lt;td&gt;Jaiswal&lt;/td&gt;
+          &lt;td&gt;60&lt;/td&gt;
+
+          <br>
+          &lt;tr&gt;&lt;td&gt;James&lt;/td&gt;
+          &lt;td&gt;William&lt;/td&gt;
+          &lt;td&gt;80&lt;/td&gt;
+    <br>
+
+    &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;
+          &lt;td&gt;Doe&lt;/td&gt;
+          &lt;td&gt;80&lt;/td&gt;
+
+          <br>&lt;/table&gt;<br>
+      </p>
+  </div>
+</div>
+
+<h2>Output:</h2> <br>
+<table border="1px">
+<tr> <th rowspan="2" >First_Name</th> <th>Last_Name </th> <th>Marks</th> </tr>
+<tr><td>Sonoo</td> <td>Jaiswal</td>
+<tr><td>James</td> <td>William</td> <td>80</td>
+<tr><td>John</td> <td>Doe</td> <td>80</td>
+</table> <br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

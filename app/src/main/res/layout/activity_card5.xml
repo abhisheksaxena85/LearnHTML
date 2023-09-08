@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".card5_activity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="@color/main_card_color"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:backgroundTint="#F8F8F8"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="10dp"
+                    android:layout_height="170dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/html_logo"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/varelaroundregular"
+                android:gravity="left|center"
+                android:layout_marginBottom="20dp"
+                android:text="5. HTML API"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:cardElevation="8dp"
+                android:soundEffectsEnabled="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/fifth_card1"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:layout_height="120dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="14dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:src="@drawable/html_logo"
+                        android:layout_height="50dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center|left">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varelaroundregular"
+                            android:text="HTML Drag and Drop"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_arrow_forward_24"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:cardElevation="8dp"
+                android:soundEffectsEnabled="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/fifth_card2"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:layout_height="120dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="14dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:src="@drawable/html_logo"
+                        android:layout_height="50dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center|left">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varelaroundregular"
+                            android:text="HTML Geolocation"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_arrow_forward_24"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:cardElevation="8dp"
+                android:soundEffectsEnabled="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/fifth_card3"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:layout_height="120dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="14dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:src="@drawable/html_logo"
+                        android:layout_height="50dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center|left">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varelaroundregular"
+                            android:text="HTML Web Storage"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_arrow_forward_24"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:cardElevation="8dp"
+                android:soundEffectsEnabled="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/fifth_card4"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:layout_height="120dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="14dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:src="@drawable/html_logo"
+                        android:layout_height="50dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center|left">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varelaroundregular"
+                            android:text="HTML Web Workers"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_arrow_forward_24"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:cardElevation="8dp"
+                android:soundEffectsEnabled="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/fifth_card5"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:layout_height="120dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="14dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:src="@drawable/html_logo"
+                        android:layout_height="50dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="7dp"
+                        android:gravity="center|left">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varelaroundregular"
+                            android:text="HTML5 Server-Sent Event"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_arrow_forward_24"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML paragraph</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction: 
+        column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+
+      .headingTag h1,h2,h3,h4,h5,h6{
+        width: 100%;
+        margin: 0;
+        background-color: white;
+      }
+      .headingTag h1{
+        font-size: 32px;
+      }
+      .headingTag h2{
+        font-size: 24px;
+      }
+      .headingTag h3{
+        font-size: 18px;
+      }
+      .headingTag h4{
+        font-size: 16px;
+      }
+      .headingTag h5{
+        font-size: 14px;
+      }
+      .headingTag h6{
+        font-size: 12px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML paragraph or HTML p tag is
+        used to define a paragraph in a
+        webpage. Let's take a simple
+        example to see how it work. It is a
+        notable point that a browser itself
+        add an empty line before and
+        after a paragraph. An HTML &lt;p&gt;
+        tag indicates starting of new
+        paragraph.
+        <br><br>
+        <b>Note:</b> If we are using various &lt;p&gt;
+            tags in one HTML file then browser
+            automatically adds a single
+            blank line between the two
+            paragraphs.
+        <br><br>
+        See this example:
+    </p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;This is first paragraph &lt;/p&gt;<br>
+                &lt;p&gt;This is second paragraph &lt;/p&gt;<br>
+                &lt;p&gt;This is third paragraph &lt;/p&gt;<br>         
+
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <p>This is first paragraph </p>
+    <p style="margin-top: 0; margin-bottom: 0;">This is second paragraph </p>
+    <p>This is third paragraph </p>
+
+    <hr width="100%">
+
+
+    <h2>Space inside HTML Paragraph</h2>
+
+    <p>If you put a lot of spaces inside
+        the HTML p tag, browser removes
+        extra spaces and extra line while
+        displaying the page. The browser
+        counts number of spaces and
+        lines as a single one.
+    </p>
+
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;I am <br> going to provide <br>you a tutorial on HTML <br> and hope that it will be very beneficial for you. &lt;/p&gt;<br>
+                &lt;p&gt;Look, I put here a lot <br> of spaces &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; but &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I know, Browser will ignore it.&lt;/p&gt;<br>       
+            </p>
+        </div>
+    </div>
+
+
+    <h2>Output: </h2>
+    <p>I am
+going to provide
+you a tutorial on HTML
+and hope that it will be very beneficial for you. </p>
+<p>Look, I put here a lot
+of spaces   but I know, Browser will ignore it. <br> <br> As you can see, all extra lines and unnecessary spaces are removed by the browser.</p>
+
+<h2>How to use &lt;br&gt; and &lt;hr&gt; tag with paragraph?</h2>
+<p>An HTML &lt;br&gt; tag is used for line
+    break and it can be used with
+    paragraph elements. Following is
+    the example to show how to use
+    &lt;br&gt; with &lt;p&gt; element.
+    </p>
+    <h2>Example:</h2>
+
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>&lt;!DOCTYPE html&gt; 
+                <br>&lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &lt;title&gt;Web page title&lt;/title&gt;
+                <br>&lt;/head&gt;
+                <br>&lt;body&gt;<br>
+
+                &lt;h2&gt;Use of line break with paragraph tag&lt;/h2&gt;<br>
+                &lt;p&gt;&lt;br&gt;Papa and mama, and baby and Dot, <br> &lt;br&gt;Willie and me? the whole of the lot <br>&lt;br&gt; Of us all went over in Bimberlie's sleigh, <br>&lt;br&gt;To grandmama's house on Christmas day.&lt;/p&gt;<br>
+
+                &lt;/body&gt;<br>
+                &lt/html&gt;
+            </p>
+        </div>
+    </div>
+
+
+    <h2>Output:</h2>
+    <h3 style="margin-bottom: 0px; margin-top: 10px;">Use of line break with paragraph tag</h3>
+    <p style="margin-top: 0px;"><br>Papa and mama, and baby and Dot,
+    <br>Willie and me? the whole of the lot
+    <br> Of us all went over in Bimberlie's sleigh,
+    <br>To grandmama's house on Christmas day.</p>
+
+<br>
+
+    <p>An HTML &lt;hr&gt; tag is used to apply
+        a horizontal line between two
+        statements or two paragraphs.
+        Following is the example which is
+        showing use of &lt;hr&gt; tag with
+        paragraph.
+        </p>
+
+        <h2 style="margin-bottom: 10px;">Example:</h2>
+
+    
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>&lt;!DOCTYPE html&gt; 
+                    <br>&lt;html&gt; <br>
+                    &lt;head&gt; <br>
+                    &lt;title&gt;Web page title&lt;/title&gt;
+                    <br>&lt;/head&gt;
+                    <br>&lt;body&gt;<br>
+     
+                    &lt;h2&gt;Example to show a horizontal line with pragraph.&lt;/h2&gt;<br>
+                    &lt;p&gt;An HTML hr tag draw a horizontal line and separte two paragraphs with that line. &lt;hr&gt; it will start a new paragraph.&lt;/p&gt;<br>
+    
+                    &lt;/body&gt;<br>
+                    &lt/html&gt;
+                </p>
+            </div>
+        </div>
+        
+</body>
+</html>

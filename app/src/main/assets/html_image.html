@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction: 
+        column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      </style>
+</head>
+<body>
+    <p><b>HTML img tag</b> is used to display image on the web page. HTML img tag is an empty tag that contains attributes only, closing tags are not used in HTML images element. <br><br> Let's see an example of HTML image. </p>
+    
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;h2&gt; HTML Image Example &lt;/h2&gt;<br>
+                &lt;img src="good_morning.jpg" alt="Good Morning Friends"/&gt;
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <img style="margin-top: 10px; margin-bottom: 10px; height: auto;" src="download.jpg" alt="Good Morning Friends" width="60%" >
+
+    <hr width="100%">
+    <h1>Attributes of HTML img tag</h1>
+    <p>The src and alt are important attributes of HTML img tag. All attributes of HTML image tag are given below.</p>
+
+    <h2>1&rpar; src :</h2>
+    <p>It is a necessary attribute that describes the source or path of the image. It instructs the browser where to look for the image on the server. <br><br> The location of image may be on the same directory or another server.</p>
+
+    <h2>2&rpar; alt :</h2>
+    <p>The alt attribute defines an alternate text for the image, if it can't be displayed. The value of the alt attribute describe the image in words. The alt attribute is considered good for SEO prospective.</p>
+
+    <h2>3&rpar; width :</h2>
+    <p>It is an optional attribute which is used to specify the width to display the image. It is not recommanded now. You should apply CSS in place of width attribute. </p>
+
+    <h2>4&rpar; height :</h2>
+    <p>It gives the height to the image. The HTML height attribute also supports iframe, image and object elements. It is not recommanded now. You should apply CSS in place of height attribute.</p>
+
+    <hr width="100%">
+
+    <h1>Use of height and width attribute with img tag</h1>
+    <p>You have learnt about how to insert an image in your web page, now if we want to give some height and width to display image according to our requirement, then we can set it with height and with attributes of image.</p>
+
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;img src="animal.jpg" height="180" width="300" alt="animal image" &gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <img src="animal image.jpg"  width="70%" alt="animal image" >
+    <p><b>Note: Always try to insert the image with height and width, else it may flicker while displaying on webpage.</b></p>
+    <hr width="100%">
+
+    <h1>Use of alt attribute</h1>
+    <p>We can use alt attribute with tag. It will display an alternative text in case if image cannot be displayed on browser. Following is the example for alt attribute: </p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;img src="animal.jpg" height="180" width="300" alt="animal image" &gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2><br>
+    <img src="animal.jpg" height="180" width="300" alt="animal image" >
+
+
+    <hr width="100%">
+    <h1>How to get image from another directory/folder?</h1>
+    <p>To insert an image in your web, that image must be present in your same folder where you have put HMTL file. But if in some case image is available in some other directory then you can access the image like this:</p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;img src="E:images/animal.jpg" height="180" width="300" alt="animal image" &gt;<br>
+            </p>
+        </div>
+    </div>
+    <p>In above statement we have put image in local disk E - images - animal.png. <br><br><b>Note: If src URL will be incorrect or misspell then it will not display your image on web page, so try to put correct URL.</b></p>
+
+    <hr width="100%">
+    <h1>Use &lt;img&gt; tag as a link</h1>
+    <p>We can also link an image with other page or we can use an image as a link. To do this, put &lt;img&gt; tag inside the &lt;a&gt; tag.</p>
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;a href="https://www.javapoint.com/"&gt; &lt;img src="animal.jpg" height="180" width="300" alt="animal image" &gt; &lt;/a&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <a href="https://www.javapoint.com"> <img src="animal image.jpg" height="180" width="300" alt="animal image" > </a>
+
+</body>
+</html>

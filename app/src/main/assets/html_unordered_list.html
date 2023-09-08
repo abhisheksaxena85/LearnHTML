@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Unordered List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+    <p><b>HTML Unordered List</b> or Bulleted List displays elements in bulleted format. We can use unordered list where we do not need to display items in any particular order. The HTML ul tag is used for the unordered list. There can be 4 types of bulleted list.</p>
+    <ul style="width: 100%;">
+        <li>disc</li>
+        <li>circle</li>
+        <li>square</li>
+        <li>none</li>
+    </ul>
+    
+    <p>To represent different ordered lists, there are 4 types of attributes in &lt;ul&gt; tag.</p>
+
+    <table border="1" style="border-collapse: collapse;">
+        <tr> <th>Type</th>  <th>Description</th></tr>
+        <tr> <td>Type "disc"</td>  <td>This is the default style. In this style, the list items are marked with bullets.</td></tr>
+        <tr> <td>Type "circle"</td> <td>In this style, the list items are marked with circles.</td></tr>
+        <tr> <td>Type "square"</td> <td>In this style, the list items are marked with squares.</td></tr>
+        <tr> <td>Type "none"</td> <td>In this style, the list items are not marked.</td> </tr>
+    </table>
+    <br>
+    <hr width="100%">
+
+    <h2>HTML Unordered List Example</h2><br>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;ul&gt;    <br>
+                &lt;li&gt;Aries&lt;/li&gt;<br>
+                &lt;li&gt;Bingo&lt;/li&gt;<br>
+                &lt;li&gt;Leo&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </p>
+        </div>
+    </div>
+
+    <h2>Output</h2>
+<ul style="width: 100%;">
+<li>Aries</li>
+<li>Bingo</li>
+<li>Leo</li>
+</ul>
+<hr width="100%">
+<h2>ul type="circle"</h2><br>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;ul type="circle"&gt;    <br>
+            &lt;li&gt;Aries&lt;/li&gt;<br>
+            &lt;li&gt;Bingo&lt;/li&gt;<br>
+            &lt;li&gt;Leo&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<ul type="circle" style="width: 100%;">
+<li>Aries</li>
+<li>Bingo</li>
+<li>Leo</li>
+</ul>
+
+<hr width="100%">
+<h2>ul type="square"</h2><br>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;ul type="square"&gt;    <br>
+            &lt;li&gt;Aries&lt;/li&gt;<br>
+            &lt;li&gt;Bingo&lt;/li&gt;<br>
+            &lt;li&gt;Leo&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<ul type="square" style="width: 100%;">
+<li>Aries</li>
+<li>Bingo</li>
+<li>Leo</li>
+</ul>
+
+<hr width="100%">
+
+<h2>ul type="none"</h2><br>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;ul type="none"&gt;    <br>
+            &lt;li&gt;Aries&lt;/li&gt;<br>
+            &lt;li&gt;Bingo&lt;/li&gt;<br>
+            &lt;li&gt;Leo&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<ul style="width: 100%;" type="none">
+<li>Aries</li>
+<li>Bingo</li>
+<li>Leo</li>
+</ul>
+</body>
+</html>

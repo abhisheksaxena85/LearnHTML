@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="card_title_color">#CC0000</color>
+    <color name="card_discription">#9F000000</color>
+    <color name="navigation_icon_color">#D60000</color>
+    <color name="home_hame_burger_color">#fff</color>
+    <color name="main_background_color">#FFFFFF</color>
+    <color name="main_card_color">#fff</color>
+    <color name="card_text_color">#000000</color>
+    <color name="card_theme_color">#FF0000</color>
+    <color name="toolbar_color">#9051FF</color>
+    <color name="bottomNav_icon_color">#B5494949</color>
+</resources>

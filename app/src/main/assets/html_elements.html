@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML element</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     
+
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction: 
+        column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      </style>
+</head>
+<body>
+
+
+    <p>An HTML file is made of elements.
+        These elements are responsible
+        for creating web pages and
+        define content in that webpage.
+        An element in HTML usually
+        consist of a start tag &lt;tag name&gt;,
+        close tag &lt;/tag name&gt; and
+        content inserted between
+        them. Technically, an element is a
+        collection of start tag, attributes,
+        end tag, content between them. <br><br>
+        <b>Note :</b> Some elements does not
+        have end tag and content, these
+        elements are termed as empty
+        elements or self-closing element
+        or void elements.
+        </p>
+        <h2>Such as</h2>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p> 
+                &lt;p&gt;Hello World!&lt;/p&gt;<br>
+   
+            </p>
+        </div>
+    </div>
+
+
+    <h2 style="margin-bottom: 10px;">Example</h2>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>&lt;!DOCTYPE html&gt; 
+                <br>&lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &lt;title&gt;WebPage&lt;/title&gt;
+                <br>&lt;/head&gt;
+                <br>&lt;body&gt;<br>
+                &lt;h1&gt;This is my first web page&lt;/h1&gt;<br>
+                &lt;h2&gt;How it looks?&lt;/h2&gt;<br>
+                &lt;p&gt;It looks nice!!!!!!&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt/html&gt;
+            </p>
+        </div>
+    </div>
+
+    <p>All the content written between body elements are visible on web page.</p>
+
+    <p><b>Void element :</b> All the content written
+        between body elements are
+        visible on web page.
+        Void element: All the elements in
+        HTML do not require to have start
+        tag and end tag, some elements
+        does not have content and end
+        tag such elements are known as
+        Void elements or empty
+        elements. These elements are
+        also called as unpaired tag.
+        <br><br>
+        Some Void elements are &lt;br&gt;
+        (represents a line break),
+        &lt;hr&gt;(represents a horizontal line),
+        etc.
+         
+        <br><br>
+        <b>Nested HTML Elements:</b> HTML can
+        be nested, which means an
+        element can contain another
+        element.
+    </p>
+
+    <h2>Block-level and Inline HTML elements</h2>
+    <p>For the default display and styling
+        purpose in HTML, all the elements
+        are divided into two categories:
+        <ul>
+            <li>Block-level element</li>
+            <li>Inline element</li>
+        </ul>
+        </p>
+
+    <hr width="100%">    
+
+    <h2 style="margin-top: 10px; margin-bottom: 10px;">Block-level element:</h2>
+    <ul>
+        <li>These are the elements,
+            which structure main part of
+            web page, by dividing a
+            page into coherent blocks.</li>
+        <li>A block-level element always
+            start with new line and takes
+            the full width of web page,
+            from left to right.</li>  
+        <li>These elements can contain
+            block-level as well as inline
+            elements.</li>       
+    </ul>
+
+    <p>Following are the block-level elements in HTML.</p>
+    <P>
+        &lt;address&gt;,
+        &lt;article&gt;,
+        &lt;aside&gt;,
+        &lt;blockquote&gt;,
+        &lt;canvas&gt;,
+        &lt;dd&gt;,
+        &lt;div&gt;,
+        &lt;dl&gt;,
+        &lt;dt&gt;,
+        &lt;fieldset&gt;,
+        &lt;figcaption&gt;,
+        &lt;figure&gt;,
+        &lt;footer&gt;,
+        &lt;form&gt;,
+        &lt;h1&gt;-
+        &lt;h6&gt;,
+        &lt;header&gt;,
+        &lt;hr&gt;,
+        &lt;li&gt;,
+        &lt;mian&gt;,
+        &lt;nav&gt;,
+        &lt;noscript&gt;,
+
+        &lt;ol&gt;,
+        &lt;output&gt;,
+        &lt;p&gt;,
+        &lt;pre&gt;,
+        &lt;section&gt;,
+        &lt;table&gt;,
+        &lt;tfoot&gt;,
+        &lt;ul&gt; and 
+        &lt;video&gt;.
+    </P>
+
+     <h2 style="margin-bottom: 10px;">Example</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>&lt;!DOCTYPE html&gt; 
+                <br>&lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &lt;title&gt;WebPage&lt;/title&gt;
+                <br>&lt;/head&gt;
+                <br>&lt;body&gt;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="background-color:lightblue;&gt;This is first div&lt;/div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="background-color:lightgreen;&gt;This is second div&lt;/div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="background-color:pink;&gt;This is third div&lt;/div&gt;<br>
+                
+                &lt;/body&gt;<br>
+                &lt/html&gt;
+            </p>
+        </div>
+    </div>
+
+    <hr width="100%">
+
+    <h2>Inline elements:</h2>
+    <ul>
+        <li>Inline elements are those
+            elements, which differentiate
+            the part of a given text and
+            provide it a particular
+            function.</li>
+        <li>These elements does not
+            start with new line and take
+            width as per requirement.</li>    
+        <li>The Inline elements are
+            mostly used with other
+            elements.</li>    
+    </ul>
+
+    <p>
+        &lt;a&gt;,
+        &lt;abbr&gt;,
+        &lt;acronym&gt;,
+        &lt;b&gt;,
+        &lt;bdo&gt;,
+        &lt;big&gt;,
+        &lt;br&gt;,
+        &lt;button&gt;,
+        &lt;cite&gt;,
+        &lt;code&gt;,
+        &lt;dfn&gt;,
+        &lt;em&gt;,
+        &lt;i&gt;,
+        &lt;img&gt;,
+        &lt;input&gt;,
+        &lt;kbd&gt;,
+        &lt;label&gt;,
+        &lt;map&gt;,
+        &lt;object&gt;,
+        &lt;q&gt;,
+        &lt;samp&gt;,
+        &lt;script&gt;,
+        &lt;select&gt;,
+        &lt;small&gt;,
+        &lt;span&gt;,
+        &lt;strong&gt;,
+        &lt;sub&gt;,
+        &lt;sup&gt;,
+        &lt;textarea&gt;,
+        &lt;time&gt;,
+        &lt;tt&gt;,
+        &lt;var&gt;.
+    </p>
+
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>&lt;!DOCTYPE html&gt; 
+                <br>&lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &lt;title&gt;WebPage&lt;/title&gt;
+                <br>&lt;/head&gt;
+                <br>&lt;body&gt;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://www.javascript.com/html-tutorial" &gt;Click on link &lt;/a&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span style="background-color:lightblue" &gt;This is inline element &lt;/span&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; This will take width of text only &lt;/p&gt;<br>
+                
+                &lt;/body&gt;<br>
+                &lt/html&gt;
+            </p>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+</body>
+</html>

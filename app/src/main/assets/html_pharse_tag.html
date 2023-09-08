@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML phrase Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction: 
+        column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      </style>
+</head>
+<body>
+
+    <p>The HTML phrase tags are special purpose tags, which defines the structural meaning of a block of text or semantics of text. <br><br> Following is the list of phrase tags, some of which we have already discussed in HTML formatting.</p>
+    <ul>
+        <li>Abbreviation tag: &lt;abbr&gt;</li>
+        <li>Acronym tag: &lt;acronym&gt;</li>
+        <li>Marked tag: &lt;mark&gt;</li>
+        <li>Strong tag: &lt;strong&gt;</li>
+        <li>Emphasized tag: &lt;em&gt;</li>
+        <li>Definition tag: &lt;dfn&gt;</li>
+        <li>Quoting tag: &lt;blockquote&gt;</li>
+        <li>Short quote tag: &lt;q&gt;</li>
+        <li>Code tag: &lt;code&gt;</li>
+        <li>Keyboard tag: &lt;kbd&gt;</li>
+        <li>Address tag: &lt;address&gt;</li>
+    </ul>
+
+    <hr width="100%">
+    <br>
+    <h2>1. Text Abbreviation tag</h2>
+    <p>This tag is used to abbreviate a text. To abbreviate a text, write text between &lt;abbr&gt; and &lt;/abbr&gt; tag.</p>
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;An &lt;abbr title="Hypertext Markup language"&gt;HTML &lt;/abbr&gt; laguage is used to create web pages.&lt;/p&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <p>An <abbr title="Hypertext Markup language">HTML </abbr> laguage is used to create web pages.</p>
+    <hr width="100%">
+
+    <h2>2. Marked tag</h2>
+    <p>The content written between &lt;mark&gt; &lt;/mark&gt; tag will show as yellow mark on browser. This tag is used to highlight a particular text.</p>
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;This tag will  &lt;mark&gt; highlight &lt;/mark&gt; the text. &lt;/p&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <p>This tag will <mark> highlight </mark> the text. </p>
+
+    <hr width="100%">
+
+    <h2>3. Strong tag</h2>
+    <p>This tag is used to display the important text of the content. The text written between &lt;strong&gt; and &lt;/strong&gt; will be displayed as important text.</p>
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;In HTML it is recommended to use &lt;strong&gt; lower-case &lt;/strong&gt;, while writing a code.&lt;/p&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <p>In HTML it is recommended to use <strong> lower-case </strong>, while writing a code.</p>
+
+    <hr width="100%">
+
+    <h2>4. Emphasized tag</h2>
+    <p>This tag is used to emphasize the text, and displayed the text in italic form. The text written between &lt;em&gt; and &lt;/em&gt; tag will italicized the text.</p>
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;HTML is an &lt;em&gt; easy &lt;/em&gt; to learn language.&lt;/p&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <p>HTML is an <em> easy </em> to learn language.</p>
+
+
+    <hr width="100%">
+    <h2>5. Definition tag</h2>
+    <p>When you use the &lt;dfn&gt; and &lt;/dfn&gt; tags, it allow to specify the keyword of the content. Following is the example to show how to definition element.</p>
+    <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt; &lt;dfn&gt; HTML &lt;/dfn&gt; is a markup language.&lt;/p&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <p> <dfn> HTML </dfn> is a markup language.</p>
+
+    <hr width="100%">
+    <h2>6. Quoting tag</h2>
+    <p>The HTML &lt;blockquote&gt; element shows that the enclosed content is quoted from another source. The source URL can be given using the cite attribute, and text representation of source can display using &lt;cite&gt; ... &lt;/cite&gt; element.</p>
+
+     <h2 style="margin-bottom: 10px;">Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;blockquote cite="https://www. keepinspiring.me /famous-quotes/"&gt;  &lt;p&gt;? The first step toward success is taken when you refuse to be a captive of the environment in which you first find your self.? &lt;/p&gt; &lt;/blockquote&gt;<br> <br>
+                &lt;cite&gt;-Mark Caine&lt;/cite&gt;
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+<blockquote cite="https://www.keepinspiring.me/famous-quotes/"> <p>"The first step toward success is taken when you refuse to be a captive of the environment in which you first find your self."</p> </blockquote>
+<p><cite>-Mark Caine</cite></p>
+
+
+<hr width="100%">
+<h2>7. Short Quotation tag</h2>
+<p>An HTML &lt;q&gt;....&lt;/q&gt; element defines a short quotation. If you will put any content between &lt;q&gt;....&lt;/q&gt;, then it will enclose the text in double quotes.</p>
+
+<h2 style="margin-bottom: 10px;">Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;p&gt; Steve Jobs said: &lt;q&gt;If you are working on something that you really care about, You don't have to be pushed. The Vision pulls you.&lt;/q&gt; &lt;/p&gt;<br> 
+        </p>
+    </div>
+</div>
+
+<h2>Output:</h2>
+<p> Steve Jobs said: <q>If you are working on something that you really care about, You don't have to be pushed. The Vision pulls you.</q> </p>
+
+<hr width="100%">
+<h2>8. Code tag</h2>
+<p>The HTML &lt;code&gt; &lt;/code&gt; element is used to display the part of computer code. It will display the content in monospaced font.</p>
+
+
+<h2 style="margin-bottom: 10px;">Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;p&gt; First Java program &lt;/p&gt;<br> 
+            &lt;p&gt; &lt;code&gt; <br> class Simple{ <br>public static void main(String args[]){ <br> System.out .println ("Hello Java"); <br> }} <br> &lt;/code&gt;&lt;/p&gt;<br>         </p>
+    </div>
+</div>
+
+<h2>Output:</h2>
+<p> First Java program </p>
+<p> <code>
+class Simple{ <br>
+public static <br>void main(String args[]){ <br>
+System.out. <br> println("Hello <br> Java"); <br>
+&nbsp; &nbsp;} <br>
+}
+</code></p>
+
+<hr width="100%">
+<h2>9. Keyboard Tag</h2>
+<p>In HTML the keyboard tag, &lt;kbd&gt;, indicates that a section of content is a user input from keyboard.</p>
+
+<h2 style="margin-bottom: 10px;">Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;p&gt; Please press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt; Shift&lt;/kbd&gt; + t &lt;kbd&gt;&lt;/kbd&gt; to restore page on chrome. &lt;/p&gt;<br> 
+            
+    </div>
+</div>
+<h2>Output:</h2>
+<p> Please press <kbd>Ctrl</kbd> + <kbd> Shift</kbd> + t <kbd></kbd> to restore page on chrome. </p>
+
+
+<hr width="100%">
+<h2>10. Address tag</h2>
+<p>An HTML &lt;address&gt; tag defines the contact information about the author of the content. The content written between &lt;address&gt; and &lt;/address&gt; tag, then it will be displayed in italic font.</p>
+
+
+<h2 style="margin-bottom: 10px;">Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;address&gt; You can ask your queries by contact us on &lt;a href=""&gt;example123 @newdomain.com&lt;/a&gt; <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;br&gt; You can also visit at: &lt;br&gt; 58 S. G arfield Street. Villa Rica, GA 30187.  <br> <br>
+            &lt;/address&gt;<br> 
+            
+    </div>
+</div>
+<h2>Output:</h2>
+<address> You can ask your queries by contact us on <a href="">example123 <br> @newdomain.com</a>
+
+      <br> You can also visit at: <br> 58 S. G arfield Street. Villa Rica, GA 30187.
+
+</address>
+</body>
+</html>

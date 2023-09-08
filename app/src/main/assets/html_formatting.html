@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML formatting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction: 
+        column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      </style>
+</head>
+<body>
+
+    <p><b>HTML Formatting</b> is a process of
+        formatting text for better look and
+        feel. HTML provides us ability to
+        format text without using CSS.
+        There are many formatting tags
+        in HTML. These tags are used to
+        make text bold, italicized, or
+        underlined. There are almost 14
+        options available that how text
+        appears in HTML and XHTML.
+        In HTML the formatting tags are
+        divided into two categories:</p>
+        <ul>
+            <li>Physical tag: These tags are
+        used to provide the visual
+        appearance to the text.</li>
+                <li>Logical tag: These tags are
+        used to add some logical or
+        semantic value to the text.</li>
+        </ul>
+ 
+
+    <p style="margin-top: 5px;">
+        <b>NOTE: There are some physical
+        and logical tags which may give
+        same visual appearance, but
+        they will be different in semantics
+        </b><br><br>
+        Here, we are going to learn 14
+        HTML formatting tags. Following is
+        the list of HTML formatting text.
+    </p>
+        
+
+    <h2>1&rpar; Bold Text</h2>
+    <p>
+        HTML&lt;b&gt; and &lt;strong&gt; formatting
+            elements
+            The HTML &lt;b&gt; element is a
+            physical tag which display text in
+            bold font, without any logical
+            importance. If you write anything
+            within &lt;b&gt;..........&lt;/b&gt; element, is
+            shown in bold letters.
+            See this example:
+    </p>
+
+
+
+
+    
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt; &lt;b&gt;Write Your First Paragraph in bold text. &lt;/b&gt;&lt;/p&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output</h2>
+    <p><b>Write Your First Paragraph in bold
+        text.</b><br><br>
+        The HTML &lt;strong&gt; tag is a logical
+        tag, which displays the content in
+        bold font and informs the
+        browser about its logical
+        importance. If you write anything
+        between &lt;strong&gt;???????. &lt;/strong&gt;, is shown important text.
+        <br><br>
+        See this example:
+        </p>
+
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;p&gt; &lt;strong&gt;This is an important content&lt;/strong&gt;, and this is normal content&lt;/p&gt;<br>
+                </p>
+            </div>
+        </div>
+
+
+        <h2>2&rpar; Italic Text</h2>
+        <p><b>HTML &lt;i&gt; and &lt;em&gt; formatting elements </b>
+        <br><br>The HTML &lt;i&gt; element is physical
+            element, which display the
+            enclosed content in italic font,
+            without any added importance. If
+            you write anything within &lt;i&gt;.........
+            &lt;/i&gt; element, is shown in italic
+            letters. <br><br>
+            See this example:
+        
+        </p>
+
+
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;p&gt; &lt;i&gt;Write Your First Paragraph in italic text &lt;/i&gt; &lt;/p&gt;<br>
+                </p>
+            </div>
+        </div>
+
+
+        <h2>- Italic with &lt;em&gt;</h2>
+        <p><i style="margin: 0;">Write Your First Paragraph in italic
+            text.</i><br><br>
+            The HTML &lt;em&gt; tag is a logical
+            element, which will display the
+            enclosed content in italic font,
+            with added semantics
+            importance.
+            <br><br>
+            See this example:
+            </p>
+
+
+            <div id="code_container">
+                <div id="code_header">
+                    <div id="code_title">
+                        <img src="code (1).svg"/>
+                        <p>Code Example</p>
+                    </div>
+                </div>
+                <div id="code_body">
+                    <p>
+                        &lt;p&gt; &lt;em&gt;This is an important content &lt;/em&gt;, which displayed in italic font&lt;/p&gt;<br>
+                    </p>
+                </div>
+            </div>
+
+            <h2>Output :</h2>
+            <p><em style="margin: 0;">This is an important content, which displayed in italic font.</em></p>
+
+            
+            <h2>3&rpar; HTML Marked formatting</h2>
+
+            <p>If
+                you want to mark or highlight a
+                text, you should write the content
+                within &lt;mark&gt;.......&lt;/mark&gt;.
+                <br><br>
+                See this example:
+                </p>
+
+                <div id="code_container">
+                    <div id="code_header">
+                        <div id="code_title">
+                            <img src="code (1).svg"/>
+                            <p>Code Example</p>
+                        </div>
+                    </div>
+                    <div id="code_body">
+                        <p>
+                            &lt;h2&gt; I want to put a &lt;mark&gt; Mark &lt;/mark&gt; on your face &lt;/h2&gt;<br>
+                        </p>
+                    </div>
+                </div> 
+                
+            <h2>Output:</h2>    
+            <p><b>I want to put a <mark>Mark</mark> on your face. </b></p>
+
+            <h2>4&rpar; Underlined Text</h2>
+
+            <p>If you write anything within &lt;u&gt;.....&lt;/ul&gt; element, is shown in underlined text. <br><br>See this example</p>
+            <div id="code_container">
+                <div id="code_header">
+                    <div id="code_title">
+                        <img src="code (1).svg"/>
+                        <p>Code Example</p>
+                    </div>
+                </div>
+                <div id="code_body">
+                    <p>
+                        &lt;p&gt; &lt;u&gt; Write Your First Paragraph in underlined text. &lt;/u&gt; &lt;/p&gt;<br>
+                    </p>
+                </div>
+            </div> 
+
+            <h2>Output:</h2>
+            <p><u>Write Your First Paragraph in underlined text.</u></p>
+
+
+            <h2>5&rpar; Strike Text</h2>
+            <p>Anything written within
+                &lt;strike&gt;........&lt;/strike&gt; element
+                is displayed with strikethrough. It
+                is a thin line which cross the
+                statement.
+                <br><br>
+                See this example:
+                </p>
+                <div id="code_container">
+                    <div id="code_header">
+                        <div id="code_title">
+                            <img src="code (1).svg"/>
+                            <p>Code Example</p>
+                        </div>
+                    </div>
+                    <div id="code_body">
+                        <p>
+                            &lt;p&gt; &lt;strike&gt; Write Your First Paragraph strikethrough. &lt;/strike&gt; &lt;/p&gt;<br>
+                        </p>
+                    </div>
+                </div>     
+
+                <h2>Output:</h2>
+                <p><strike>Write Your First Paragraph with strikethrough.</strike></p>
+
+                
+
+            <h2>6&rpar; Monospaced Text</h2>
+
+            <p>If you want that each letter has
+                the same width then you should
+                write the content within
+                &lt;tt&gt;.............&lt;/tt&gt; element. <br><br>
+                Note: We know that most of the
+                fonts are known as variable-
+                width fonts because different
+                letters have different width. (for
+                example: 'w' is wider than 'i').
+                Monospaced Font provides
+                similar space among every letter. <br><br>
+                See this example:
+            </p>
+
+            <div id="code_container">
+                <div id="code_header">
+                    <div id="code_title">
+                        <img src="code (1).svg"/>
+                        <p>Code Example</p>
+                    </div>
+                </div>
+                <div id="code_body">
+                    <p>
+                        &lt;p&gt;Hello &lt;tt&gt; Write Your First Paragraph in monospaced font. &lt;/tt&gt; &lt;/p&gt;<br>
+                    </p>
+                </div>
+            </div>  
+
+            <h2>Output</h2>
+            <p>Hello <tt style="font-family: monospace;"> Write Your First Paragraph in monospaced font. </tt> </p>
+
+            <h2>7&rpar; Superscript Text</h2>
+            <p>If you put the content within
+                &lt;sup&gt;...............&lt;/sup&gt; element, is
+                shown in superscript; means it is
+                displayed half a character's
+                height above the other
+                characters. <br><br>
+                See this example:
+                </p>
+
+            <div id="code_container">
+                    <div id="code_header">
+                        <div id="code_title">
+                            <img src="code (1).svg"/>
+                            <p>Code Example</p>
+                        </div>
+                    </div>
+                    <div id="code_body">
+                        <p>
+                            &lt;p&gt;Hello &lt;sup&gt; Write Your First Paragraph in superscript. &lt;/sup&gt; &lt;/p&gt;<br>
+                        </p>
+                    </div>
+                </div>  
+
+                <h2>Output:</h2>
+
+                <p>Hello <sup> Write Your First Paragraph in superscript. </sup> </p>
+
+            
+                <h2>8&rpar; Subscript Text</h2>
+                <p>If you put the content within
+                    &lt;sub&gt;..............&lt;/sub&gt; element, is
+                    shown in subscript; means it is
+                    displayed half a character's
+                    height below the other
+                    characters. <br><br>
+                    See this example:
+                    </p>
+
+                    
+            <div id="code_container">
+                <div id="code_header">
+                    <div id="code_title">
+                        <img src="code (1).svg"/>
+                        <p>Code Example</p>
+                    </div>
+                </div>
+                <div id="code_body">
+                    <p>
+                        &lt;p&gt;Hello &lt;sub&gt; Write Your First Paragraph in subscript. &lt;/sub&gt; &lt;/p&gt;<br>
+                    </p>
+                </div>
+            </div>  
+
+            <h2>Output:</h2>
+
+           <p>Hello <sub> Write Your First Paragraph in subscript. </sub> </p>
+
+           
+           <h2>9&rpar; Deleted Text</h2>
+           <p>Anything that puts within
+            &lt;del&gt;........&lt;/del&gt; is displayed as
+            deleted text. <br><br>
+            See this example:
+            </p>
+
+            <div id="code_container">
+                <div id="code_header">
+                    <div id="code_title">
+                        <img src="code (1).svg"/>
+                        <p>Code Example</p>
+                    </div>
+                </div>
+                <div id="code_body">
+                    <p>
+                        &lt;p&gt;Hello &lt;del&gt; Delete Your First Paragraph. &lt;/del&gt; &lt;/p&gt;<br>
+                    </p>
+                </div>
+            </div>  
+
+            <h2>Output:</h2>
+            <p>Hello <del> Delete Your First Paragraph. </del> </p>
+
+        <h2>10&rpar; Inserted Text</h2>   
+        <p>Anything that puts within &lt;ins&gt;......&lt;/ins&gt; is displayed as inserted text. <br><br>See this example:</p>
+
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;p&gt;&lt;del&gt; Delete Your First Paragraph. &lt;/del&gt; &lt;ins&gt;Write another paragraph.&lt;/ins&gt; &lt;/p&gt;<br>
+                </p>
+            </div>
+        </div>
+
+        <h2>Output</h2>
+        <p><del> Delete Your First Paragraph. </del> <ins>Write another paragraph.</ins> </p>
+
+        <h2>11&rpar; Larger Text</h2>   
+
+        <p>If you want to put your font size
+            larger than the rest of the text
+            then put the content within
+            &lt;big&gt;.........&lt;/big&gt;. It increase one
+            font size larger than the previous
+            one. <br><br>
+            See this example:
+        </p>
+
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;p&gt; Hello &lt;big&gt;Write the Paragraph in larger font. &lt;/big&gt; &lt;/p&gt;<br>
+                </p>
+            </div>
+        </div>
+
+        <h2>Output:</h2>
+        <p> Hello<big>Write the Paragraph in larger font. </big> </p>
+
+
+        <h2>12&rpar; Smaller Text</h2>   
+        <p>If you want to put your font size
+            smaller than the rest of the text
+            then put the content within
+            &lt;small&gt;........&lt;/small&gt; tag. It
+            reduces one font size than the
+            previous one. <br><br>
+            See this example:
+            </p>
+
+            <div id="code_container">
+                <div id="code_header">
+                    <div id="code_title">
+                        <img src="code (1).svg"/>
+                        <p>Code Example</p>
+                    </div>
+                </div>
+                <div id="code_body">
+                    <p>
+                        &lt;p&gt; Hello &lt;small&gt;Write the Paragraph in smaller font. &lt;/small&gt; &lt;/p&gt;<br>
+                    </p>
+                </div>
+            </div>    
+
+            <h2>Output:</h2>
+
+            <p> Hello <small>Write the Paragraph in smaller font.</small> </p>
+
+</body>
+</html>
