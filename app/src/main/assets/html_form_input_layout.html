@@ -175,13 +175,421 @@ Enter your name <br> <input type="text" name="username" ><br>
 Enter your password <br> <input type="password" name="password" ><br>
 <input type="submit" value="submit" >
 <input type="reset" value="Reset" >
-
+</form>
 <p>Try to change the input values of user id and password, then when you click on reset, it will reset input fields with default values.</p>
 <hr width="100%">
 
 <h2>5. &lt;input type="radio"&gt;:</h2>
-<p>The &lt;input&gt; type "radio" defines the radio </p>
+<p>The &lt;input&gt; type "radio" defines the radio buttons, which allow choosing an option between a set of related options. At a time only one radio button option can be selected at a time.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;p&gt;Kindly select your favorite color&lt;/p&gt; 
+            &lt;input type="radio" name="color" value="red"&gt; Red &lt;br&gt;<br>
 
+            &lt;input type="radio" name="color" value="blue"&gt; Blue &lt;br&gt;<br>
+            &lt;input type="radio" name="color" value="green"&gt; Green &lt;br&gt;<br>
+            &lt;input type="radio" name="color" value="pink"&gt; Pink &lt;br&gt;<br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<form style="width: 100%;">
+<p>Kindly select your favorite color</p> <input type="radio" name="color" value="red"> Red <br>
+<input type="radio" name="color" value="blue"> Blue <br>
+<input type="radio" name="color" value="green"> Green <br>
+<input type="radio" name="color" value="pink"> Pink <br>
+</form><br>
+<hr width="100%">
+<h2>6. &lt;input type="checkbox"&gt;:</h2>
+<p>The &lt;input&gt; type "checkbox" are displayed as square boxes which can be checked or unchecked to select the choices from the given options.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;p&gt;Kindly select your favorite color&lt;/p&gt; 
+            &lt;input type="checkbox" name="color" value="red"&gt; Red &lt;br&gt;<br>
+
+            &lt;input type="checkbox" name="color" value="blue"&gt; Blue &lt;br&gt;<br>
+            &lt;input type="checkbox" name="color" value="green"&gt; Green &lt;br&gt;<br>
+            &lt;input type="checkbox" name="color" value="pink"&gt; Pink &lt;br&gt;<br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<p>Kindly select your favorite color</p> <input type="checkbox" name="color" value="red"> Red <br>
+<input type="checkbox" name="color" value="blue"> Blue <br>
+<input type="checkbox" name="color" value="green"> Green <br>
+<input type="checkbox" name="color" value="pink"> Pink <br>
 </form>
+
+<br><hr width="100%">
+<h2>7. &lt;input type="button"&gt;:</h2>
+<p>The &lt;input&gt; type "button" defines a simple push button, which can be programmed to control a functionally on any event such as, click event.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+
+            &lt;input type="submit" value="click me" onclick="alert('You are learning HTML')"&gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<input type="submit" value="click me" onclick="alert('You are learning HTML')">
+</form> <br>
+<hr width="100%">
+<h2>8. &lt;input type="file"&gt;:</h2>
+<p>The &lt;input&gt; element with type "file" is used to select one or more files from user device storage. Once you select the file, and after submission, this file can be uploaded to the server with the help of JS code and file API.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+
+            &lt;input type="file" name="newFile" &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form style="width: 100%;">
+<input type="file" name="newFile" >
+<input type="submit" >
+</form>
+<p>We can choose any type of file until we do not specify it! The selected file will appear at next to "choosen file" option.</p>
+
+<hr width="100%">
+<h2>9. &lt;input type="image"&gt;:</h2>
+<p>The &lt;input&gt; type "image" is used to represent a submit button in the form of image.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+
+            &lt;input type="image" src="download.jpg" width="100px" name="newImg" &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<input type="image" src="download.jpg" width="50%" name="newImg" >
+<input type="submit" >
+</form>
+<br>
+<hr width="100%">
+<h1>HTML5 newly added &lt;input&gt; types element</h1>
+
+<h2>1. &lt;input type="color"&gt;:</h2>
+<p>The &lt;input&gt; type "color" is used to define as input field which contains a colour. It allows a user to specify the colour by the visual colour interface on a browser. <br><br><b>Note: The "color" type only supports color value in hexadecimal format, and the default value is #000000 (black).</b></p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            Pick your favorite color:
+            &lt;input type="color" name="color" &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+Pick your favorite color: <input type="color" value="#778788" name="color" >
+<input type="submit" >
+</form><br>
+<hr width="100%">
+<h2>2. &lt;input type="date"&gt;:</h2>
+<p>The &lt;input&gt; element of type "date" generates an input field, which allows a user to input the date in a given format. A user can enter the date by text field or by date picker interface.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            Select date from here
+            &lt;input type="date" name="date" &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+Select date from here <input type="date" name="date" >
+<input type="submit" >
+</form>
+<br>
+<hr width="100%">
+
+<h2>3. &lt;input type="datetime-local"&gt;:</h2>
+<p>The &lt;input&gt; element of type "datetime-local" creates input filed which allow a user to select the date as well as local time in the hour and minute without time zone information.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            Enter your local time
+            &lt;input type="datetime-local" name="datetime-local" &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+Enter your local time <input type="datetime-local" name="datetime-local" >
+<input type="submit" >
+</form><br><hr width="100%">
+
+<h2>4. &lt;input type="email"&gt;:</h2>
+<p>The &lt;input&gt; type "email" creates an input filed which allow a user to enter the e-mail address with pattern validation. The multiple attributes allow a user to enter more than one email address.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;label&gt;Enter your email address &lt;/label&gt;
+            &lt;input type="email" name="email" required &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<label>Enter your email address </label> <input type="email" name="email" required >
+<input type="submit" >
+</form>
+<br><hr width="100%">
+
+<h2>5. &lt;input type="month"&gt;:</h2>
+<p>The &lt;input&gt; type "month" creates an input field which allows a user to easily enter month and year in the format of "MM, YYYY" where MM defines month value, and YYYY defines the year value. </p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            Enter your Birth Month-year:
+            &lt;input type="month" name="newMonth" &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+
+
+<form >
+Enter your Birth Month-year: <input type="month" name="newMonth" >
+<input type="submit" >
+</form>
+<br><hr width="100%">
+
+<h2>6. &lt;input type="number"&gt;:</h2>
+<p>The &lt;input&gt; element type number creates input filed which allows a user to enter the numeric value. You can also restrict to enter a minimum and maximum value using min and max attribute.</p>
+   
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;label&gt;Enter your email address &lt;/label&gt;
+            &lt;input type="number" name="number" min="20" max="60" required &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<label>Enter your email address </label> <input type="number" name="number" min="20" max="60" required >
+<input type="submit" >
+</form><br><hr width="100%">
+
+<h2>7. &lt;input type="url"&gt;:</h2>
+<p>The &lt;input&gt; element of type "URL" creates an input filed which enables user to enter the URL.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;label&gt;Enter your website URL: &lt;/label&gt;
+            &lt;input type="url" name="website url" placeholder="https:// example.com" required &gt; <br>
+            &lt;input type="submit" value="send"&gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<label>Enter your website URL: </label> <input type="url" name="website url" placeholder="https://example.com" required >
+<input type="submit" value="send">
+</form>
+
+<br><hr width="100%">
+<h2>8. &lt;input type="week"&gt;:</h2>
+<p>The &lt;input&gt; type week creates an input field which allows a user to select a week and year form the drop-down calender without time zone.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;label&gt;Select your best week of year &lt;/label&gt;<br>
+            &lt;input type="week" name="bestweek" required &gt; <br>
+            &lt;input type="submit" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<label>Select your best week of year </label><br>
+<input type="week" name="bestweek" required >
+<input type="submit" >
+</form>
+<br><hr width="100%">
+<h2>9. &lt;input type="search"&gt;:</h2>
+<p>The &lt;input&gt; type "search" creates an input field which allows a user to enter a search string. These are functionally symmetrical to the text input type, but may be styled differently.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;label&gt;Search here: &lt;/label&gt;<br>
+            &lt;input type="search" name="q" required &gt; <br>
+            &lt;input type="submit" value="search" &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<label>Search here: </label>
+<input type="search" name="q" required >
+<input type="submit" value="search" >
+</form>
+
+<br><hr width="100%">
+<h2>10. &lt;input type="tel"&gt;:</h2>
+<p>The &lt;input&gt; element of type "tel" creates an input field to enter the telephone number. The "tel" type does not have default validation such as email, because telephone number pattern can vary wordwide.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            &lt;label&gt;Enter Your Telephone Number: &lt;/label&gt;<br>
+            &lt;input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required &gt; <br>
+            &lt;input type="submit"  &gt; <br>
+            &lt;/form&gt;
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+<label>Enter Your Telephone Number: </label>
+<input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+<input type="submit" >
+</form>
+<br>
+<p><b>Note:</b> Here we are using two attributes that are "pattern" and "required" which allow user to enter the number in given format and it is required to enter the number in input field.</p>
+
+<br>
 </body>
 </html>

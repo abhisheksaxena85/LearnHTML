@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attribute</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <h2>HTML &lt;form&gt; element attribute</h2>
+    <p>In HTML there are various attribute for &lt;form&gt; element which are given below.</p>
+
+    <h2>HTML action attribute</h2>
+    <p>The action attribute of &lt;form&gt; element defines the process to be performed on form when form is submitted, or it is a URI to process the form information. <br><br>The action attribute value defines the web page where information proceed. It can be .php, .jsp, .asp, etc. or any URL where you want to process your form. </p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html"&gt;    <br> 
+               Enter your name &lt;br&gt; &lt;input type="text" name="username" &gt;<br>
+                &lt;input type="submit" value="submit"&gt;<br>
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output</h2>
+    <form action="action.html">
+    Enter your name <br> <input type="text" name="username" >
+    <input type="submit" value="submit">
+    </form>
+    <p><b>It will redirect to a new page "action.html" when you click on submit button.</b></p>
+    <hr width="100%">
+
+    <h2>HTML method attribute</h2>
+    <p>The method attribute defines the HTTP method which browser used to submit the form. The possible values of method attribute can be:</p>
+    <ul>
+      <li><b>post:</b> We can use the post value of method attribute when we want to process the sensitive data as it does not display the submitted data in URL.</li>
+      <li><b>get:</b> The get value of method attribute is default value while submitting the form. But this is not secure as it displays data in URL after submitting the form.</li>
+    </ul>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get | post"&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+    <p>When submitting the data, it will display the entered data in the form of </p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                file:<t style="color: rgb(167, 186, 248); font-size: 17px;">///D:/HTML/ action.html? name=learnhtml& pass=123</t>
+            </p>
+        </div>
+    </div><hr width="100%">
+    <h2>HTML target attribute</h2>
+    <p>The target attribute defines where to open the response after submitting the form. The following are the keywords used with the target attribute.</p>
+    <ul>
+      <li><b>_self:</b> If we use _self as an attribute value, then the response will display in current page only.</li>
+    </ul>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get" target="_self"&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+
+    <ul>
+      <li><b>_blank:</b> If we use _blank as an attribute it will load the response in a new page.</li>
+    </ul>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get" target="_blank"&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+
+
+    <hr width="100%">
+    <h2>HTML autocomplete attribute</h2>
+    <p>The HTML autocomplete attribute is a newly added attribute of HTML5 which enables an input field to complete automatically. It can have two values "on" and "off" which enables autocomplete either ON or OFF. The default value of autocomplete attribute is "on".</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get" target="_blank" autocomplete="on"&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+
+    <hr width="100%">
+    <h2>HTML enctype attribute</h2>
+    <p>The HTML enctype attribute defines the encoding type of form-content while submitting the form to the server. The possible values of enctype can be:</p>
+    <ul>
+        <li><b>application/x-www-form-urlencoded:</b> It is default encoding type if the enctype attribute is not included in the form. All characters are encoded before submitting the form.</li>
+    </ul>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get" enctype="application/x-www-form-urlencoded"&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+    <ul>
+        <li><b>multipart/form-data:</b> It does not encode any character. It is used when our form contains file-upload controls.</li>
+    </ul>
+    
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get" enctype="multipart/form-data"&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+
+    <ul>
+        <li><b>text/plain (HTML5):</b> In this encoding type only space are encoded into + symbol and no any other special character encoded.</li>
+    </ul>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get" enctype="text/plain"&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+
+    <hr width="100%">
+    <h2>HTML novalidate attribute HTML5</h2>
+    <p>The novalidate attribute is newly added Boolean attribute of HTML5. If we apply this attribute in form then it does not perform any type of validation and submit the form.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get" novalidate&gt;
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+
+    <p><b>Try to change the form details with novalidate attribute and without novalidate attribute and see the difference.</b></p>
+    <hr width="100%">
+    
+
+</body>
+</html>
