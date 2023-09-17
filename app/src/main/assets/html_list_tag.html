@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+    <p>HTML Lists are used to specify lists of information. All lists may contain one or more list elements. There are three different types of HTML lists.
+    </p>
+  <ol>
+            <li>Ordered List or Numbered List (ol)</li>
+            <li>Unordered List or Bulleted List (ul)</li>
+            <li>Description List or Defination List (dl)</li>
+        </ol>
+    <p><b>Note: We can create a list inside another list, which will be termed as nested List.</b></p>
+    <hr width="100%">
+    <h2>HTML Ordered List or Numbered List</h2>
+    <p>In the ordered HTML lists, all the list items are marked with numbers by default. It is known as numbered list also. The ordered list starts with &lt;ol&gt; tag and the list items start with &lt;li&gt; tag.</p>
+
+<br>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;ol&gt;    <br>
+            &lt;li&gt;Aries&lt;/li&gt;<br>
+            &lt;li&gt;Bingo&lt;/li&gt;<br>
+            &lt;li&gt;Leo&lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output: </h2>
+    <ol style="width: 100%; ">
+<li>Aries</li>
+<li>Bingo</li>
+<li>Leo</li> 
+</ol>
+
+<hr width="100%">
+<h2>HTML Unordered List or Bulleted List</h2>
+<p>In HTML Unordered list, all the list items are marked with bullets. It is also known as bulleted list also. The Unordered list starts with &lt;ul&gt; tag and list items start with &lt;li&gt; tag.</p>
+<br>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;ul&gt;    <br>
+            &lt;li&gt;Aries&lt;/li&gt;<br>
+            &lt;li&gt;Bingo&lt;/li&gt;<br>
+            &lt;li&gt;Leo&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output:</h2>
+<ul style="width: 100%;">
+<li>Aries</li>
+<li>Bingo</li>
+<li>Leo</li>
+</ul>
+
+<hr width="100%">
+<h2>HTML Description List or Definition List</h2>
+<p>HTML Description list is also a list style which is supported by HTML and XHTML. It is also known as definition list where entries are listed like a dictionary or encyclopedia. <br><br> The definition list is very appropriate when you want to present glossary, list of terms or other name-value list. <br><br> The HTML definition list contains following three tags: </p>
+<ol style="width: 100%; margin: 0;">
+    <li><b>&lt;dl&gt; tag</b> defines the start of the list.</li>
+    <li><b>&lt;dt&gt; tag</b> defines a term.</li>
+    <li><b>&lt;dd&gt; tag</b> defines the term definition (Description).</li>
+</ol>
+<br>
+
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;dl&gt;    <br>
+            &lt;dt&gt;Aries&lt;/dt&gt;<br>
+            &lt;dd&gt;One of the 12 horoscope sign&lt;/dd&gt;<br>
+            &lt;/dl&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output: </h2>
+<p>
+<dl style="width: 100%; margin: 0;">
+<dt>Aries</dt>
+<dd>One of the 12 horoscope sign</dd>
+</dl>
+</p>
+
+<hr width="100%">
+<h2>HTML Nested List</h2>
+<p>A list within another list is termed as nested list. If you want a bullet list inside a numbered list then such type of list will called as nested list.</p>
+
+
+
+</body>
+</html>

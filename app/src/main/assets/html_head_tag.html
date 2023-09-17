@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Head</title>
+
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+</body>
+    <p>The HTML &lt;head&lt; element is used as a container for metadata (data about data). It is used between &lt;html&gt; tag and &lt;body&gt; tag. <br><br>The head of an HTML document is a part whose content is not displayed in the browser on page loading. It just contains metadata about the HTML document. <br><br>An HTML head can contain lots of metadata information or can have very less or no information, it depends on our requirement. But head part has a crucial role an HTML document while creating a website. <br><br>Metadata defines the document title, character set, style, links, scripts and other meta information. <br><br>Following is a list of tags used in metadata:</p>
+    <ul style="width: 100%;">
+        <li>&lt;title&gt;</li>
+        <li>&lt;style&gt;</li>
+        <li>&lt;meta&gt;</li>
+        <li>&lt;link&gt;</li>
+        <li>&lt;script&gt;</li>
+        <li>&lt;base&gt;</li>
+    </ul>
+    <hr width="100%">
+    <h2>HTML &lt;title&gt; Element</h2>
+    <p>The HTML &lt;title&gt; element is used to define the title of document. It is used in all HTML/XHTML documents. The &lt;title&gt; element must be placed between &lt;head&gt; element, and one document can only have one title element.</p>
+    <h2>What does &lt;title&gt; element do?</h2>
+    <ol style="width: 100%;">
+        <li>It defines a title in the browser tab.</li>
+        <li>It provides a title for the page when it is added to favorites.</li>
+        <li>It displays a title for the page in search engine results.</li>
+    </ol>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+
+                &lt;head&gt;<br>
+                &lt;title&gt; This is the page title
+                &lt;/title&gt;<br>
+
+                &lt;/head&gt;<br>
+
+
+                &lt;body&gt;<br>
+               &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+        </div>
+    </div>
+
+    <hr width="100%">
+    <h2>HTML &lt;style&gt; Element</h2>
+    <p>The HTML &lt;style&gt; element is used to style the HTML page. The &lt;style&gt; element can have CSS properties for that HTML page only. If we want to apply CSS for multiple pages then we should use separate CSS file.</p>
+    
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+
+                &lt;head&gt;<br>
+                &lt;title&gt; This is the page title
+                &lt;/title&gt;<br>
+
+                
+                &lt;style&gt; <br>
+                h4{<br>
+                    color:red;<br>
+                } <br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+
+
+                &lt;body&gt;<br>
+                &lt;h4&gt;This is heading&lt;h4&gt;<br>
+               &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+
+    <div>
+        <style>
+            h4{
+            color:red;
+            }
+            </style>
+            <h4>This is heading<h4>
+    </div>
+    <hr width="100%">
+    <h2>HTML &lt;link&gt; Element</h2>
+    <p>The HTML &lt;link&gt; element is used to link an external style sheet to your webpage. The &lt;link&gt; element contains main two attributes which are "rel" and "href". The rel attribute indicates that it is a stylesheet, and href gives the path to that external file.</p>
+
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;link rel="stylesheet" href="style.css"&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <hr width="100%">
+    <h2>HTML &lt;meta&gt; Element</h2>
+    <p>The HTML &lt;meta&gt; element is used to specify the character set, page description, keyword, authors and other metadata on the webpage. <br><br>Metadata is mainly used by browsers, search engines, and other web services to rank better. <br><br><b>Let's see how to use metadata:</b> <br><br><b>To define a character set:</b></p>
+
+    
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta charset="UTF-8" &gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <p>The charset attribute specifies the character encoding. In this example we have set it to "UTF-8" which means it can handle to display any language.</p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+
+                &lt;head&gt;<br>
+                &lt;meta charset="UTF-8"&gt; <br>
+
+                &lt;title&gt; This is the page title
+                &lt;/title&gt;<br>
+
+            
+                &lt;/head&gt;<br>
+
+
+                &lt;body&gt;<br>
+                &lt;h4&gt;This is heading&lt;h4&gt;<br>
+               &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+        </div>
+    </div>
+    <br><hr width="100%">
+    <h2>To define a description of your webpage:</h2>
+    <br>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta name="description" content="Free Web tutorial"&gt; <br>
+        </div>
+    </div>
+
+    <p>If you give a meta description then it will be useful for the relevant search to perform by search engines.</p>
+
+    <hr width="100%">
+    <h2>To define keywords for search engines:</h2><br>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta name="description" content="HTML, CSS, XML, JavaScript" &gt; <br>
+            </p>
+        </div>
+    </div>
+
+    <p>The keyword value is also used to provide keywords for a search engine, but it may ignore by browser due to spammers.</p> 
+
+    <hr width="100%">
+    <h2>To define author of webpage:</h2>
+    <br>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta name="author" content="John Doe" &gt; <br>
+            </p>
+        </div>
+    </div>
+    <p>The author value specifies the name of the person who wrote the page content, and it is useful to automatically extract author information by some content management systems.</p>
+
+    <hr width="100%">
+    <h2>To refresh document every 30 second:</h2>
+    <br>  
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta http-equiv="refresh" content="30" &gt; <br>
+            </p>
+        </div>
+    </div>
+
+    <p>Meta refresh is used to provide instructions to the browser to automatically refresh the page after the given time interval. As in above example it will automatically refresh after every 30 second.</p>
+    
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta http-equiv="refresh" content="10; url=https://www.google.com/html-head" &gt; <br>
+            </p>
+        </div>
+    </div>
+    <p>If you add and URL with content value, then it will redirect to that page after the time limit will over. </p>
+
+    <hr width="100%">
+    <h1>Use &lt;meta&gt; tag to set the Viewport</h1>
+    <p>This method is introduced in HTML5 to take control over the viewport bt using &lt;meta&gt; tag. <br><br>Viewport is the user's visible area of a webpage. It changes from device to device and appears smaller on mobile phones than computer screen.</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" &gt; <br>
+            </p>
+        </div>
+    </div>
+    <p>Here the <b>&lt;meta&gt; viewport</b> element specifies how to control the page's dimensions and scaling. <br><br> The <b>width=device-width</b> is used to set the width of the page, to follow the screen-width of device (which will vary depending on the device). <br><br> The <b>initial-scale=1.0 </b>is used to set the initial zoom level when the page first loaded by the browser.</p>
+
+    <br><hr width="100%">
+    <h2>HTML &lt;base&gt; Element</h2>
+    <p>The HTML &lt;base&gt; element is used to specify the base URL and base target for all relative URLs in a page.</p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;base href="https://javapoint.com/" taget="_blank" &gt; <br>
+            </p>
+        </div>
+    </div>
+
+    <hr width="100%">
+    <h2>HTML &lt;script&gt; element</h2>
+    <p>HTML &lt;script&gt; element is used to apply client side JavaScript for the same page or to add an external JavaScript file to current page. <br><br> If we want to use some external JavaScript file then it can be applied by:</p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;script src=".js file_path" &gt; <br>
+            </p>
+        </div>
+    </div>
+<br>
+
+</body>
+</html>
