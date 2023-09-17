@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,6 +39,8 @@ BottomNavigationView bottomNavigationView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Seting potrait mode only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Adding custom toolbar
         toolbar = findViewById(R.id.toolbar);

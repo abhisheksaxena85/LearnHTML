@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Responsive</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <h2>Responsive Web Design</h2>
+    <p>Responsive web design is used to make your web page look appropriate, good, and well placedon all devices (desktop, tablet, smartphone, etc.) <br><br>Responsive web design uses HTML and CSS to resize, hide, shrink, enlarge, or move the content. It makes the content look good on any screen.</p>
+    <h2>Set the viewport</h2>
+    <p>Let's see how to set the viewport.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+            </p>
+        </div>
+    </div><hr>
+    <h2>Responsive Images</h2>
+    <p>Images which can be scaled nicely to fit any browser size are known as responsive images.</p>
+    <h2>How to make Images Responsive</h2>
+    <p><b>By using the width property</b> <br><br>Set the CSS width property to 100% to make the images responsive and scale up and down. <br><br><b>By using the Max-width property</b> <br><br>This method is best and most used because it facilitates that the image will scale down if it has to, but never scale up to be larger than its original size.</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p style="max-width:100%;"&gt; This is text&lt;/p&gt;<br>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <h2>Change image according to the browser width.</h2>
+    <p>By using the HTML &lt;picture&gt; element, you can set two or more images according to the browser width. It will change the picture when you change the browser-size. i.e. desktop and phone.</p>
+    <hr>
+    <h2>Responsive Text-Size</h2>
+    <p>We can make the text size responisve by using the "uv" unit. It means viewport-width. By using this, we can make the text-size to follow the browser window screen.</p>
+
+</body>
+</html>

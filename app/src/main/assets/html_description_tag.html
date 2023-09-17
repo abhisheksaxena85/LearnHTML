@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Description List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+    <p><b>HTML Description List</b> or Definition List displays elements in Definition form like in dictionary. The &lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt; tags are used to define description list. <br><br> The 3 HTML description list tags are given below: </p>
+    <ol style="width: 100%; margin: 0;">
+        <li><b>&lt;dl&gt; tag</b> defines the description list.</li>
+        <li><b>&lt;dt&gt; tag</b> defines data term.</li>
+        <li><b>&lt;dd&gt; tag</b> defines data definition.</li>
+    </ol>
+<br>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;dl&gt;    <br>
+                &nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>
+                &nbsp;&nbsp;&lt;dd&gt;is a markup language.&lt;/dd&gt;<br>
+                &nbsp;&nbsp;&lt;dt&gt;Java&lt;/dt&gt;<br>
+                &nbsp;&nbsp;&lt;dd&gt;is a programming language.&lt;/dd&gt;<br>
+                &lt;/dl&gt;
+            </p>
+        </div>
+    </div>
+
+
+    <h2>Output</h2>
+    <dl>
+  <dt>HTML</dt>
+  <dd>is a markup language.</dd>
+  <dt>Java</dt>
+  <dd>is a programming language.</dd>
+</dl>
+
+
+
+
+</body>
+</html>

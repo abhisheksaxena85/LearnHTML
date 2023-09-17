@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Area Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    
+    <h2>Description:</h2>
+    <p>The &lt;area&gt; tag defines the clickable areas or active areas inside the image-map which are associated with the hyperlinks. If you click on those areas then it will perform some action such as open a new image, new URL, etc. This tag is always used with &lt;map&gt; element. <br><br>Inside an image map different areas can be hyperlinked to various locations using multiple &lt;area&gt; elements in a single &lt;map&gt; element. <br><br>The &lt;area&gt; element is defined with (required) attributes shape and coords. The shape attribute specifies the shape of the area such as rectangle, circle, square, and polygon. The coords attribute defines the coordinates of areas inside the image. </p>
+    <h2>What is Image-map</h2>
+    <p>An image-map is defined as a graphical image with active areas so that when user click on those area, it can link to different destinations. To define an image-map, we require the following things:</p>
+    <ul>
+        <li>An HTML &lt;img&gt; element which use map attribute which defines a valid map name.</li>
+        <li>HTML &lt;map&gt; element with name attribute whose value must be same as usemap.</li>
+        <li>One or more &lt;area&gt; elements inside a &lt;map&gt; which create clickable areas in an image-map.</li>
+    </ul>
+    
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;area shape=" " coords=" " href="" &gt;
+            </p>
+        </div>
+    </div>
+    <p><b>Following are some specifications about the HTML &lt;area&gt; tag.</b></p>
+    <table border="1">
+        <tr><th>Display</th><th>Block</th></tr>
+        <tr><th>Start tag/End tag</th><td>Only start tag (End tag forbidden)</td></tr>
+        <tr><th>Usage</th><td>Image Map</td></tr>
+    </table>
+<br>
+    <hr>
+    <h2>Attribute:</h2>
+    <table border="1">
+        <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+        <tr><td>alt</td><td>text</td><td>An alternative text String to display on the browser if it does not display the image.</td></tr>
+        <tr><td>coords</td><td>x1, y1, x2, y2 (rect)</td><td>Defines coordinates for the upper left and lower right of a rectangle.</td></tr>
+        <tr><td>href</td><td>href</td><td>URL it determines the hyperlink destination for the active area.</td></tr>
+        <tr><td>target</td><td>_blank</td><td>Open link in a new window.</td></tr>
+        <tr><td> </td><td>_parent</td><td>Open link in the parent frame.</td></tr>
+        <tr><td> </td><td>_self</td><td>Open link in current window.</td></tr>
+        <tr><td> </td><td>_top</td><td>Open link with full width in the same window.</td></tr>
+        <tr><td>shape</td><td>default</td><td>It defines the default area (reactan- -gular)</td></tr>
+        <tr><td>download</td><td>filename</td><td>Defines that hyperlink, which is used for downloading the resource.</td></tr>
+    </table>
+
+
+</body>
+</html>

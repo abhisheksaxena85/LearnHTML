@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Datalist tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>The HTML &lt;datalist&gt; tag is used to provide an auto complete feature on form element. It provides a list of predefined options to the users to select data. <br><br>The datalist tag is inroduced in HTML5. <br><br>The &lt;datalist&gt; tag should be used with an &lt;input&gt; element that contains a "list" attribute. The value of "list" attribute is linked with the datalist id.</p>
+    <h2>HTML datalist tag Example</h2>
+    <p>Let's see the simple example of HTML5 datalist tag. If you press A, it will show a list of cricketers starting with A letter.</p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;label&gt;<br>
+               Enter you favorite cricket player: <br>
+               &lt;input type="text" id="favCricket" list="datalist" &gt;<br>
+               &lt;datalist id="datalist" &gt; <br>
+                &lt;option value="Virat Kohli"&gt; <br>
+                &lt;option value="Rohit Sharma"&gt; <br>
+                &lt;option value="Dhoni"&gt; <br>
+                &lt;option value="Brian Lara"&gt; <br>
+                &lt;option value="Saurav Ganguly"&gt; <br>
+
+               &lt;/datalist&gt;<br>
+               &lt;/label&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output</h2>
+    <label>
+Enter you favorite cricket player:
+<input type="text" id="favCricket" list="datalist" >
+<datalist id="datalist" >
+<option value="Virat Kohli"> <option value="Rohit Sharma"> <option value="Dhoni"> <option value="Brian Lara"> <option value="Saurav Ganguly"> </datalist>
+</label>
+
+</body>
+</html>

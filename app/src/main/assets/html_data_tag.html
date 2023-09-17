@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Data Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>The HTML &lt;data&gt; tag is used to provide a machine readable version of its own contents. It displays the data in a special format. It is useful in the case where your data needs to be in a certain format because it may be processed by a script, but this might not be the format that you'd like your user see. <br><br>Let's take a scenario to understand it well. <br><br>Suppose you have to represent some numbers to your users with letters (i.e. one, two, three, and so on) but you have script that sorts the numbers in ascending or descending orders. So your script needs numbers in a format like 1,2,3...etc. <br><br>The &lt;data&gt; tag is here to solve your problem. <br><br>For the users: Write within the &lt;data&gt; &lt;/data&gt; tag. <br><br>For the script: Use value attribute</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;data value="1" &gt;One&lt;/data&gt;
+            </p>
+        </div>
+    </div>
+<br>
+    <h2>HTML data tag attribute</h2>
+    <p>There is only one required attribute. The data tag supports global and event attributes also.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>Value</td><td>It is required attribute. It is used to provide the machine-readable version of tag's content.</td></tr>
+    </table>
+    <br><hr>
+    
+
+</body>
+</html>

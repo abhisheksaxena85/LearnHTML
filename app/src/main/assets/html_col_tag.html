@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML col tag</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;col&gt; tag is used to specify common column properties for each column within &lt;colgroup&gt; element in an HTML table. <br><br>The &lt;col&gt; tag is useful when it requires to apply common style rules for each column cell rather than applying individually.</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;col span=' ' style=' ' &gt;
+
+            </p>
+        </div>
+    </div>
+
+
+    <p><b>Following are some specifications about the HTML &lt;col&gt; tag.</b></p>
+    <table border="1">
+        <tr><th>Display</th><th>Inline</th></tr>
+        <tr><th>Start tag/End tag</th><th>Start tag(Empty tag)</th></tr>
+        <tr><th>Usage</th><th>HTML tables</th></tr>
+    </table>
+    <br>
+    <hr><h2>Attribute:</h2>
+    <p>Tag-specific attribute element should contain. The default value of span attribute is 1.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+        <tr><td>align</td><td>left, center, right, justify char</td><td>It specifies the horizontal alignment of each column cell. </td></tr>
+        <tr><td>char</td><td>character</td><td>It specifies the alignment of content based on characters in a column. It will be ignored if align is not set to char.</td></tr>
+        <tr><td>charoff</td><td>number</td><td>It sets the number of characters to offset the column data from the alignment character specified by the char attribute.</td></tr>
+        <tr><td>span</td><td>number</td><td>It specifies the number of the columns.</td></tr>
+        <tr><td>valign</td><td>top, middle, bottom, baseline</td><td>The specifies the vertical alignment of the columns.</td></tr>
+        <tr><td>width</td><td>%, pixel, relative_length</td><td>It specifies the width of the column.</td></tr>
+    </table>
+    <br>
+    <p>HTML &lt;col&gt; tag supports all Global and Event attributes.</p>
+
+</body>
+</html>

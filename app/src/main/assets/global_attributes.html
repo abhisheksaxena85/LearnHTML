@@ -5,9 +5,52 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Global Attributes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+
+      </style>
+
 </head>
 <body>
-<h1>Hello global attributes</h1>
+    <p >HTML global attributes are those attributes which are common for all HTML elements. The global attributes are supported by both standard and non-standard elements. <br><br>The global attributes can be used with all elements, although it may not have any effect on some elements. <br><br>Following is the complete list of global attributes with their description:</p>
+    <table border="1" style="width:100%;">
+        <tr><th>Attributes</th><th>Description</th></tr>
+        <tr><td>accesskey</td><td>It is used to generate keyboard shortcuts for current elements.</td></tr>
+        <tr><td>class</td><td>It is used to provide the class name for the current element. It is mainly used with the stylesheet.</td></tr>
+        <tr><td>contenteditable</td><td>It determines whether the content within an element is editable or not.</td></tr>
+        <tr><td>contextmenu</td><td>It defines the id for the &lt;menu&gt; element which is used as a context menu for an element.</td></tr>
+        <tr><td>data-</td><td>It is used to store element-specific private data which can be accessed by javascript.</td></tr>
+        <tr><td>dir</td></td><td>It specifies the direction of the content inside the current element.</td></tr>
+        <tr><td>draggable</td><td>It specifies whether the content within an element is movable or not using Drag and Drop API.</td></tr>
+        <tr><td>dropzone</td><td>It specifies the action is taken on the dragged element when it is dropped, such as whether it is copied, moved or linked.</td></tr>
+        <tr><td>hidden</td><td>It is used to hide the element from view.</td></tr>
+        <tr><td>id</td><td>It specifies a unique id for the element. It can be used with CSS and javascript.</td></tr>
+        <tr><td>lang</td><td>It specifies the primary language for the content of an element.</td></tr>
+        <tr><td>style</td><td>It is used to apply inline CSS to the current element.</td></tr>
+        <tr><td>spellcheck</td><td>It specifies whether the content should be checked for spelling errors or not.</td></tr>
+        <tr><td>tabindex</td><td>It determines the tabbing order of an element.</td></tr>
+        <tr><td>title</td><td>It is used to provide the title, name, or some extra information about the element.</td></tr>
+        <tr><td>translate</td><td>It specifies whether the content of the element should be translated when the page is localized or not.</td></tr>
+    </table>
 </body>
 </html>

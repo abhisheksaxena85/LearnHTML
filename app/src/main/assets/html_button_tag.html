@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Button Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>The &lt;button&gt; tag is used to create a clickable button within HTML form on your webpage. You can put content like text or image within the &lt;button&gt;....&lt;/button&gt; tag. <br><br>You should always specify the type attribute for a &lt;button&gt; tag. Different browsers use different default type for the button element. <br><br>HTML button tag can be used inside and outside the form. <br><br>If you use it inside the form, it works as the submit button. You can also use it as reset button. <br><br> If you use it outside the form, you can call JavaScript function on it.</p>
+    <br><hr>
+    <h2>HTML Button Tag Example</h2>
+    <p>Let's see the code to display the button.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;button name="button" type="button"&gt; Click Here&lt;/button&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <button name="button" type="button"> Click Here</button>
+    <hr>
+    <h2>HTML Button Example: Calling JavaScript Function</h2>
+    <p>Let's see the code to call JavaScript function on button click.</p>
+    
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;button name="button" type="button" value="OK" onclick="hello()"&gt; Click Here&lt;/button&gt;<br>
+               &lt;script&gt; <br>
+                    function hello(){<br>
+                        alert("Hello Everyone!"); <br>
+
+                    } <br>
+               &lt;/script&gt; <br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <button name="button" type="button" value="OK" onclick="hello()"> Click Here</button>
+    <script>
+    function hello(){
+    alert("Hello Everyone!");
+    }
+    </script>
+
+    <hr>
+    <h2>Attributes of HTML Button Tag</h2>
+    <p>&lt;button&gt; supports all global attributes and some specific additional attributes. <br><br>There is given a list of HTML button tag attributes.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>autofocus</td><td>It specifies that a button should automatically get focus while the loading of the page.</td></tr>
+        <tr><td>disabled</td><td>It specifies that a button should be disabled.</td></tr>
+        <tr><td>form</td><td>It specifies one or more forms that the button belongs to.</td></tr>
+        <tr><td>formaction</td><td>It is used for submit type. It specifies where to send the form data when form is submitted.</td></tr>
+        <tr><td>formmethod</td><td>It specifies how to send form-data. </td></tr>
+        <tr><td>formenctype</td><td>It specifies how form-data should be encoded before sending it to server.</td></tr>
+        <tr><td>formnovalidate</td><td>It specifies that the form data should not be validated on submission. </td></tr>
+        <tr><td>formtarget</td><td>It specifies that where to display the response after submitting form.</td></tr>
+        <tr><td>name</td><td>It specifies the name of the button.</td></tr>
+        <tr><td>type</td><td>It specifies the type of the button.</td></tr>
+        <tr><td>value</td> <td>It specifies the value of the button.</td></tr>
+
+    </table>
+
+    <br>
+</body>
+</html>

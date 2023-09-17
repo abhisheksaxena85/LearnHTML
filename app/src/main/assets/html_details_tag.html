@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Details Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;details&gt; tag is used to specify the additional details on the web page that the user can view or hide on demand. <br><br>According ro W3C HTML specifications, it is used as a disclosure widget from which user can retrieve additional information or control. <br><br> It is used together with a relevant tag known as &lt;summary&gt;. Technically, there is no need of summary tag, but if you ignore this then the browser will use some default text. <br><br>The &lt;details&gt; tag wraps all the content which you want to show or hide and the &lt;summary&gt; and the title of the section. <br><br>HTML details is a new tag introduced in HTML5. <br><br>Let's take an example to understand this clearly. </p> <br>
+    <hr>
+    <h2>HTML details tag attribute</h2>
+    <p>HTML details tag also supports global and event attributes in HTML. <br><br> The details tag provides one specific attribute open.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>Open</td><td>It specifies that the details will be displayed to the user.</td></tr>
+    </table>
+
+    <br>
+    <h2>HTML details tag example</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;details&gt;<br>
+                &lt;summary&gt;<br>
+                Copyright 2011-2023
+                &lt;/summary&gt;<br>
+                &lt;p&gt;All Right Reserved&lt;/p&gt;<br>
+               &lt;/details&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <details>
+<summary>
+Copyright 2011-2023 </summary>
+<p>All Right Reserved</p>
+</details>
+
+
+</body>
+</html>

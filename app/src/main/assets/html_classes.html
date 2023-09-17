@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML classes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <h2>Class Atribute in HTML</h2>
+    <p>The HTML class attribute is used to specify a single or multiple class names for an HTML element. The class name can be used by CSS and JavaScript to do some tasks for HTML elements. You can use this class in CSS with a specific class, write a period (.) character, followed by the name of the class for selecting elements. <br><br> A class attribute can be defined within &lt;style&gt; tag or in separate file using the (.) character. <br><br>In a HTML document, we can use the same class atribute name with different elements.</p>
+    <h2>Defining a HTML class</h2>
+    <p>To create an HTML class, firstly define style for HTML class using &lt;style&gt; tag within &lt;head&gt; section as following example:</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;head&gt; <br>
+                 &lt;style&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.heading{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>                                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:blue;<br>                                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                 &lt;/style&gt;<br>
+                &lt;/head&gt;
+            </p>
+        </div>
+    </div>
+
+    <p>We have define style for a class name "headings", and we can use this class name with any of HTML element in which we want to provide such styling. We just need to follow the following sytax to use it.</p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;tag class="abc"&gt;Content &lt;/tag&gt;
+            </p>
+        </div>
+    </div>
+    <br><hr width="100%">
+    <h2>Class Attribute in JavaScript</h2>
+    <p>You can use JavaScript access elements with a specified class by using the getElementByClassName() method.</p>
+
+    <hr width="100%">
+    <h2>Multiple Classes</h2>
+    <p>You can use multiple class names (more than one) with HTML elements. These class names must be separated by a space.</p>
+    <hr width="100%">
+    <h2>Same class with Different Tag</h2>
+    <p>You can use the same class name with different tags like &lt;h2&gt; and &lt;p&gt; etc, to share the same style.</p>
+
+
+
+</body>
+</html>

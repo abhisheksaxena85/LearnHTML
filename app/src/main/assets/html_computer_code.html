@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Computer Code</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>When we are programming, sometimes it is mandatory to show the Output result, error message, or coding part to user on a webpage. Hence to solve this issue HTML uses different tags for the user inputs, codes, programs, etc. With the help of these tags, you will be able to write codes to display on your webpage. <br><br>Following is a list of some tags which are used in HTML for this task.</p>
+    <ul style="width: 100%;">
+        <li>&lt;code&gt;</li>
+        <li>&lt;kbd&gt;</li>
+        <li>&lt;samp&gt;</li>
+        <li>&lt;var&gt;</li>
+        <li>&lt;pre&gt;</li>
+    </ul>
+    <hr>
+    <h2>HTML &lt;code&gt; element</h2>
+    <p>It is used to represent some programming code on your website. The content written between <code style="font-family: monospace;">tag will be displayed in default monospace font.</code></p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;code&gt;<br>
+                x = 5;<br>
+                y = 10; <br>
+                z = x + y;<br>
+                &lt;/code&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <code style="font-family: monospace;">
+    x = 5;
+    y = 10;
+    z = x + y;
+    </code>
+    <hr>
+    <h2>HTML &lt;kbd&gt; Element</h2>
+    <p>It is used to represent user input, keyboard input, voice command, etc. Text written with &lt;kbd&gt;..&lt;/kbd&gt; tags is typically displayed in the browser's default monospace font.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;kbd&gt;This is how content looks like in kbd TAG. &lt;/kbd&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <kbd style="font-family: monospace;">This is how content looks like in kbd TAG. </kbd>
+    <hr>
+    <h2>HTML &lt;samp&gt; Element</h2>
+    <p>The HTML &lt;samp&gt; element is used to represent a program's output. Text written within samp element is typically displayed in the browser's default monospace font.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;samp&gt; This is how the content within samp element looks like. &lt;/samp&gt; 
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <samp style="font-family: monospace;"> This is how the content within samp element looks like. </samp>
+
+    <hr>
+    <h2>HTML &lt;var&gt; element</h2>
+    <p>The HTML &lt;var&gt; element is used to define a variable. The variable could be a variable in a mathematical expression or a variable in programming context.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;var&gt; This is text used in var tag.&lt;/var&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <var> This is text used in var tag.</var>
+
+    <hr>
+    <h2>HTML &lt;pre&gt; element</h2>
+    <p>The &lt;pre&gt; element defines preformatted text, which displays the content within it in a fixed-width font. It keeps the content into its original format and ignores all formatting. </p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;pre&gt; This is the text used in pre tag. &lt;/pre&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <pre style="font-family: monospace;width: 100%;" > This is the text used <br> in pre tag. </pre>
+
+
+</body>
+</html>

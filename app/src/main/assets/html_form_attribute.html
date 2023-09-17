@@ -235,7 +235,182 @@
 
     <p><b>Try to change the form details with novalidate attribute and without novalidate attribute and see the difference.</b></p>
     <hr width="100%">
+    <h1>HTML &lt;input&gt; element attribute</h1>
+    <h2>HTML name attribute</h2>
+    <p>The HTML name attribute defines the name of an input element. The name and value attribute are included in HTTP request when we submit the form. <br><br><b>Note: If you will not use name attribute in any input field, then that input field will not be submitted, when submit the form.</b></p>
+    <p>Click on submit and see the URL where email is not included in HTTP request as we have not used name attribute in the email input field.</p>
+
+    <hr width="100%">
+    <h2>HTML value attribute</h2>
+    <p>The HTML value attribute defines the initial value or default value of an input field.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="action.html" method="get"&gt;<br>
+                &lt;input type="text" name="username" value="username"&gt;<br>
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div> 
+    <h2>Output:</h2>
+    <form action="action.html" method="get">
+    <input type="text" name="username" value="username">
+    </form>
+    <p><b>Note: In password input field the value attribute will always unclear.</b></p>
+    <hr width="100%">
+    <h2>HTML required attribute HTML5</h2>
+    <p>HTML required is a boolean attribute which specifies that user must fill that field before submitting the form.</p>
+    <p><b>If you will try to submit the form without completing email field then it will give an error pop up.</b></p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;input type="text" name="username" required&gt;<br>
+                &lt;input type="submit" value="submit"&gt;<br>
+            </p>
+        </div>
+    </div> 
+    <h2>Output:</h2>
+
+    <form>
+    <input type="text" name="username" required>
+    <input type="submit" value="submit">
+    </form>
+
+    <hr width="100%">
+    <h2>HTML autofocus attribute HTML5</h2>
+    <p>The autofocus is a Boolean attribute which enables a field automatically focused when a webpage loads.</p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;input type="text" name="username" autofocus&gt;<br>
+                &lt;input type="submit" value="submit"&gt;<br>
+            </p>
+        </div>
+    </div> 
+    <h2>Output:</h2>
+    <form>
+        <input type="text" name="username" autofocus>
+        <input type="submit" value="submit">
+    </form><br>
+    <hr width="100%">
+    <h2>HTML placeholder attribute HTML5</h2>
+    <p>The placeholder attribute specifies a text within an input field which informs the user about the expected input of that field. <br><br>The placeholder attribute can be used with text, password, email, and URL values. <br><br> When the user enters the value, the placeholder will be automatically removed.</p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;input type="text" name="username" placeholder="Enter details"&gt;<br>
+                &lt;input type="submit" value="submit"&gt;<br>
+            </p>
+        </div>
+    </div> 
+    <h2>Output:</h2>
+    <form>
+        <input type="text" name="username" placeholder="Enter details">
+        <input type="submit" value="submit">
+    </form>
+    <br><hr width="100%">
+    <h2>HTML disabled attribute</h2>
+    <p>The HTML disabled attribute when applied then it disable that input field. The disabled field does not allow the user to interact with that field. <br><br> The disabled input field does not receive click events, and these input value will not be sent to the server when submitting the form.</p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;input type="text" name="username" disabled &gt;<br>
+                &lt;input type="submit" value="submit"&gt;<br>
+            </p>
+        </div>
+    </div> 
+    <h2>Output:</h2>
+
+    <form>
+        <input type="text" name="username" disabled >
+        <input type="submit" value="submit">
+    </form><br><hr width="100%">
+
+    <h2>HTML size attribute</h2>
+    <p>The size attribute controls the size of the input field in typed character.</p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;input type="text" name="username" size="10" &gt;<br>
+                &lt;input type="submit" value="submit"&gt;<br>
+            </p>
+        </div>
+    </div> 
+    <h2>Output:</h2>
+    <form>
+        <input type="text" name="username" size="10" >
+        <input type="submit" value="submit">
+    </form>
+
+    <br>
+    <hr width="100%">
+    <h2>HTML form attribute</h2>
+    <p>HTML form attribute allows a user to specify an input field outside the form but remains the part of the parent form.</p>
     
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;input type="text" name="username" form="fcontrol" &gt;<br>
+                &lt;input type="submit" value="submit"&gt;<br>
+            </p>
+        </div>
+    </div> 
+    
+
+
 
 </body>
 </html>

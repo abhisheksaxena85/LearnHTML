@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML applet tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;applet&gt; tag was used to embed the java applet in an HTML document. This element has been deprecated in HTML 4.0 and instead of it was can use &lt;object&gt; and newly added element &lt;embed&gt;. <br><br>The use of Java applet is also deprecated, and most browsers do not support the use of plugins.</p>
+
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;applet code="URL" height="200" width="100"&gt;.....&lt;/applet&gt;
+            </p>
+        </div>
+    </div>
+
+    <p><b>Following are some specifications about &lt;applet&gt; tag.</b></p>
+    <table border="1">
+        <tr><th>Display</th><th>Block</th></tr>
+        <tr><th>Start tag/End tag</th><td>Both Start tag and End tag</td></tr>
+        <tr><th>Usage</th><td>Embed Applets</td></tr>
+    </table>
+    <hr>
+    <h2>Attributes</h2>
+    <p><b>Specific Attributes</b></p>
+    <table border="1">
+        <tr><th>Attribute name</th><th>Value</th><th>Description</th></tr>
+        <tr><td>code</td><td>URL</td><td>It specifies the URL of java applet class file.</td></tr>
+        <tr><td>width</td><td>pixels</td><td>It specifies the display width of the applet panel.</td></tr>
+        <tr><td>height</td><td>pixels</td><td>It specifies the display height of applet panel.</td></tr>
+        <tr><td>align</td><td>leftright opmiddle bottom</td><td>It specifies the position of applet application relative to surrounding content.</td></tr>
+        <tr><td>alt</td><td>text</td><td>It is used to display alternative text in case browser does not support java.</td></tr>
+        <tr><td>archive</td><td>URL</td><td>This specifies the archived or compr- -essed version of an applet application.</td></tr>
+        <tr><td>object</td><td>name</td><td>It specifies the URL or reference to a serialized represen- -tation of applet.</td></tr>
+        <tr><td>codebase</td><td>URL</td><td>It specifies the exact or relative URL of applets .class file specified in the code attribute.</td></tr>
+        <tr><td>hspace</td><td>pixels</td><td>It specifies the horizontal space around the applet.</td></tr>
+        <tr><td>vspace</td><td>pixels</td><td>It specifies the vertical space around the applet.</td></tr>
+        <tr><td>name</td><td>name</td><td>It specifies the name for the applet.</td></tr>
+    </table>
+    <p><b>The &lt;applet&gt; tag supports all Global and Event Attributes in HTML.</b></p>
+
+
+
+</body>
+</html>

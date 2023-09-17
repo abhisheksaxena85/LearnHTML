@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Style Using CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+</head>
+<body>
+    <p>Let's suppose we have created our web page using a simple HTML code, and we want something which can present our page in a correct format, and visibly attractive. So to do this, we can style our web page with CSS (Cascading Stylesheet) properties. <br><br>Css is used to apply the style in the web page which is made up of HTML elements. It describes the look of the webpage. <br><br>CSS provides various style properties such as background color, padding, margin, border-color, and many more, to style a webpage. <br><br> Each property in CSS has a name-value pair, and each property is seperated by a semicolon (;).</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;h1 style="color:red;font-size:16px;"&gt; Welcome to this application&lt;/h1&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output</h2>
+    <h1 style="color:red;font-size:16px;"> Welcome to this application</h1>
+
+    <p>In the above example, we have used a style attribute to provide some styling format to our code.</p>
+
+    <hr width="100%">
+    <h2>Three ways to apply CSS</h2>
+    <p>To use CSS with HTML document, there are three ways: </p>
+    <ul>
+        <li><b>Inline CSS:</b> Define CSS properties using style attribute in the HTML elements.</li>
+        <li><b>Internal or Embedded CSS:</b> Define CSS using &lt;style&gt; tag in &lt;head&gt; section.</li>
+        <li><b>External CSS:</b> Define all CSS property in a separate .css file, and then include the file with HTML file using tag in section. </li>
+    </ul>
+
+    <hr width="100%">
+    <h2>Inline CSS</h2>
+    <p>Inline CSS is used to apply CSS in a single element. It can apply style uniquely in each element. <br><br> To apply inline CSS, you need to use style attribute within HTML element. We can use as many properties as we want, but each property should be separated by a semicolon (;)</p>
+    
+    <hr width="100%">
+    <h2>Internal CSS</h2>
+    <p>An internal stylesheets contains the CSS properties for a webpage in &lt;head&gt; section of HTML document. To use Internal CSS, we can use class and id attribute. <br><br>We can use internal CSS to apply a style for a single HTML page.</p>
+
+    <hr width="100%">
+    <h2>External CSS</h2>
+    <p>An external CSS contains a separate CSS file which only contains style code using the class name, id name, tag name, etc. We can use this CSS file in any HTML file by including it in HTML file using &lt;link&gt; tag. <br><br> If we have multiple HTML pages for an application and which use similar CSS, then we can use external CSS. <br><br> There are two files need to create to apply external CSS-</p>
+    <ul>
+        <li>First create the HTML file.</li>
+        <li>Create a CSS file and save it using the .css extension (This file only will only contain the styling code)</li>
+        <li>Link the CSS file in your HTML file using tag in header section of HTML document.</li>
+    </ul>
+    <br>
+    <hr width="100%"><br>
+    <table border="1" style="border-collapse: collapse;">
+        <tr><th>Properties-name</th><th>Description</th></tr>
+        <tr><td>background-color</td><td>It defines the background color of that element.</td></tr>
+        <tr><td>color</td> <td>It defines the color of text of an element.</td></tr>
+        <tr><td>padding</td><td>It defines the space between content and the border.</td></tr>
+        <tr><td>margin</td> <td>It creates space around an element.</td></tr>
+        <tr><td>font-family</td><td>Font-family defines a font for a particular element.</td></tr>
+        <tr><td>Font-size</td><td>Font-size defines a font size for a particular element.</td></tr>
+        <tr><td>text-align</td><td>It is used to align the text in a selected position.</td></tr>
+    </table>
+
+
+</body>
+</html>

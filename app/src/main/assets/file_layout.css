@@ -1,3 +1,4 @@
+
 *{
     margin-left: 6px;
     margin-right: 6px;
@@ -7,12 +8,21 @@
     font-size: 19px;
     font-family: 'Poppins', sans-serif;
 }     
+h3{
+    width: 100%;
+    margin-bottom: 0px;
+}
+hr{
+    width: 100%;
+}
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+body input, textarea{
+    width: 60%;
+}
 b{
     margin: 0;
 }
@@ -105,3 +115,13 @@ body h1{
     word-spacing:auto;
     font-family: 'Poppins', sans-serif;
 }
+
+th, td{
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }

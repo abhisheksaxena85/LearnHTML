@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout Techniques</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>Creating layouts are the most important things while designing a website, as it will ensure that your website looks in a well-arranged way and the content appears easy to understand. There are various techniques, and frameworks available for creating layouts, but here we will learn about simple techniques. You can use the following methods to create multicolumn layouts:</p>
+    <ul style="width: 100%;">
+        <li>HTML Tables</li>
+        <li>CSS float property</li>
+        <li>CSS framework</li>
+        <li>CSS flexbox</li>
+        <li>Lyout using div</li>
+    </ul>
+    <hr width="100%">
+    <h2>HTML Tables (Not Recommended)</h2>
+    <p>HTML table-based layout is one of the easiest ways for creating a layout, as table use only rows and column-based format, but HTML tables are not recommended for your page layout. Theelement is designed to display tabular data. It is not good for a layout. Although first creating a layout is easy, but if you want to change or redesign your website, then it will be a complicated task.</p>
+    <hr>
+    <h2>CSS Frameworks</h2>
+    <p>CSS provides many frameworks like W3.CSS, Bootstrap, and many more, to create your layout fast. Using CSS frameworks you can easily create a responsive and attractive web layout. You just need to add a link for these frameworks, and you can use all properties available in the framework.</p>
+    <hr>
+    <h2>CSS Float</h2>
+    <p>You can create an entire web layout using CSS float property. <br><br> <b>Advantage:</b> It is very easy to learn and use. You just learn how the float and clear properties work. <br><br> <b>Disadvantage:</b> Floating elements are tied to the document flow, which may harm the flexibility.</p>
+    <hr>
+    <h2>CSS Flexbox</h2>
+    <p>Flexbox is a new layout mode in CSS3. <br><br><b>Advantage: </b>It ensures that the page layout must accommodate different screen sizes and different display devices. <br><br> <b>Disadvantage: </b>It does not work in IE10 and earlier.</p>
+</body>
+</html>

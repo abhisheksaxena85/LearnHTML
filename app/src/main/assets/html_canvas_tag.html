@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML canvas tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>The HTML canvas element provides HTML a bitmapped surface to work with. It is used to draw graphics on the web page. <br><br>The HTML5 &lt;canvas&gt; tag is used to draw graphics using scripting language like JavaScript. <br><br> The &lt;canvas&gt; element is only a container for graphics, you must need a scripting language to draw the graphics. The &lt;canvas&gt; element allows for dynamic and scriptable rendering of 2D shapes and bitmap images. <br><br>It is a low level, procedural model that updates a bitmap and does not have a built-in scene. There are several methods in canvas to draw paths, boxes, circles, text and add images. </p>
+    <br>
+    <h2>How to create a HTML canvas?</h2>
+    <p>A canvas is a rectangle like area on an HTML page. It is specified with canvas element. By default, the &lt;canvas&gt; element has not border and no content, it is like a container. </p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;canvas id="mycanvas" width="200" height="100" &gt;&lt;/canvas&gt;
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <h2>HTML Canvas Tag with JavaScript</h2>
+    <p>A canvas is a two dimensional grid. <br><br> Coordinates (0,0) defines the upper left corner of the canvas. The parameter (0,0,200,100) is used for fillRect() method. This parameter will fill the rectangle start with the upper-left corner (0,0) and draw a 200 * 100 rectangle. </p>
+    
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;canvas id="mycanvas" width="50" height="100" border="10px solid black"&gt;&lt;/canvas&gt;
+                &lt;script&gt; <br>
+                var c = document.getElementById("mycanvas"); <br>
+                var cctx = c.getContext("2d");<br>
+                cctx.fillStyle = "#ff4343";<br>
+                cctx.fillRect(0,0,200,100);<br>
+                &lt;/script&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <canvas id="mycanvas" width="50" height="100" style="border:1px solid black;"></canvas> <script>
+    var c = document.getElementById("mycanvas");
+    var cctx = c.getContext("2d");
+    cctx.fillStyle = "#ff4343";
+    cctx.fillRect(0,0,200,100);
+    </script>
+    <br>
+    <hr>
+    <h2>Drawing Line on Canvas</h2>
+    <p>If you want to draw a straight line on the canvas, you can use the following two methods. <br><br><b>moveTo(x,y):</b> It is used to define the starting point of the line. <br><br> <b>lineTo(x,y):</b> It is used to define the ending point of the line. <br><br>If you draw a line which starting point (0,0) and the end point is (200,100), use the stroke method to draw the line. </p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;canvas id="mycanvasLine" width="200" height="100" border="1px solid red"&gt;&lt;/canvas&gt;
+                &lt;script&gt; <br>
+                var c = document.get ElementById("mycanvasLine"); <br>
+                var cctx = c.getContext("2d");<br>
+                cctx.moveTo(0,0);<br>
+                cctx.lineTo(200,100);<br>
+                cctx.stroke();<br>
+                &lt;/script&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <canvas id="mycanvasLine" width="200" height="100" border="1px solid red"></canvas> <script>
+    var c = document.getElementById("mycanvasLine");
+    var cctx = c.getContext("2d");
+    cctx.moveTo(0,0);
+    cctx.lineTo(200,100);
+    cctx.stroke();
+    </script>
+
+    <br><hr>
+    <h2>Drawing Circle on Canvas</h2>
+    <p>If you want to draw a circle on the canvas, you can use the arc() method:</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               arc(x, y, z, start, stop);
+            </p>
+        </div>
+    </div>
+    <p>To sketch circle on HTML canvas, use one of the ink() methods, like stroke() or fill().</p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;canvas id="mycanvasLine" width="200" height="100" border="1px solid red"&gt;&lt;/canvas&gt; <br>
+                &lt;script&gt; <br>
+                var c = document.get ElementById("mycanvasLine"); <br>
+                var cctx = c.getContext("2d");<br>
+                cctx.beginPath();<br>
+                cctx.arc(95,50,40,0,2*Math.PI);<br>
+                cctx.stroke();<br>
+                &lt;/script&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <canvas id="mycanvascircle" width="200" height="100" border="1px solid red"></canvas> <script>
+    var c = document.getElementById("mycanvascircle");
+    var cctx = c.getContext("2d");
+    cctx.beginPath();
+    cctx.arc(95,50,40,0,2*Math.PI);
+    cctx.stroke();
+    </script>
+<br>
+    <hr>
+    <h2>Drawing text on canvas</h2>
+    <p>There are property and methods used for drawing text on the canvas. <br><br><b>font property:</b> It is used to define the font property for the text. <br><br><b>fillText(text, x, y) method: </b>It is used to draw filled text on the canvas. It looks like bold font. <br><br> <b>strokeText(text, x, y) method:</b> It is also used to draw text on the canvas, but the text is unfilled. <br><br> Let's see fillText() method example:</p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               &lt;canvas id="mycanvasLine" width="200" height="100" border="1px solid red"&gt;&lt;/canvas&gt; <br>
+                &lt;script&gt; <br>
+                var c = document.get ElementById("mycanvasLine"); <br>
+                var cctx = c.getContext("2d");<br>
+                cctx.font = "30px Arial";<br>
+                cctx.fillText("Hello World",10,50);<br>
+                &lt;/script&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <canvas id="mycanvasText" width="200" height="100" border="1px solid red"></canvas>
+    <script>
+    var c = document.getElementById("mycanvasText");
+    var cctx = c.getContext("2d");
+    cctx.font = "30px Arial";
+    cctx.fillText("Hello World",10,50);
+    </script>
+    
+
+
+
+
+    
+
+
+</body>
+</html>

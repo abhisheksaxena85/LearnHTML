@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+</head>
+<body>
+    <p><b>HTML &lt;dialog&gt; tag</b> is used to create a new popup dialog on a web page. This tag represents a dialog box or other interactive component like window. <br><br> The &lt;dialog&gt; element uses a boolean attribute called open that activate element and facilitate user to interact with it. <br>HTML dialog is a new tag inroduced in HTML5.</p><hr>
+    
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;div&gt;  
+                &lt;dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;"&gt;  <br>
+                &lt;p&gt;&lt;q&gt;I am so clever that sometimes I don't understand a single word of what I am saying.  <br> 
+                &lt;/q&gt; - &lt;cite&gt;Oscar Wilde&lt;/cite&gt;&lt;/p&gt;  <br>
+                &lt;button id="hide"&gt;Close&lt;/button&gt;  <br>
+                &lt;/dialog&gt;  <br>
+                &lt;button id="show"&gt;Show Dialog&lt;/button&gt;  <br>
+                &lt;/div&gt;  <br>
+                  
+                &lt;script type="text/JavaScript"&gt;  <br>
+                (function() {    <br>
+                    var dialog = document.getElementById('myFirstDialog');    <br>
+                    document.getElementById('show').onclick = function() {    <br>
+                        dialog.show();    <br>
+                    };    <br>
+                    document.getElementById('hide').onclick = function() {    <br>
+                        dialog.close();    <br>
+                    };    <br>
+                })();   <br>
+                &lt;/script&gt;  <br>
+            </p>
+        </div>
+    </div>
+    <br>
+    <h2>Output</h2>
+    <div> <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">
+<p><q>I am so clever that sometimes I don't understand a single word of what I am saying.
+</q> - <cite>Oscar Wilde</cite></p>
+<button id="hide">Close</button>
+</dialog>
+<button id="show">Show Dialog</button>
+</div>
+<script type="text/JavaScript">
+(function() {
+var dialog = document.getElementById('myFirstDialog');
+document.getElementById('show').onclick = function() {
+dialog.show();
+};
+document.getElementById('hide').onclick = function() {
+dialog.close();
+};
+})();
+</script>
+
+    <p>HTML dialog tag also supports global and event attributes in HTML.</p>
+    
+
+
+    
+
+</body>
+</html>

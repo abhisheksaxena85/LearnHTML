@@ -5,9 +5,133 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HTML Event Attributes</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+
+      </style>
+
 </head>
 <body>
-<h1>Html Event Attributes</h1>
+    <p>When a browser reacts on user action, then it is called as an event. For example, when you click on the submit button, then if the browser displays an information box. <br><br>In HTML5 there are lots of event attributes which can be activated using a programming language such as JavaScript. <br><br> Following is a table of event attributes, using these attributes you can perform several events. </p>
+    <h2>Windows Event Attributes</h2>
+    <p>Windows events are related for the window object, and it can only be applied with &lt;body&gt; tag.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>onafterprint</td><td>Executed the scripts after the document is printed.</td></tr>
+        <tr><td>onbeforeprint</td><td>Executed the scripts before the document is printed.</td></tr>
+        <tr><td>onbeforeunload</td><td>Executed the script before a document being unloaded.</td></tr>
+        <tr><td>onerror</td><td>Executed the script when an error occurs.</td></tr>
+        <tr><td>onhashchange</td><td>Executed the script when the anchor part in URL of the webpage is changed.</td></tr>
+        <tr><td>onload</td><td>Executed the script when a message event occurs.</td></tr>
+        <tr><td>onmessage</td><td>Executed the script when a message event occurs.</td></tr>
+        <tr><td>onoffline</td><td>Executed the script when the network connection is disconnected, and browser started working offline.</td></tr>
+        <tr><td>ononline</td><td>Executed the script when the browser started working online.</td></tr>
+        <tr><td>onpagehide</td><td>Executed the script when the current webpage is hidden such as if the user has moved away from the current webpage.</td></tr>
+        <tr><td>onpageshow</td><td>Executed the script when the current webpage is focused.</td></tr>
+        <tr><td>onpopstate</td><td>Executed the script when the window's active history is changed.</td></tr>
+        <tr><td>onresize</td><td>Executed the script when the window is resized.</td></tr>
+        <tr><td>onstorage</td><td>Executed the script when web storage is updated.</td></tr>
+        <tr><td>onunload</td><td>Executed the script when the current webpage is unloaded, or window is closed.</td></tr>
+    </table>
+
+    <hr>
+    <h2>Form Event Attributes</h2>
+    <p>Form event occurs when the user performs some action within the form such as submitting the form, selecting input field, etc. <br><br>The form events can be used with any element, but these are mainly used with HTML form elements. <br><br>Following is the list of all Form Event attributes:</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>onblur</td><td>Executed the script when form element loses the focus.</td></tr>
+        <tr><td>onchange</td><td>Executed the script when the value of the element is changed.</td></tr>
+        <tr><td>onfocus</td><td>Trigger an event when the element gets focused.</td></tr>
+        <tr><td>oninput</td><td>Executed the script when the user enters input to the element.</td></tr>
+        <tr><td>oninvalid</td><td>Executed the script when the element does not satisfy its predefined constraints.</td></tr>
+        <tr><td>onreset</td><td>Triggers the event when user reset the form element values.</td></tr>
+        <tr><td>onsearch</td><td>Triggers the event when a search field receives some input.</td></tr>
+        <tr><td>onselect</td><td>Triggers the event when the user has selected some text.</td></tr>
+        <tr><td>onsubmit</td><td>Triggers the event when a form is submitted.</td></tr>
+    </table>    
+    <hr>
+    <h2>Keyboard Event Attributes</h2>
+    <p>Keyboard event occurs when a user interacts with the keyboard. Following is a list of the keyboard event.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>onkeydown</td><td>Triggers the event when the user presses down a key on the keyboard.</td></tr>
+        <tr><td>onkeypress</td><td>Triggers the event when the user presses the key which displays some character.</td></tr>
+        <tr><td>onkeyup</td><td>Triggers the event when the user releases the currently pressed key.</td></tr>
+    </table>    
+    <hr>
+    <h2>Mouse Event Attributes</h2>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>onclick</td><td>Triggers the event when the mouse clicks on the element.</td></tr>
+        <tr><td>ondblclick</td><td>Triggers the event when mouse double click occurs on the element.</td></tr>
+        <tr><td>onmousedown</td><td>Triggers the event when the mouse button is pressed on the element.</td></tr>
+        <tr><td>onmousemove</td><td>Triggers the event when the mouse pointer moves over the element.</td></tr>
+        <tr><td>onmouseout</td><td>Triggers the event when the when the mouse moves outside the element.</td></tr>
+        <tr><td>onmouseover</td><td>Triggers the event when the mouse moves onto the element.</td></tr>
+        <tr><td>onmouseup</td><td>Triggers the event when the mouse button is released.</td></tr>
+        <tr><td>onmousewheel</td><td>Triggers the event when the mouse wheel is rolled over an element.</td></tr>
+        <tr><td>onwheel</td><td>Triggers the event when the mouse wheel rolls up or down on the element.</td></tr>
+    </table>    
+    <hr>
+    <h2>Clipboard Event Attributes</h2>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>oncopy</td><td>Triggers the event when the user copies the content to the system clipboard.</td></tr>
+        <tr><td>oncut</td><td>Triggers the event when the content of an element is cut and copy to the clipboard.</td></tr>
+        <tr><td>onpaste</td><td>Triggers the event when the user pastes some content in an element.</td></tr>
+    </table>    
+    <hr>
+    <h2>Media Event Attributes</h2>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>onabort</td><td>Executed the script when media playback is aborted.</td></tr>
+        <tr><td>oncanplay</td><td>Executed the script when the media file is ready to play.</td></tr>
+        <tr><td>oncanplaythrough</td><td>Executed the script when the media file is ready to play without buffering or stopping.</td></tr>
+        <tr><td>oncuechange</td><td>Executed the script text cue of &lt;track&gt; element is changed.</td></tr>
+        <tr><td>ondurationchange</td><td>Executed the script when the media file duration is changed.</td></tr>
+        <tr><td>onemptied</td><td>Executed the script if media occurs some fatal error, and the file becomes unavailable.</td></tr>
+        <tr><td>onended</td><td>Executed the script when the media file occurs its end point.</td></tr>
+        <tr><td>onerror</td><td>Executed the script when some error occurred while fetching the media data.</td></tr>
+        <tr><td>onloadeddata</td><td>Executed the script when media data is loaded.</td></tr>
+        <tr><td>onloadedmetadata</td><td>Executed the script when metadata of media file is loaded.</td></tr>
+        <tr><td>onloadstart</td><td>Executed the script when loading of media file starts.</td></tr>
+        <tr><td>onpause</td><td>Executed the script when media playback is paused.</td></tr>
+        <tr><td>onplay</td><td>Executed the script when media file ready to play after being paused.</td></tr>
+        <tr><td>onplaying</td><td>Executed the script when media file is started playing.</td></tr>
+        <tr><td>onprogress</td><td>Executed the script when the browser is in the process of getting the media data.</td></tr>
+        <tr><td>onratechange</td><td>Executed the script when playback speed changed.</td></tr>
+        <tr><td>onseeked</td><td>Executed the script when seek operation is ended and seeking attribute is set to false.</td></tr>
+        <tr><td>onseeking</td><td>Executed the script when seek operation is active and seeking attribute is set to true.</td></tr>
+        <tr><td>oninstalled</td><td>Executed the script when browser unexpectedly stopped fetching the data media.</td></tr>
+        <tr><td>onsuspend</td><td>Executed the script if fetching of media data is intentionally stopped.</td></tr>        
+        <tr><td>ontimeupdate</td><td>Executed the script when playback position is changed, such as if a user fasts forward the track.</td></tr>
+        <tr><td>onvolumechange</td><td>Executed the script when media volume is changed (muted or unmuted).</td></tr>
+        <tr><td>onwaiting</td><td>Executed the script if playback pause to wait for loading more data.</td></tr>
+    </table>    
+
+    
+
+
 </body>
 </html>

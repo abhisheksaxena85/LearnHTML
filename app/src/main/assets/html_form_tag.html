@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>An <b>HTML form</b> is<i>a section of a document</i> which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc. <br><br> An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc.</p>
+    <hr width="100%">
+    <h2>Why use HTML Form</h2>
+    <p>HTML form are required if you want to collect some data from of the site visitor. <br><br> For example: If a user want to purchase some items on internet, he/she must fill the form such as shipping address and credit/debit card details so that item can be sent to the given address.</p>
+    <hr width="100%">
+    <h2>HTML Form Syntax</h2> <br>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;form action="server url" method="get|post"&gt;    <br> 
+                //input controls e.g. textfield, textarea, radiobutton, button <br>
+                &lt;/form&gt;
+            </p>
+        </div>
+    </div>
+
+    <hr width="100%">
+    <h2>HTML Form Tags</h2>
+    <p>Let's see the list of HTML 5 form tags.</p>
+
+    <table border="1" style="border-collapse: collapse;">
+        <tr>  <th>Tag</th>  <th>Description</th></tr>
+        <tr>  <td>&lt;form&gt;</td>  <td>It defines an HTML form to enter inputs by the used side.</td></tr>
+        <tr>  <td>&lt;input&gt;</td>  <td>It defines an input control.</td></tr>
+        <tr>  <td>&lt;textarea&gt;</td>  <td>It defines a multiline input control.</td></tr>
+        <tr>  <td>&lt;label&gt;</td>  <td>It defines a label for an input element.</td></tr>
+        <tr>  <td>&lt;fieldset&gt;</td>  <td>It groups the related element in a form.</td></tr>
+        <tr>  <td>&lt;legend&gt;</td>  <td>It defines a caption for a &lt;fieldset&gt; element.</td></tr>
+        <tr>  <td>&lt;select&gt;</td>  <td>It defines a dropdown list.</td></tr>
+        <tr>  <td>&lt;optgroup&gt;</td>  <td>It defines a group of related options in a dropdown list.</td></tr>
+        <tr>  <td>&lt;option&gt;</td>  <td>It defines an option in a dropdown list.</td></tr>
+        <tr>  <td>&lt;button&gt;</td>  <td>It defines a clickable button.</td></tr>
+    </table>
+    <br>
+<h2>HTML 5 Form Tags</h2>
+<p>Let's see the list of HTML 5 form tags.</p>
+<table border="1" style="border-collapse: collapse;">
+    <tr> <th>Tag</th> <th>Description</th></tr>
+    <tr> <td>&lt;datalist&gt;</td> <td>It specifies a list of predefined options for input control.</td></tr>
+    <tr> <td>&lt;keygen&gt;</td> <td>It defines a key-pair generator field for forms.</td></tr>
+    <tr> <td>&lt;Output&gt;</td> <td>It defines the result of a calculation.</td></tr>
+</table>
+
+<br>
+<hr width="100%">
+<h2>HTML &lt;form&gt; element</h2>
+<p>The HTML &lt;form&gt; element provide a document section to take input from user. It provides various interactive controls for submitting information to web server such as text field, text area, password field, etc. <br><br> <b>Note: The &lt;form&gt; element does not itself create a form but it is container to contain all required form elements, such as &lt;input&gt;, &lt;label&gt;, etc.</b></p>
+
+<h2>Syntax:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+            //Form elements <br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<hr width="100%">
+<h2>HTML &lt;input&gt; element</h2>
+<p>The HTML &lt;input&gt; element is fundamental form element. It is used to create form fields, to take input from user. We can apply different input field to gather different information from user. Following is the example to show the simple text.</p>
+<h2>Example</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form &gt;    <br> 
+           Enter your name &lt;br&gt; &lt;input type="text" name="username" &gt;<br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<form >
+Enter your name <br> <input type="text" name="username" >
+</form>
+
+<hr width="100%">
+<h2>HTML TextField Control</h2>
+<p>The type="text" attribute of input tag creates textfield control also known as single line textfield control. The name attribute is optional, but it is required for the server side component such as JSP, ASP, PHP, etc.</p>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+                First Name : &lt;input type="text" name="firstname"/&gt; &lt;br&gt; <br>
+                Last Name : &lt;input type="text" name="secondname"/&gt; &lt;br&gt; <br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output</h2>
+<form>
+First Name : <input type="text" name="firstname"/> <br>
+Last Name : <input type="text" name="secondname"/> <br>
+</form>
+<p><b>Note: If you will omit 'name' attribute then the text filed input will not be submitted to server.</b></p>
+<hr width="100%">
+
+<h2>HTML &lt;textarea&gt; tag in form</h2>
+<p>The &lt;textarea&gt; tag in HTML is used to insert multiple-line text in a form. The size of &lt;textarea&gt; can be specify either using "rows" or "cols" attribute or by CSS.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+                Enter your address : &lt;textarea rows="2" cols="20"&gt; &lt;/textarea&gt; <br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output</h2>
+<form>
+Enter your address :<textarea rows="2" cols="20"> </textarea>
+</form><br>
+<hr width="100%">
+<h2>Label Tag in Form</h2>
+<p>It is considered better to have label in form. As it makes the code parser/browser/user friendly. <br><br>If you click on the label tag, it will focus on the text control. To do so, you need to have for attribute in label tag that must be same as id attribute of input tag.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+                &lt;label for="firstname"&gt; First Name: &lt;/label&gt; 
+                &lt;input type="text" id="firstname" name="firstname"/&gt;<br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output</h2>
+<form>
+<label for="firstname"> First Name: </label> <input type="text" id="firstname" name="firstname"/>
+</form>
+ 
+<hr width="100%">
+<h2>HTML Password Field Control</h2>
+<p>The password is not visible to the user in password field control.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+                &lt;label for="password"&gt; Password: &lt;/label&gt; 
+                &lt;input type="password" id="password" name="password"/&gt;<br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output</h2>
+<form>
+<form>
+<label for="password"> Password: </label> <input type="password" id="password" name="password"/>
+</form>
+
+<hr width="100%">
+<h2>HTML 5 Email Field Control</h2>
+<p>The email field in new in HTML 5. It validates the text for correct email address. You must use @ and (.) in this field.</p>
+
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+                &lt;label for="email"&gt; Email: &lt;/label&gt; 
+                &lt;input type="email" id="email" name="email"/&gt;<br>
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<form>
+<label for="email"> Email: </label> <input type="email" id="email" name="email"/>
+</form>
+
+<hr width="100%">
+<h2>Radio Button Control</h2>
+<p>The radio button is used to select one option from multiple options. It is used for selection of gender, quiz questions etc. <br><br> If you use one name for all the radio buttons, only one radio button can be selected at a time. <br><br> Using radio buttons for multiple options, you can only choose a single option at a time.</p>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+                &lt;label for="gender"&gt; Gender: &lt;/label&gt; 
+                &lt;input type="radio" id="gender" name="gender" value="male"/&gt; Male<br>
+                &lt;input type="radio" id="gender" name="gender" value="female"/&gt; Female<br>
+
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output</h2>
+<form>
+<label for="gender"> Gender: </label> <input type="radio" id="gender" name="gender" value="male"/> Male
+<input type="radio" id="gender" name="gender" value="female"/> Female
+</form>
+<hr width="100%">
+<h2>Checkbox Control</h2>
+<p>The checkbox control is used to check multiple options from given checkboxes. </p>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+               Hobby:&lt;br&gt; &lt;input type="checkbox" id="cricket" name="cricket" value="cricket"/&gt;<br>
+               &lt;label for="cricket"&gt;Cricket&lt;/label&gt; &lt;br&gt; 
+
+               &lt;br&gt; &lt;input type="checkbox" id="football" name="football" value="football"/&gt;<br>
+               &lt;label for="football"&gt;Football&lt;/label&gt; &lt;br&gt; 
+
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output</h2>
+<form style="width: 100%;">
+Hobby:<br> <input type="checkbox" id="cricket" name="cricket" value="cricket"/>
+<label for="cricket">Cricket</label> <br>  <input type="checkbox" id="football" name="football" value="football"/>
+<label for="football">Football</label> <br> </form>
+
+<hr width="100%">
+<h2>Submit Button Control</h2>
+<p>HTML <b>&lt;input type="submit"&gt;</b> are used to add a submit button on web page. When user clicks on submit button, then form get submit to the server.</p>
+
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>&lt;input type="submit" value="submit"/&gt;<br>
+           
+        </p>
+    </div>
+</div>
+<p>The type = "submit", specifying that it is a submit button. <br><br>The value attribute can be anything which we write on button on web page. <br><br>The name attribute can be omit here.</p>
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+                &lt;label for="firstname"&gt; First Name: &lt;/label&gt; 
+                &lt;input type="text" id="firstname" name="firstname"/&gt;<br>
+                &lt;input type="submit" value="submit"/&gt;<br>
+
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+<h2>Output</h2>
+<form>
+<label for="firstname"> First Name: </label> <input type="text" id="firstname" name="firstname"/>
+<input type="submit" value="submit"/>
+</form>
+<br>
+<hr width="100%">
+<h2>HTML &lt;fieldset&gt; element</h2>
+<p>The &lt;fieldset&gt; element in HTML is used to group the related information of a form. This element is used with &lt;legend&gt; element which provide caption for the grouped elements.</p>
+
+<h2>Example:</h2>
+<div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;form&gt;    <br> 
+            &lt;fieldset&gt;
+            &lt;legend&gt;User Information &lt;/legend&gt;
+                &lt;label for="firstname"&gt; First Name: &lt;/label&gt; 
+                &lt;input type="text" id="firstname" name="firstname"/&gt;<br>
+                &lt;input type="submit" value="submit"/&gt;<br>
+            &lt;/fieldset&gt;
+            &lt;/form&gt;
+        </p>
+    </div>
+</div>
+
+<h2>Output</h2>
+
+<form>
+<fieldset> <legend>User Information </legend> <label for="firstname"> First Name: </label> <input type="text" id="firstname" name="firstname"/>
+<input type="submit" value="submit"/>
+</fieldset> </form>
+
+
+
+
+</body>
+</html>

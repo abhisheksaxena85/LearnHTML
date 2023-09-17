@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+</head>
+<body>
+    <p>HTML iframe is used to display a nested webpage (a webpage within a webpage). The HTML &lt;iframe&gt; tag defines an inline frame. <br><br>An HTML iframe embeds another document within the current HTML document in the rectangular region. <br><br>The webpage content and iframe contents can interact with each other using JavaScript.</p>
+    <h2>Iframe Syntax</h2>
+    <p>An HTML iframe is defined with the &lt;iframe&gt; tag:</p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;iframe src="URL"&gt; &lt;/iframe&gt; 
+            </p>
+        </div>
+    </div>
+    <p>Here, "src" attribute specifies the web address (URL) of the inline frame page.</p>
+    <h2>Set Width and Height of iframe</h2>
+    <p>You can set the width and height of iframe by using "width" attributes. By default, the attribute's values are specified in pixels but you can also set them in percent. i.e. 50%, 60%, etc.</p>
+
+    <h2>Example : (Pixels)</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;iframe src="https:/ /www.google.com/" width="100" height="100" &gt; &lt;/iframe&gt;
+            </p>
+        </div>
+    </div>
+    
+    <br><hr width="100%">
+    <h2>Example : (Percentage)</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;iframe src="https:/ /www.google.com/" width="40%" height="40%" &gt; &lt;/iframe&gt;
+            </p>
+        </div>
+    </div>
+    <p>You can also use CSS to set the height and width of the iframe.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;iframe src="https:/ /www.google.com/" style="width:200px; height:100px;" &gt; &lt;/iframe&gt;
+            </p>
+        </div>
+    </div>
+
+    <hr width="100%">
+    <h2>Remove the border of iframe</h2>
+    <p>By default, an iframe contains a border around it. You can remove the border by using &lt;style&gt; attribute and CSS border property. </p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;iframe src="https:/ /www.google.com/" style="border:none;" &gt; &lt;/iframe&gt;
+            </p>
+        </div>
+    </div>
+    <p>You can also change the size, color, style of the iframe's border.</p>
+
+        <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;iframe src="https:/ /www.google.com/" style="border:2px solid black;"&gt; &lt;/iframe&gt;
+            </p>
+        </div>
+    </div>
+    <hr width="100%">
+    <h2>Iframe Target for a link</h2>
+    <p>You can set a target frame for a link by using iframe. Your specified target attribute of the link must refer to the name attribute of the iframe.</p>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;iframe src="action.html" style="width:200px; name="iframe" height:100px;" &gt; &lt;/iframe&gt; <br>
+                &lt;p&gt; &lt;a href="https:/ /www.google.com/lab" target="iframe"&gt; google&lt;/a&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <iframe src="action.html" style="width:200px; height:100px;" name="iframe"> </iframe>
+    <p> <a href="https://www.google.com/lab" style="text-align: center; width: 100%;" target="iframe"> google</a>
+    <hr width="100%">    
+    <h2>Enbed YouTube video using iframe</h2>
+    <p>You can also add a YouTube video on your webpage using the &lt;iframe&gt; tag. The attached video will be played at your webpage and you can also set height, width, autoplay, and many more properties for the video. <br><br>Following are some steps to add YouTube video on your webpage:</p>
+    <ul>
+        <li>Goto YouTube video which you want to embed.</li>
+        <li>Click on SHARE <b>&rarr;</b> under the video.</li>
+        <li>Click on Embed &lt;&gt; option.</li>
+        <li>Copy HTML code.</li>
+        <li>Paste the code in your HTML file.</li>
+        <li>Change height, width, and other properties (as per requirement).</li>
+    </ul>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                
+                &lt;iframe width="560" height="315" src="https:/ /www.youtube.com/ embed/o5tccfuC4pI?si=- fAgN3qjanmMzHZn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+            </p>
+        </div>
+    </div>
+    
+    <h2>Output:</h2>
+    <iframe width="70%" height="400px" src="https://www.youtube.com/embed/o5tccfuC4pI?si=-fAgN3qjanmMzHZn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <hr width="100%">
+    <table border="1" style="border-collapse: collapse;">
+        <tr><th>Attribute name</th> <th>Description</th></tr>
+        <tr><td>allowfullscreen</td> <td>If true then that frame can be opened in full screen.</td></tr>
+        <tr><td>height</td> <td>It defines the height of the embedded iframe, and the default height is 150px.</td></tr>
+        <tr><td>name</td><td>It gives the name to the iframe. The name attribute is important if you want to create a link in one frame.</td></tr>
+        <tr><td>frameborder</td><td>It defines whether iframe should have a border or not.</td></tr>
+        <tr><td>Width</td><td>It defines the width of embedded frame, and default width is 300px.</td></tr>
+        <tr><td>src</td><td>The src attribute is used to give the path name or file name which content to be loaded into iframe.</td></tr>
+        <tr><td>sandbox</td><td>This attribute is used to apply extra restrictions for the content of the frame.</td></tr>
+        <tr><td>allow-forms</td><td>It allows submission of the form if this keyword is not used then form submission is blocked.</td></tr>
+        <tr><td>allow-popups</td><td>It will enable popups, and if not applied then no popup will open.</td></tr>
+        <tr><td>allow-script</td><td>It will enable the script to run.</td></tr>
+        <tr><td>allow-same-origin</td> <td>If this keyword is used then the embedded resource will be treated as downloaded from the same source.</td></tr>
+        <tr><td>srcdoc</td><td>The srcdoc attribute is used to show the HTML content in the inline iframe. It overrides the src attribute.</td></tr>
+        <tr><td>scrolling</td><td>It indicates that browser should provide a scroll bar for the iframe or not (-auto,-yes,-no).</td></tr>
+    </table>
+
+</body>
+</html>

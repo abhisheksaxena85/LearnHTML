@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Base Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;base&gt; tag is used to specify a base URI or URL to use for all relative links contained within an HTML document. <br><br>Only one &lt;base&gt; element can be specified within a document, and it must be placed with &lt;head&gt; element. We can also specify how other links should open using the target attribute.</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;base href="https://www. google.com"&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <p>In HTML &lt;base&gt; element does not contain closing tag but in XHTML end tag but in XHTML end tag &lt;/base&gt; is required. <br><br><b>Following are some specifications about the &lt;base&gt; tag.</b></p>
+    <table border="1">
+        <tr><th>Display</th><th>None</th></tr>
+        <tr><th>Start tag/End tag</th><td>Only start-tag</td></tr>
+        <tr><th>Usage</th><td>Anchor and links</td></tr>
+    </table>
+<br>
+    <h2>Example:</h2>
+    <p>Open in same window (by default)</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt; &lt;/title&gt; <br>
+                &lt;base href="https://www. google.com"&gt;<br>
+                &lt;/head&gt;<br>
+
+                &lt;body&gt;<br>
+                    &lt;a href="/pictures"&gt;Pictures&lt;/a&gt;<br>
+                    &lt;a href="/email"&gt;Email&lt;/a&gt;<br>
+                    &lt;a href="/calender"&gt;Calender&lt;/a&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt; 
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <head>
+    <title> </title>
+    <base href="https://www. google.com">
+    </head>
+    <body>
+    <a href="/pictures">Pictures</a>
+    <a href="/email">Email</a>
+    <a href="/calender">Calender</a>
+    </body>
+
+    <p>In the above example we have used base URL = "https:// www.google.com" which all other relative links will treat as starting URL. Here (/) defines the root URL of the current document.</p>
+    <hr>
+    <h2>Attribute</h2>
+    <p>Tag specific attributes:</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Value</th><th>Definition</th></tr>
+        <tr><td>href</td><td>URL</td><td>It specifies the base URL for all relative links.</td></tr>
+        <tr><td>target</td></tr>
+        <tr><td></td><td>_blank</td><td>Open the relative link in the new window.</td></tr>
+        <tr><td></td><td>_self</td><td>Open the relative link in current window.</td></tr>
+        <tr><td></td><td>_parent</td><td>Open the relative link in the parent fram.</td></tr>
+        <tr><td></td><td>_top</td><td>Open the links in full width of the page.</td></tr>
+    </table>
+
+    <p>The &lt;base&gt; tag supports both global and event attributes in HTML.</p>
+    
+
+
+</body>
+</html>

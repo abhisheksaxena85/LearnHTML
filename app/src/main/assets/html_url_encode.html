@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML URL Encode</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <h2>What is URL?</h2>
+    <p>URL stands for Uniform Resource Locator. It is actually a web address. A URL can contain words i.e (javapoint.com) or an Internet Protocol (IP) address i.e.195.201.68.81. But most of the user use URL in the form of words because it is easy to remember that numbers. </p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                scheme: <t style="font-size: 15px;color: rgb(207, 159, 255);">//prefix.domain:port/path/filename</t>
+            </p>
+        </div>
+    </div>
+
+    <p>Here,</p>
+    <ul>
+        <li><b>scheme</b> is used to define the type of Internet service (most common is http or https). </li>
+        <li><b>prefix</b> is used to define a domain prefix (default for http is www).</li>
+        <li><b>domain</b> is used to define the internet domain (like javapoint.com). </li>
+        <li><b>port</b> is used to define the port number at the host (default for http is 80).</li>
+        <li><b>path</b> is used to define the path at the server (If omitted: the root directory of the site).</li>
+        <li><b>filename</b> is used to define the name of a document or resources.</li>
+    </ul>
+    <p><b>Following is a list of some common types schemes used in URL:</b></p>
+    <ul>
+        <li>http (HyperText Transfer Protocol): Common web pages. Not encrypted.</li>
+        <li>https (Secure HyperText Transfer Protocol): Secure web pages. encrypted/</li>
+        <li>ftp (File Transfer Protocol): Downloading or uploading files.</li>
+        <li>file: A file on your computer.</li>
+    </ul>
+    <h2>URL Encoding</h2>
+    <p>URL encoding is used to convert non-ASCII characters into a format that can be used over the Internet because a URL is sent over the Internet by using the ASCII character-set only. If a URL contains character outside the ASCII set, the URL has to be converted. <br><br> In URL encoding, the non-ASCII characters are replaced with a "%" followed by hexadecimal degits. <br><br> URL cannot contains spaces. URL encoding normally replaces a space with a plus(+) sign, or %20.</p>
+
+</body>
+</html>

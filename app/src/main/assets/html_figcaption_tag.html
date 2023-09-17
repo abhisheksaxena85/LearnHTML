@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Figcaption tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>The &lt;figcaption&gt; element is used to provide a caption to an image. <br><br> It is an optional tag and can appear before or after the content within the &lt;figure&gt; tag. <br><br> Only one &lt;figcaption&gt; element can be nested within a &lt;figure&gt; tag although the &lt;figure&gt; element itself may contain multiple other elements like &lt;img&gt; or &lt;code&gt;. <br><br>The &lt;figcaption&gt; element is used with &lt;figure&gt; element and it can be placed as the first or last child of the &lt;figure&gt; element. </p>
+    <hr>
+    <h2>HTML Figure tag example</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;figure&gt;<br>
+                &lt;img src="animal.jpg" &gt; <br>
+                &lt;figcaption&gt; <br>
+                Fig. 1.1 - Animal Image <br>
+                &lt;/figcaption&gt; <br>
+                &lt;/figure&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <figure>
+<img src="animal image.jpg" style="width: 90%;" >
+<figcaption>
+Fig. 1.1 - Animal Image
+</figcaption>
+</figure>
+
+</body>
+</html>

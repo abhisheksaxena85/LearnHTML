@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Figure tag</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p><b>HTML &lt;figure&gt; tag</b> is used to mark up a photo in the document on a web page. <br> <br> As we know image tag is already available in HTML to display the picture on webpages. But HTML5 &lt;figure&gt; tag is used to handle the group of diagrams, photos, code listing etc. With some embedded content, you can also add a caption for the photo with the help of &lt;figcaption&gt; tag. <br><br> HTML figure is a new tag inroduced in HTML5. </p><hr>
+    <h2>HTML Figure tag example</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eos architecto dolores aliquam, labore distinctio dolorem alias natus. Veniam quibusdam consequuntur iure expedita natus saepe sint magni sit ea animi? &lt;/p&gt;<br>
+                &lt;figure&gt;<br>
+                &lt;img src="animal.jpg" &gt; <br>
+                &lt;/figure&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eos architecto dolores aliquam, labore distinctio dolorem alias natus. Veniam quibusdam consequuntur iure expedita natus saepe sint magni sit ea animi? </p>
+<figure>
+<img src="animal image.jpg" style="width: 80%;">
+</figure>
+
+</body>
+</html>
