@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Google Maps</title>
+
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+
+      </style>
+
+
+</head>
+<body>
+    <p>HTML Google Map is used to display maps on your webpage. You can simply add a map on your basic HTML page.</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;div id="map"&gt;My map will go here&lt;/div&gt;<br>
+            </p>
+        </div>
+    </div><br><hr>
+    <h2>Set the Map Size</h2>
+    <p>You can set the map size by using the following syntax:</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;div id="map" style="width:400px; height:300px; background:grey;"&gt; &lt;/div&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <p><b>How to create a function to set the map properties?</b></p>
+    <p>
+        You can set the map properties
+by creating a function. Here, the
+function is myMap(). This
+example shows the Google map
+centered in London, England. <br><br>
+We have to use the functionalities
+of Google Maps APl provided by a
+JavaScript library located at
+Google. Use the following script to
+refer to the Google Maps API with
+a callback to the myMap
+function.
+    </p>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;script src="https:/ /maps.googleapis .com/maps/api /js?callback =myMap"&gt;&lt;/script&gt;
+            </p>
+        </div>
+    </div><br>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                            &lt;!DOCTYPE html&gt;   <br>
+            &lt;html&gt;   <br>
+            &lt;body&gt;   <br>
+            &lt;h1&gt;My First Google Map&lt;/h1&gt;   <br>
+            &lt;div id="map" style="width: 400px;height:400px; background:grey"&gt;&lt;/div&gt;   <br>
+            &lt;script&gt;   <br>
+            function myMap() {   <br>
+            var mapOptions = {   <br>
+                center: new google.maps. LatLng(51.5, -0.12),   <br>
+                zoom: 10,   <br>
+                mapTypeId: google.maps. MapTypeId.HYBRID   <br>
+            }   <br>
+            var map = new google.maps .Map(document. getElement ById("map"), mapOptions);   <br>
+            }   <br>
+            &lt;/script&gt;   <br>
+            &lt;script src="https:/ /maps.googleapis. com/maps/ api/js?key= AIzaSyBu-916DdpKAjTm JNIgngS6HL_kDIKU0aU &callback= myMap"&gt;&lt;/script&gt;   <br>
+            &lt;/body&gt;   <br>
+            &lt;/html&gt; <br>
+                        </p>
+        </div>
+    </div>
+    <br><hr>
+    <h2>Example Explanation</h2>
+    <p><b>
+        mapoptions: </b>It is a variable which
+        defines the properties for the
+        map. <br> <br>
+        <b>center: </b>It specifies where to
+        center the map (using latitude
+        and longitude coordinates). <br> <br>
+        <b>zoom: </b>It specifies the zoom level
+        for the map (try to experiment
+        with the zoom level). <br><br>
+        <b>mapTypeld:</b> It specifies the map
+        type to display. The following
+        map types are supported:
+        ROADMAP, SATELLITE, HYBRID, and
+        TERRAIN. <br><br>
+        <b>var map=new google.maps.Map(
+         document. getElement Byld ("map"
+        ), mapOptions): </b>It creates a new
+        map inside the element with id="map", using the parameters that are passed (mapOptions).
+    </p>
+    <br><hr>
+    <h2>HTML Multiple Maps</h2>
+    <p>
+        You can use different maps types in a single example.
+    </p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;!DOCTYPE html&gt;   <br>
+&lt;html&gt;   <br>
+&lt;body&gt;   <br>
+&lt;div id="googleMap1" style="width:400px; height:300px;"&gt;&lt;/div&gt;   <br>
+&lt;br&gt;   <br>
+&lt;div id="googleMap2" style="width:400px; height:300px;"&gt;&lt;/div&gt;   <br>
+&lt;br&gt;   <br>
+&lt;div id="googleMap3" style="width:400px; height:300px;"&gt;&lt;/div&gt;   <br>
+&lt;br&gt;   <br>
+&lt;div id="googleMap4" style="width:400px; height:300px;"&gt;&lt;/div&gt;   <br>
+&lt;script&gt;   <br>
+function myMap() {   <br>
+  var mapOptions1 = {   <br>
+    center: new google.maps. LatLng(51.508742, -0.120850),   <br>
+    zoom:9,   <br>
+    mapTypeId: google.maps. MapTypeId. ROADMAP   <br>
+  };   <br>
+  var mapOptions2 = {   <br>
+    center: new google. maps.LatLng (51.508742, -0.120850),   <br>
+    zoom:9,   <br>
+    mapTypeId: google .maps.MapTypeId. SATELLITE   <br>
+  };   <br>
+  var mapOptions3 = {   <br>
+    center: new google. maps.LatLng (51.508742, -0.120850),   <br>
+    zoom:9,   <br>
+    mapTypeId: google.maps. MapTypeId. HYBRID   <br>
+  };  
+  var mapOptions4 = {   <br>
+    center: new google.maps. LatLng(51.508742, -0.120850),   <br>
+    zoom:9,   <br>
+    mapTypeId: google.maps .MapTypeId. TERRAIN   <br>
+  };  
+  var map1 = new google. maps.Map(document .getElementById ("googleMap1"), mapOptions1);   <br>
+  var map2 = new google. maps.Map(document .getElementById ("googleMap2"), mapOptions2);   <br>
+  var map3 = new google. maps.Map(document .getElementById ("googleMap3"), mapOptions3);   <br>
+  var map4 = new google. maps.Map(document .getElementById ("googleMap4"), mapOptions4);   <br>
+}   <br>
+&lt;/script&gt;   <br>
+&lt;script src="https:/ /maps.googleapis. com/maps/api/js? key=AIzaSyBu- 916DdpKAjTmJNI gngS6HL_kDI KU0aU&callback =myMap"&gt;&lt;/script&gt;   <br>
+&lt;/body&gt;   <br>
+&lt;/html&gt; <br>
+            </p>
+        </div>
+    </div><br>
+    
+
+    
+
+</body>
+</html>

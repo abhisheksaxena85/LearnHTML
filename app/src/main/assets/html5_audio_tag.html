@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+    <p><b>HTML audio tag</b> is used to define sounds such as music and other audio clips. Currently there are three supported file format for HTML 5 audio tag.</p>
+    <ol style="width: 100%;margin: 0;">
+        <li> mp3</li>
+        <li> wav</li>
+        <li> ogg</li>
+    </ol>
+
+    <p>HTML supports &lt;video&gt; and &lt;audio&gt; controls. The Flash, Silverlight and similar technologies are used to play the multimedia items. <br><br>This table defines that which web browser supports which audio file format. </p>
+    <hr>
+    <h2>HTML Audio Tag Example</h2>
+    <p>Let's see the code to play mp3 file using HTML audio tag.</p>
+
+    <h3>Example:</h3>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;audio controls&gt;<br>
+                    &lt;source src="koyal.mp3" type="audio/mpeg"&gt; <br>
+                &lt;/audio&gt; <br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <audio controls>
+    <source src="koyal.mp3" type="audio/mpeg">
+    </audio>
+    <p>Let's see the example to play ogg file using HTML audio tag.</p>
+    <ol>
+        <li>&lt;<b>audio</b> controls&gt;</li>
+        <li>&lt;<b>source</b> src="koyal.ogg" type="audio/ogg" &gt;</li>
+        <li>Your browser does not support the html audio tag.</li>
+        <li><b>&lt;/audio&gt;</b></li>
+    </ol>
+    <hr>
+    <h2>Attributes of HTML Audio Tag</h2>
+    <p>There is given a list of HTML audio tag.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>controls</td><td>It defines the audio controls which is displayed with play/pause buttons.</td></tr>
+        <tr><td>autoplay</td><td>It specifies that the audio will start playing as soon as it is ready.</td></tr>
+        <tr><td>loop</td><td>It specifies that the audio file will start over again, every time when it is completed.</td></tr>
+        <tr><td>muted</td><td>It is used to mute the audio output.</td></tr>
+        <tr><td>preload</td><td>It specifies the author view to upload audio file when the page loads.</td></tr>
+        <tr><td>src</td><td>The specifies the source URL of the audio file.</td></tr>
+    </table>
+    <hr>
+    <h2>HTML Audio Tag Attribute Example</h2>
+    <p>Here we are going to use controls, autoplay, loop and src attributes of HTML audio tag.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;audio controls&gt;<br>
+                    &lt;source src="koyal.mp3" type="audio/mpeg"&gt; <br>
+                &lt;/audio&gt; <br>
+            </p>
+        </div>
+    </div>
+
+    <h2>MIME Types for HTML Audio format</h2>
+    <p>The available MIME type HTML audio tag is given below.</p>
+    <table border="1">
+        <tr><th>Audio Format</th><th>MIME Type</th></tr>
+        <tr><td>mp3</td><td>audio/mpeg</td></tr>
+        <tr><td>ogg</td><td>audio/ogg</td></tr>
+        <tr><td>wav</td><td>audio/wav</td></tr>
+    </table>
+    <br>
+</body>
+</html>

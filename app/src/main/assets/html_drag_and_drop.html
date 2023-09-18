@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Drag and Drop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML Drag and Drop (DnD) is a feature of HTML5. It is a powerful user
+        interface concept which is used to copy, reorder and delete items with the
+        help of mouse. You can hold the mouse button down over an element and
+        drag it to another location. If you want to drop the element there, just release
+        the mouse button. <br><br>
+        If you want to achieve the Drag and Drop functionality in traditional HTML4,
+        you must either have to use complex JavaScript programming or other JavaScript frameworks like jQuery etc.
+    </p><hr>
+    <h2>Event for Drag and Drop feature</h2>
+    <table border="1">
+        <tr><th>Event</th><th>Description</th></tr>
+        <tr><td>Drag</td><td>It fires every times when the mouse is moved while the object is being dragged.</td></tr>
+        <tr><td>Dragstart</td><td>It is a very initial stage. It fires when the user starts dragging object.</td></tr>
+        <tr><td>Dragenter</td><td>It fires when the user moves his/her mouse cursor over the target element.</td></tr>
+        <tr><td>Dragover</td><td>This event is fired when the mouse moves over an element.</td></tr>
+        <tr><td>Dragleave</td><td>This event is fired when the mouse leaves an element.</td></tr>
+        <tr><td>Drop</td><td>It fires at the end of the drag operation.</td></tr>
+        <tr><td>Dragend</td><td>It fires when user releases the mouse button to complete the drag operation.</td></tr>
+    </table>
+    <br>
+    <hr>
+    <h2>HTML5 Drag and Drop Example</h2>
+    <p>Let's see an example of HTML5 drag and drop feature.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;script&gt;   <br>
+                function allowDrop(ev) {ev.prevent Default();}   <br>
+                function drag(ev) {ev.dataTransfer .setData(" text/html", ev.target. id);}   <br>
+                function drop(ev) {   <br>
+                ev.preventDefault();   <br>
+                var data = ev.dataTransfer .getData ("text/html");   <br>
+                ev.target. appendChild(document .getElementById (data));   <br>
+                }   <br>
+            &lt;/script&gt;   <br>
+                &lt;p&gt;Drag the javatpoint image into the rectangle:&lt;/p&gt;   <br>
+                &lt;div id="div1" style="width:350px; height:100px; padding:10px; border:1px solid #aaaaaa;"    <br>
+                ondrop="drop(event)" ondragover="allow Drop(event)" &gt;&lt;/div&gt;   <br>
+                &lt;br&gt;   <br>
+                &lt;img id="drag1" src="/htmlpages /images/ javatpoint.png" alt="javatpoint image"    <br>
+                draggable="true" ondragstart= "drag(event)"/&gt; <br>
+              
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <script>
+function allowDrop(ev) {ev.preventDefault();}
+function drag(ev) {ev.dataTransfer.setData("text/html", ev.target.id);}
+function drop(ev) {
+ev.preventDefault();
+var data = ev.dataTransfer.getData("text/html");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<p>Drag the javatpoint image into the rectangle:</p>
+<div id="div1" style="width:150px;height:150px;padding:10px;border:1px solid #aaaaaa;"
+ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" style="width: 100px; height: 100px;" src="animal image.jpg" alt="javatpoint image"
+draggable="true" ondragstart="drag(event)"/>
+
+    <p>In the above example, we have used ondrop and on dragover events on div element, and ondragstart event on img tag.</p>
+    <br>
+    <h2>Stages during Drag and Drop Operations</h2>
+    <p><b>1&rpar; Make an element draggable <br></b> If you want to make an element draggable, set the draggable attribute to "true" on element. <br><br>For example: </p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;img draggable="true" &gt;
+            </p>
+        </div>
+    </div>
+    <p><b>2&rpar; What to drag: </b> <br><br>Use ondragstart and setData() methods. <br><br>Specify what should happen when the element is dragged.  <br><br><b>3&rpar; Where to Drop:</b> <br><br>Use ondragover event. <br><br><b>4&rpar; Do ondrop event.</b> <br><br>Use ondrop event.</p>
+
+
+</boy>
+</html>

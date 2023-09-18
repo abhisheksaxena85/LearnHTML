@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SVG Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>
+        The HTML SVG is an acronym
+        which stands for Scalable Vector
+        Graphics. <br><br>
+        HTML SVG is a modularized
+        language which is used to
+        describe graphics in XML. It
+        describe two-dimensional vector
+        and mixed vector/raster graphics
+        in XML. It is a W3C
+        recommendation. SVG images
+        and their behaviors are defined in
+        XML text files. So as XML files, you
+        Can create and edit an SVG
+        image with text editor, but
+        generally drawing programs like
+        inkspace are preferred to create
+        it. <br><br>
+        SVG is mostly used for vector
+        type diagrams like pie charts, 2-
+        Dimensional graphs in an X,Y
+        coordinate system etc. <br><br>
+        The &lt;svg&gt; element specifies the
+            root of a SVG fragment. You can
+            animate every element and every
+            attribute in SVG files.
+    </p>
+    <br><hr>
+    <h2>HTML SVG Circle Example</h2>
+    <p>Let's see the example to draw circle by svg.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;svg width="100" height="100"&gt;  <br>
+                    &lt;circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="red" /&gt;   <br>
+                   &lt;/svg&gt;<br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="red" />
+    </svg>
+    <p>Here, we are using cx, cy and r attributes of circle tag. These attributes of circle tag. These attributes can't be used with svg rect tag.</p>
+    <br><hr>
+    <h2>HTML SVG Rectangle Example</h2>
+    <p>Let's see the example to draw rectangle by svg tag.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;svg width="200" height="100"&gt; <br>  
+                    &lt;rect width="200" height="100" stroke="yellow" stroke-width="4" fill="red" /&gt; <br>
+                  &lt;/svg&gt; <br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <svg width="200" height="100">
+    <rect width="200" height="100" stroke="yellow" stroke-width="4" fill="red" />
+    </svg>
+
+    <br><hr>
+    <h2>Why SVG is preferred over other image formates?</h2>
+    <p>
+        SVG images can be saved as the
+smallest size possible. Unlike
+bitmap image formats like JPG or
+PNG, it does not contain a fixed
+set of dots. So it is alsO easy to
+print with high quality at any
+resolution. <br><br>
+SVG images can be zoomed toa
+certain level without degradation
+of the picture quality. <br><br>
+SVG images and their behaviors
+are defined in XML text files, so
+they coan be created and edited
+with any text editor. <br><br>
+    </p>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML video Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+    <p>
+        HTML 5 supports &lt;video&gt; tag also.
+            The HTML video tag is used for
+            streaming video files such as a
+            movie clip, song clip on the web
+            page. <br><br>
+            Currently, there are three video
+            formats supported for HTML video
+            tag:
+    </p>
+    <ol style="width: 100%;margin: 0;">
+        <li> mp4</li>
+        <li> webM</li>
+        <li> ogg</li>
+    </ol>
+
+    <p>
+        <b>Android also supports mp4 format.</b>
+    </p>
+    <hr>
+    <h2>HTML video Tag Example</h2>
+    <p>Let's see the code to play mp4 file using HTML video tag.</p>
+
+    <h3>Example:</h3>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;video controls&gt;<br>
+                    &lt;source src="koyal.mp3" type="video/mpeg"&gt; <br>
+                &lt;/video&gt; <br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <video style="width: 80%;height: auto; " controls>
+    <source  src="koyal.mp3" type="video/mpeg">
+    </video>
+    <br>
+    <hr>
+    <h2>Attributes of HTML video Tag</h2>
+    <p>There is given a list of HTML5 video tag.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>controls</td><td>It defines the video controls which is displayed with play/pause buttons.</td></tr>
+        <tr><td>height</td><td>It is used to set the height of the the video player.</td></tr>
+        <tr><td>width</td><td>It is used to set the width of the video player.</td></tr>
+        <tr><td>poster</td><td>It specifies the image which is displayed on the screen when the video is not played.</td></tr>
+        <tr><td>autoplay</td><td>It specifies that the video will start playing as soon as it is ready.</td></tr>
+        <tr><td>loop</td><td>It specifies that the video file will start over again, every time when it is completed.</td></tr>
+        <tr><td>muted</td><td>It is used to mute the video output.</td></tr>
+        <tr><td>preload</td><td>It specifies the author view to upload video file when the page loads.</td></tr>
+        <tr><td>src</td><td>The specifies the source URL of the video file.</td></tr>
+    </table>
+    <hr>
+    <h2>HTML video Tag Attribute Example</h2>
+    <p>Let's see the example of video tag in HTML where are using height, width, controls, autoplay, loop and src attributes of HTML video tag.</p>
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;video width="320" height="240" controls autoplay loop&gt; <br>
+                    &lt;source src="movie.mp4" type="video/mp4" &gt; <br>
+                    Your browser does not support the html video tag.  <br>
+                  &lt;/video&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>MIME Types for HTML video format</h2>
+    <p>The available MIME type HTML video tag is given below.</p>
+    <table border="1">
+        <tr><th>video Format</th><th>MIME Type</th></tr>
+        <tr><td>mp4</td><td>video/mp4</td></tr>
+        <tr><td>ogg</td><td>video/ogg</td></tr>
+        <tr><td>webM</td><td>video/webM</td></tr>
+    </table>
+    <br>
+</body>
+</html>
