@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Optgroup Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+    <p>HTML &lt;optgroup&gt; tag is used to group related &lt;options&gt; in a drop down list within &lt;select&gt; element. <br><br> Using &lt;optgroup&gt; tag with &lt;select&gt; makes easier to access the dropdown list especially if list has large number of options. </p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;optgroup&gt; ... &lt;/optgroup&gt; <br>
+
+            </p>
+        </div>
+    </div>
+
+    <p>Following are some specifications about the HTML &lt;optgroup&gt; tag.</p>
+    <table border="1">
+        <tr><th>Display</th><th>Inline</th></tr>
+        <tr><th>Start tag/End tag</th><td>Both start and End tag.</td></tr>
+        <tr><th>Usage</th><td>Forms and Inputs.</td></tr>
+    </table>
+<br>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;!DOCTYPE html&gt;   &lt;br&gt; <br>
+&lt;html&gt;   &lt;br&gt; <br>
+&lt;head&gt;   &lt;br&gt; <br>
+    &lt;title&gt;Optgroup Tag&lt;/title&gt;   &lt;br&gt; <br>
+    &lt;style&gt;   <br>
+        body{   &lt;br&gt; <br>
+            text-align: center;   &lt;br&gt; <br>
+        }   &lt;br&gt; <br>
+        select{   &lt;br&gt; <br>
+                      font-size:20px;   &lt;br&gt;  <br>
+                                  font-weight:bold;    &lt;br&gt; <br>
+                                  color:green;    &lt;br&gt; <br>
+        }   &lt;br&gt; <br>
+    &lt;/style&gt;   &lt;br&gt; <br>
+&lt;/head&gt;   &lt;br&gt; <br>
+&lt;body&gt;   &lt;br&gt; <br>
+&lt;h2&gt;Example of optgroup tag&lt;/h2&gt;   &lt;br&gt; <br>
+&lt;label&gt;Select your favourite brand&lt;/label&gt;&lt;br&gt;   &lt;br&gt; <br>
+&lt;select&gt;   &lt;br&gt; <br>
+          &lt;optgroup label="Laptop Maufacturur"&gt;   &lt;br&gt; <br>
+        &lt;option value="dell"&gt;Dell&lt;/option&gt;   &lt;br&gt; <br>
+        &lt;option value="hp"&gt;HP&lt;/option&gt;   &lt;br&gt; <br>
+        &lt;option value="lenovo"&gt;Lenovo&lt;/option&gt;   &lt;br&gt; <br>
+        &lt;option value="acer"&gt;Acer&lt;/option&gt;   &lt;br&gt; <br>
+     &lt;/optgroup&gt;   &lt;br&gt; <br>
+         &lt;optgroup label="Mobile Manufacturer"&gt;  &lt;br&gt;  <br>
+        &lt;option value="apple"&gt;Apple&lt;/option&gt;   &lt;br&gt; <br>
+        &lt;option value="nokia"&gt;Nokia&lt;/option&gt;   &lt;br&gt; <br>
+        &lt;option value="samsung"&gt;Samsung&lt;/option&gt; &lt;br&gt;   <br>
+        &lt;option value="coolpad"&gt;Coolpad&lt;/option&gt;   &lt;br&gt;      <br>
+            &lt;/optgroup&gt;   &lt;br&gt; <br>
+&lt;/select&gt;   &lt;br&gt; <br>
+&lt;/body&gt;      &lt;br&gt; <br>
+&lt;/html&gt; &lt;br&gt; <br>
+
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <head> 
+<title>Optgroup Tag</title> 
+<style>
+body{ 
+text-align: center; 
+} 
+select{ 
+font-size:20px; 
+font-weight:bold; 
+color:green; 
+} 
+</style> 
+</head> 
+<body> 
+<h2>Example of optgroup tag</h2> 
+<label>Select your favourite brand</label><br> <br>
+<select> 
+<optgroup label="Laptop Maufacturur"> 
+<option value="dell">Dell</option> 
+<option value="hp">HP</option> 
+<option value="lenovo">Lenovo</option> 
+<option value="acer">Acer</option> 
+</optgroup> 
+<optgroup label="Mobile Manufacturer"> 
+<option value="apple">Apple</option> 
+<option value="nokia">Nokia</option> 
+<option value="samsung">Samsung</option> 
+<option value="coolpad">Coolpad</option> 
+</optgroup> 
+</select> 
+</body> 
+<br>
+<hr><h2>Attribute:</h2>
+<table border="1">
+    <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+    <tr><td>disabled</td><td>disabled</td><td>If it is set then options of that optgroup will be disabled.</td></tr>
+    <tr><td>label</td><td>text</td><td>It defines the label for the group which will be displayed in the dropdown list. It is required attribute.</td></tr>
+</table>
+
+<br>
+<p>HTML &lt;optgroup&gt; tag supports both global and event attributes in HTML.</p>
+
+
+
+
+
+</body>
+</html>

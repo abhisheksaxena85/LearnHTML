@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Progress Tag</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;progress&gt; tag is used to
+        display the progress of a task. It
+        provides an easy way for web
+        developers to create progress
+        bar on the website. It is mostly
+        used to show the progress of a
+        file uploading on the web page. <br><br>
+        The HTML progress tag is new in
+        HTML5 SO you must use new
+        browsers.</p>
+        <hr>
+        <h2>Attributes of HTML Progress Tag</h2>
+        <p>HTML &lt;progress&gt; tag supports the global and event attributes as well as 2 specific attributes. </p>
+        <table border="1">
+            <tr><th>Tag</th><th>Description</th></tr>
+            <tr><td>value</td><td>It defines that how much work the task has been completed.</td></tr>
+            <tr><td>max</td><td>It defines that how much work the task requires in total.</td></tr>
+        </table>
+        <br><hr>
+        <h2>HTML Progress Tag Example</h2>
+        <p>Let's see HTML progress example without attribute.</p>
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;progress&gt;
+                    &lt;/progress&gt;<br>
+                </p>
+            </div>
+        </div>
+        <p>Let's see the progress example with value and max attributes.</p>
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    Downloading progress:
+                    &lt;progress value="43" max="100" &gt;
+                    &lt;/progress&gt;<br>
+                </p>
+            </div>
+        </div>
+        <h2>Output:</h2>
+        Downloading progress: <progress value="43" max="100" > </progress>
+
+        <br><hr>
+        <h2>HTML Progress Tag with JavaScript</h2>
+        <p>The &lt;progress&gt; tag should be used in conjuction with JavaScript to display the progress of a task.</p>
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;script&gt;   <br>
+    var gvalue=1;   <br>
+    function abc(){   <br>
+     var progressExample = document.getElementById ('progress-javascript-example');   <br>
+         setInterval (function ()   <br>
+        {    <br>
+                     if(gvalue&lt;100){   <br>
+                        gvalue++;   <br>
+                        progressExample.value =gvalue;  <br>   
+                      }   <br>
+                     abc();               <br>
+          }, 1000);   <br>
+    }   <br>
+    &lt;/script&gt;   <br>
+    &lt;progress id="progress-javascript-example" min="1" max="100"&gt;&lt;/progress&gt;   <br>  
+    &lt;br/&gt;&lt;br/&gt;   <br>
+    &lt;button onclick="abc()"&gt;click me&lt;/button&gt; <br>
+                </p>
+            </div>
+        </div>
+
+
+        <h2>Output:</h2>
+        <script>
+var gvalue=1;
+function abc(){
+var progressExample = document.getElementById ('progress-javascript-example');
+setInterval (function ()
+{
+if(gvalue<100){
+gvalue++;
+progressExample.value =gvalue;
+}
+abc();
+}, 1000);
+}
+</script>
+<progress id="progress-javascript-example" min="1" max="100"></progress>
+<br/><br/>
+<button onclick="abc()">click me</button>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Output Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;output&gt; tag is used to display the result of some calculation (performed bt JavaScript) or the outcome of a user action (such as input data into a form element). <br><br>The &lt;output&gt; tag is newly added tag and was introduced in HTML5</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;output&gt; ... &lt;/output&gt; <br>
+            </p>
+        </div>
+    </div>
+    <p>Following are some specifications about the HTML &lt;output&gt; tag.</p>
+    <table border="1">
+        <tr><th>Display</th><th>Inline</th></tr>
+        <tr><th>Start tag/End tag</th><td>Both start and End tag.</td></tr>
+        <tr><th>Usage</th><td>Forms and Inputs.</td></tr>
+    </table><br>
+    <hr>
+    <h2>Attribute:</h2>
+    <table border="1">
+        <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+        <tr><td>for</td><td>element_id</td><td>It specifies the list of other element's ids which indicates the relationship between the result of the calculation and the input elements.</td></tr>
+        <tr><td>form</td><td>form_id</td><td>It specifies the form element to which this element is associated with.</td></tr>
+        <tr><td>name</td><td>name</td><td>It defines the name for the output element.</td></tr>
+    </table>   <br> 
+    <p>HTML &lt;output&gt; tag supports all the global and event attributes in HTML.</p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Picture Tag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+</head>
+<body>
+    <p>HTML &lt;picture&gt; tag is used in
+        responsive web designing where
+        we need to load the different
+        images based on their viewport,
+        height, width, orientation, and
+        pixel density. <br><br>
+        The &lt;picture&gt; tag contains one or
+        more &lt;SOurce&gt; elements and one
+        &lt;img&gt; elements. <br><br>
+        According to the viewport, the
+        matching image will be loaded
+        from different &lt;source&gt; tag, and if
+        no source contains the matching
+        image, then the default image
+        present in &lt;img&gt; tag will be
+        displayed on the browser. <br><br>This tag is new tag in HTML5.</p>
+
+        <h2>Syntax:</h2>
+        <div id="code_container">
+            <div id="code_header">
+                <div id="code_title">
+                    <img src="code (1).svg"/>
+                    <p>Code Example</p>
+                </div>
+            </div>
+            <div id="code_body">
+                <p>
+                    &lt;picture&gt;<br>
+                    &lt;source srcset=" " media=" "&gt;<br>
+                    &lt;img src=" " &gt;<br>
+                    &lt;/picture&gt;<br>
+                </p>
+            </div>
+        </div>
+
+        <p>Following are some specifications about the HTML &lt;picture&gt; tag.</p>
+        <table border="1">
+            <tr><th>Display</th><th>Inline</th></tr>
+            <tr><th>Start tag/End tag</th><td>Both start and End tag.</td></tr>
+            <tr><th>Usage</th><td>Image.</td></tr>
+        </table><br>
+        <hr>
+        <h2>Attribute:</h2>
+        <table border="1">
+            <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+            <tr><td>media</td><td>media_query</td><td>It defines and accept any media query which can be defined in CSS.</td></tr>
+            <tr><td>srcset</td><td>URL</td><td>It defines the URL of the image which can be used for different situation. (Required)</td></tr>
+            <tr><td>type</td><td>video/ogg, mp4, webM, audio/ogg, mpeg</td><td>It determines the MIME type.</td></tr>
+            <tr><td>src</td><td>URL</td><td>It specifies the location of the image.</td></tr>
+        </table>   
+<br>
+        <p>HTML &lt;picture&gt; tag supports only the global attributes in HTML.</p>
+
+</body>
+</html>

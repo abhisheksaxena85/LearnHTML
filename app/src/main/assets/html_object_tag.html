@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Object Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;object&gt; tag is used to embed multimedia files on webpage. The &lt;object&gt; tag can include multimedia files such as video, audio, images, PDF, Java, Applets, or another page on your page. <br><br>HTML &lt;param&gt; tag also used with &lt;object&gt; tag to pass parameters to plugin which has been included with &lt;object&gt; tag. <br><br>If you insert text between the &lt;object&gt; and &lt;/object&gt; tags, then it will only be displayed if the browser does not support the &lt;object&gt; tag.</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;object data=" " type=" "&gt;&lt;/object&gt; <br>
+            </p>
+        </div>
+    </div>
+
+    <p>Following are some specifications about the HTML &lt;object&gt; tag.</p>
+    <table border="1">
+        <tr><th>Display</th><th>Inline</th></tr>
+        <tr><th>Start tag/End tag</th><td>Both start and End tag.</td></tr>
+        <tr><th>Usage</th><td>Embed external resource.</td></tr>
+    </table>
+
+    <br><hr>
+    <h2>Ecample Video Embedding:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;object height="100px" width="50px" data="https://youtu.be /sSPYE2fU4ZI?si= C0lUosyLA7LNruRW" &gt;<br>
+
+                &lt;/object&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <br><hr>
+    <h2>Attributes:</h2>
+    <table border="1">
+        <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+        <tr><td>data</td><td>URL</td><td>It specifies the address of the resources.</td></tr>
+        <tr><td>type</td><td>content_type</td><td>It determines the content type of the resource specified by data.</td></tr>
+        <tr><td>acrhive</td><td>URL</td><td>It specifies the space-separated list of URL's for archives of resources for the object.</td></tr>
+        <tr><td>border</td><td>pixels</td><td>It sets the width of border around the &lt;object&gt;</td></tr>
+        <tr><td>classid</td><td>URL</td><td>It specifies the URL for the object implementation.</td></tr>
+        <tr><td>codebase</td><td>URL</td><td>It specifies the base path where to find the code for the object. </td></tr>
+        <tr><td>form</td><td>form_id </td>specifies the form element that the object element is associated with.</tr>
+        <tr><td>height</td><td>pixels</td><td>It defines the height of the object.</td></tr>
+        <tr><td>width</td><td>pixels</td><td>It determines the width of the object. </td></tr>
+        <tr><td>type must match</td><td>boolean</td><td>It specifies that resource should be embedded if type attribute matches with the actual content type of the resources provided on the data attribute. </td></tr>
+        <tr><td>name</td><td>name</td><td>It defines the name for the object.</td></tr>
+    </table>
+
+    <br>
+    <p>The &lt;object&gt; tag supports all the global and event attributes in HTML.</p>
+
+
+</body>
+</html>

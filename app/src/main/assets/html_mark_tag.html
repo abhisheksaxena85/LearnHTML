@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML mark Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;mark&gt; tag is used to highlight the some text part inside of another element such as paragraph, for reference or any notation purpose. <br><br> This is newly added tag and introduced in HTML5. <br> <br> In most of the browser, the text contained with &lt;mark&gt; tag renders with the yellow background, but it can be changed using CSS background-color property. </p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;mark&gt;Write your content here&lt;/mark&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <p>Following are some specifications about the HTML &lt;mark&gt; tag.</p>
+    <table border="1">
+        <tr><th>Display</th><th>Inline</th></tr>
+        <tr><th>Start tag/End tag</th><td>Both start and End tag.</td></tr>
+        <tr><th>Usage</th><td>Semantic and textual</td></tr>
+    </table><br>
+
+    <h2>Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;You can easily learn designing a website through &lt;mark&gt; this app&lt;/mark&gt; lectures. &lt;/p&gt; <br>
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+    <p>You can easily learn designing a website through <mark> this app</mark> lectures. </p>
+
+    <br>
+    <p>The &lt;mark&gt; tag supports both global and event attributes in HTML.</p>
+
+</body>
+</html>

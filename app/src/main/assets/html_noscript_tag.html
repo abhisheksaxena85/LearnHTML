@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Noscript Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;noscript&gt; tag is used to define an alternate content for the users who have disabled scripting from the browser and want to access the web page. <br><br> The &lt;noscript&gt; element can be used within &lt;head&gt; and &lt;body&gt; tags.  <br><br> While using noscript tag inside &lt;head&gt; element, &lt;noscript&gt; must contain &lt;link&gt;, &lt;style&gt; and &lt;meta&gt; tags. <br><br>The text inside the &lt;noscript&gt; element will be displayed if the user's browser is not script supporting. <br><br>The example of noscript tag is given below: </p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;script&gt;<br>
+                    document.write("Welcome to JavaTpoint");  <br>
+                &lt;/script&gt;<br>
+                    &lt;noscript&gt; Sorry! Your browser does not support JavaScript.! <br>
+
+                    &lt;/noscript&gt;
+            </p>
+        </div>
+    </div>
+    <h2>Output:</h2>
+
+    <script>
+document.write("Welcome to HTML Learing community");
+</script>
+<noscript> Sorry! Your browser does not support JavaScript.!
+</noscript>
+<hr>
+<h2>Difference between HTML4 and HTML5</h2>
+<p>In HTML 4.01, &lt;noscript&gt; tag can be used inside &lt;body&gt; tag only but in HTML5 it can be used inside &lt;head&gt; and &lt;body&gt; tag.</p>
+<hr>
+<h2>Difference between HTML and XHTML</h2>
+<p>The noscript tag is not supported in XHTML. <br><br>The noscript tag supports all global and event attributes in HTML.</p>
+
+
+</body>
+</html>

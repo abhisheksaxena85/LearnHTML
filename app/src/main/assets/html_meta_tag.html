@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML meta tag</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+</head>
+<body>
+    
+    <p>HTML &lt;meta&gt; tag is used to represent the metadata about the HTML document. It specifies page description, keywords, copywrite, language, author of the document, etc. <br><br>The metadata does not display on the webpage, but it is used by search engines, browsers and other web services which scan the site or webpage to know about the webpage. <br><br> With the help of meta tag, you can experiment and preview that how your webpage will render on the browser. <br><br>The &lt;meta&gt; tag is placed within the &lt;head&gt; tag, and it can be used more than in a document.</p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;menu charset="utf-8"&gt;
+            </p>
+        </div>
+    </div>
+    <p>Following are some specifications about the HTML &lt;meta&gt; tag.</p>
+    <table border="1">
+        <tr><th>Display</th><th>None</th></tr>
+        <tr><th>Start tag/End tag</th><td>Empty tag (Only start tag)</td></tr>
+        <tr><th>Usage</th><td>Document Structural</td></tr>
+    </table>
+    <p>Following are some specific sytaxes of meta tag which shows the different uses of meta tag.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                1. &lt;menu charset="utf-8"&gt;
+            </p>
+        </div>
+    </div>
+    <p>It defines the character encoding. The value of charset is "utf-8" which means it will support to display any language.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                2. &lt;menu name="keywords" content="HTML, CSS, JavaScript, Tutorials"&gt;
+            </p>
+        </div>
+    </div>
+
+    <p>It specifies the list of keyword which is used by search engines.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                3. &lt;menu name="description" content="Free Online tutorials"&gt;
+            </p>
+        </div>
+    </div>
+    <p>It defines the website description which is useful to provide relevant search performed by search engines.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                4. &lt;menu name="author" content="thisauthor"&gt;
+            </p>
+        </div>
+    </div>
+    <p>It specifies the author of the page. It is useful to extract author information by Content management system automatically.</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                5. &lt;menu name="refresh" content="50"&gt;
+            </p>
+        </div>
+    </div>
+
+    <p>It specifies to provide instruction to the browser to automatically refresh the content after every 50sec (or any given time).</p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                6. &lt;menu http-equiv="refresh" content="5, url=.... "&gt;
+            </p>
+        </div>
+    </div>
+    <p>In above example we have set a URL with content so it will automatically redirect to the given page after the provided time. </p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+               7. &lt;menu name="viewport" content="width=device-width,initial-scale=1.0"&gt;
+            </p>
+        </div>
+    </div>
+    <p>It specific the viewport to control the page dimension and scaling so that our website looks good on all device. If this tag is present, it indicates that this page is mobile device supported.</p>
+    <br>
+    <hr>
+    <h2>Attribute</h2>
+    <table border="1">
+        <tr><th>Attribute</th><th>Value</th></tr>
+        <tr><td>charset</td><td>character_set</td></tr>
+        <tr><td>content</td><td>text</td></tr>
+        <tr><td>http-equiv</td><td>Content-type default-style refresh</td></tr>
+        <tr><td>scheme</td><td>format/URL</td></tr>
+    </table>
+    <br>
+
+    <p>The &lt;meta&gt; tag supports both the global and event attributes in HTML.</p>
+
+
+</body>
+</html>

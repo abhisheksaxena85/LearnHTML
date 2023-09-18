@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Source Tag</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+
+</head>
+<body>
+    <p>
+        HTML &lt;Source&gt; tag is used as a
+            child element to define more
+            than one media resources for
+            &lt;audio&gt;, &lt;video&gt;, and &lt;picture&gt;
+            element. <br><br>
+            It is used to provide the same
+            media content with different
+            formats such as mp3, mp4, etc. <br><br>
+            When we embed multiple
+            resources with the same content
+            but different format then the
+            browser may choose the most
+            compatible format and display or
+            play that media file. <br><br>
+            The &lt;source&gt; tag was introduced
+            in HTML5.
+    </p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;source src=" " type=" " &gt;
+            </p>
+        </div>
+    </div>
+
+    <p>Following are some specifications about the HTML &lt;source&gt; tag</p>
+    <table border="1">
+        <tr><th>Display</th><th>Inline</th></tr>
+        <tr><th>Start tag/End tag</th><td>Empty tag( Only start tag)</td></tr>
+        <tr><th>Usage</th><td>Media resource</td></tr>
+    </table><br>
+    <hr>
+    <h2>Attribute</h2>
+
+    <table border="1">
+        <tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+        <tr><td>media</td><td>Media_query</td><td>It determines that for which media/device the linked source is optimized.</td></tr>
+        <tr><td>sizes</td><td></td><td>It specifies acceptable image sizes for different page layout.</td></tr>
+        <tr><td>src</td><td></td><td>It determines the URL of media files.</td></tr>
+        <tr><td>srcset</td><td></td><td>Specifies the URL of the image for different situations. It is only used when &lt;source&gt; is child of &lt;picture&gt; element.</td></tr>
+        <tr><td>type</td><td>video/ogg, mp4, webm, audio/ogg, mpeg</td><td>It determines the media type of resources.</td></tr>
+    </table>
+    <p>The &lt;source&gt; tag supports the global and event attributes in HTML.</p>
+
+
+</body>
+</html>

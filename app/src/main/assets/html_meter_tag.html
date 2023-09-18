@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Meter Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>HTML &lt;meter&gt; tag is used to measure data within a given range. It defines a scalar measurement with range. It is also known as a gause. <br><br>It should be used to display disk usage, voting population etc. <br><br>The HTML meter tag is new in HTML5 so you must use new browsers.</p>
+    <hr>
+    <h2>Attributes of HTML Meter Tag.</h2>
+    <p>HTML &lt;meter&gt; tag supports the global and event attributes as well as some specific attributes.</p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>value</td><td>It is a mandatory attribute which is used to specify a value in numbers. The number may be integer or floating point number.</td></tr>
+        <tr><td>form</td><td>It specifies one or more forms to which meter element belongs to.</td></tr>
+        <tr><td>high</td><td>It specifies a range that is considered as high value.</td></tr>
+        <tr><td>low</td><td>It specifies a range that is considered as low value.</td></tr>
+        <tr><td>max</td><td>It specifies the maximum value defined in the range.</td></tr>
+        <tr><td>min</td><td>It specifies the minimum value defined in the range.</td></tr>
+        <tr><td>optimum</td><td>It specifies the optimum value for the gauge. It is an optional attribute.</td></tr>
+    </table>
+    <br>
+    <hr>
+    <h2>HTML Meter Tag Example:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;p&gt;Display a gauge&lt;/p&gt;<br>
+                &lt;meter value="30" min="1" max="100" &gt;30 out of 100 &lt;/meter&gt;<br>
+            </p>
+        </div>
+    </div>
+    
+    <h2>Output:</h2>
+    <p>Display a gauge</p>
+    <meter value="30" min="1" max="100" >30 out of 100 </meter>
+
+    
+
+</body>
+</html>

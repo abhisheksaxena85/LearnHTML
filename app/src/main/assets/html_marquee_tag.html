@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML marquee tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>The <b>Marquee HTML</b> tag is a non-standard HTML element which is used to scroll a image or text horizontally or vertically. <br><br> In simple words, you can say that it scrolls the image or text up, down, left or right automatically. <br><br> Marquee tag was first introduced in early versions of Microsoft's internet explorer. It is compared with Netscap's blink element. </p>
+    <hr>
+    <h2>HTML Marquee Tag Example</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;marquee direction="left" &gt;This is an example of HTML marquee&lt;/marquee&gt;<br>
+            </p>
+        </div>
+    </div>
+
+    <h2>Output:</h2>
+    <marquee direction="left">This is an example of HTML marquee</marquee>
+
+<br><hr>
+    <h2>HTML Marquee Attributes</h2>
+    <p>Marquee's element contains several attributes that are used to control and adjust the appearance of the marquee. </p>
+    <table border="1">
+        <tr><th>Attribute</th><th>Description</th></tr>
+        <tr><td>behavior</td><td>It facilitates user to set the behaviour of the marquee to one of the three different types: scroll, slide, and alternate.</td></tr>
+        <tr><td>direction</td><td>defines direction for scrolling content. It may be left, right, up, and down.</td></tr>
+        <tr><td>width</td><td>defines width of marquee in pixels or %.</td></tr>
+        <tr><td>height</td><td>defines height of marquee in pixel or %.</td></tr>
+        <tr><td>hspace</td><td>defines horizontal space in pixels around the marquee.</td></tr>
+        <tr><td>vspace</td><td>defines vertical space in pixels around the marquee.</td></tr>
+        <tr><td>scrolldelay</td><td>defines scroll delay in seconds. </td></tr>
+        <tr><td>scrollamount</td><td>defines scroll amount in number.</td></tr>
+        <tr><td>loop</td><td>defines loop for marquee content in number.</td></tr>
+        <tr><td>bgcolor</td><td>defines background color. It is now deprecated.</td></tr>
+
+    </table>
+
+
+    <br><hr>
+    <h2>HTML Scroll Marquee</h2>
+    <p>It is by default property. It is used to scroll the text from right to left, and restarts at the right side of the marquee when it is reached to the end to left side. After the completion of loop text disappears.</p>
+    <hr>
+    <h2>HTML Slide Marquee</h2>
+    <p>In slide marquee, all the contents to be scrolled will be slide the entire length of marquee but stops at the end to display the content permanently.</p>
+    <hr>
+    <h2>HTML Alternate Marquee</h2>
+    <p>It scrolls the text from right to left and goes back left to right.</p>
+    <hr>
+    <h2>Direction in HTML Marquee</h2>
+    <p>This is used to change the direction of scrolling text. Let's take an example of marquee scrolling to the right. The direction can be left, right, up and down.</p>
+    <hr>
+    <h2>Disadvantages of HTML Marquee</h2>
+    <ol style="width: 100%;">
+        <li>Marquee may be distracting because human eyes are attracted towards movement and marquee text constantly. </li>
+        <li>Since Marquee text moves, so it is more difficult to click static textm, depending on the scrolling speed.</li>
+        <li>It is a non-standard HTML element.</li>
+        <li>It draws user's attention needlessly and makes the text harder to read.</li>
+    </ol>
+
+
+</body>
+</html>

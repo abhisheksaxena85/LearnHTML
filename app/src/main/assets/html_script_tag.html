@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Script Tag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+</head>
+<body>
+    <p>HTML Script tag is used to specify
+      client-side script such as
+      JavaScript. It facilitate you to
+      place a script within your HTML
+      document. <br><br>
+      Javascript is used for image
+      manipulation, form validation,
+      and dynamic content. <br><br>
+      The syntax of script tag is given
+      below:
+    </p>
+    <h2>Syntax:</h2>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;script&gt; <br> //code to be executed <br> &lt;/script&gt;  
+            </p>
+        </div>
+    </div>
+
+    <h2>Attributes of HTML script tag</h2>
+    <table border="1">
+      <tr><th>Attribute</th><th>Description</th><th>Compatibility</th></tr>
+      <tr><td>src</td><td>It specifies the URL of an external script file.</td><td>HTML 4.01, HTML5</td></tr>
+      <tr><td>type</td><td>It specifies the media type of the script.</td><td>HTML 4.01</td></tr>
+      <tr><td>async</td><td>It is a boolean value which specifies that the script is executed asynchronously.</td><td>HTML5</td></tr>
+      <tr><td>defer</td><td>It is a boolean value which is used to indicate that script is executed after document has been parsed.</td><td>HTML 4.01, HTML5</td></tr>
+    </table>
+    <br><hr>
+    <h2>Usage of script tag</h2>
+    <p>There can be two usage of HTML script tag: </p>
+    <ol>
+      <li>To embed script code</li>
+      <li>To link script file</li>
+    </ol>
+    <br><hr>
+    <h2>Embed script code</h2>
+    <p>The script tag can be used within &lt;body&gt; or &lt;head&gt; tag to embed the scripting code. Let's see the example to have script tag within HTML body.</p>
+    <div id="code_container">
+      <div id="code_header">
+          <div id="code_title">
+              <img src="code (1).svg"/>
+              <p>Code Example</p>
+          </div>
+      </div>
+      <div id="code_body">
+          <p>
+              &lt;script type="text/javascript"&gt; <br> 
+              function msg(){<br>
+                alert("Hello everyone");<br>
+              } <br>
+              &lt;/script&gt;  
+          </p>
+      </div>
+  </div>
+  <hr>
+  <h2>Link Script file</h2>
+  <p>The script tag can be used to link external script file by src attribute. It must be used within the &lt;head&gt; tag only.</p>
+  <div id="code_container">
+    <div id="code_header">
+        <div id="code_title">
+            <img src="code (1).svg"/>
+            <p>Code Example</p>
+        </div>
+    </div>
+    <div id="code_body">
+        <p>
+            &lt;script type="text/javascript" src="message.js"&gt; <br> 
+            &lt;/script&gt;  
+        </p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
