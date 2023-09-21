@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdView;
+
 public class card3_activity extends AppCompatActivity {
 Toolbar toolbar;
 String t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,t21,t22,t23,t24,t25,t26,t27,t28,t29,t30;
@@ -670,6 +672,10 @@ String file91, file92,file93,file94,file95,file96,file97;
         contentIntent(card97,file97,t97);
 
 
+
+        AdView banner = findViewById(R.id.banner_ad);
+        allFunctions allfunctions_obj = new allFunctions();
+        allfunctions_obj.bannerAd(banner);
 
 
 

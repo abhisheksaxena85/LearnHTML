@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Geolocation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>
+        The Geolocation is one of the best
+        HTML5 APl which is used to
+        identify the user's geographic
+        location for the web application. <br><br>
+        This new feature of HTML5 allows
+        you to navigate the latitude and
+        longitude coordinates of the
+        Current website's visitor. These
+        coordinates can be captured by
+        Javascript and send to the server
+        which can show your current
+        location on the website. <br><br>
+        Most of the geolocation services
+        use Network routing addresses
+        such as IP addresses, RFID, WIFI
+        and MAC addresses or internoal
+        GPS devices to identify the user's
+        location. 
+    </p><hr>
+    <h2>User Privacy:</h2>
+    <p>
+        The user's location is the privacy
+        concern, so geolocation API
+        protects the user's privacy by
+        taking the user's permission
+        before getting the location.
+        Geolocation APl sends a
+        notification prompt box which
+        user can allow or deny, and if the
+        user allows then only his location
+        will be identified.
+    </p>
+    <hr>
+    <h2>Geolocation Object</h2>
+    <p>
+        The Geolocation APl is Work with
+        the navigation.geolocation
+        object. Its read-only property
+        returns a Geolocation object
+        which identifies the location of
+        the user and can generate a
+        Customized result based on user
+        location.
+    </p>
+
+    <h3>Syntax:</h3>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                geo=navigator. geolocation;
+            </p>
+        </div>
+    </div>
+    <br><hr>
+    <h2>Geolocation Methods</h2>
+    <p>The Geolocation APl uses three
+        methods of Geolocation interface
+        which are given following:</p>
+    <table border="1">
+        <tr><th>Methods</th><th>Description</th></tr>
+
+        <tr><td>getCurrentPosition()</td><td>It defines the device or the user's current location and returns a position object with data.</td></tr>
+        <tr><td>watchPosition()</td><td>Returns a value whenever the device location changes.</td></tr>
+        <tr><td>clearWatch()</td><td>It cancels the previous watchPosition() call.</td></tr>
+    </table>    
+    <br><hr>
+    <h2>Checking for browser support:</h2>
+    <p>
+        The geolocation property of navigator.geolocation object helps to determine the browser support for the Geolocation API.
+    </p>
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                &lt;!DOCTYPE html&gt;   <br>
+&lt;html&gt;   <br>
+&lt;head&gt;  
+    &lt;title&gt;Geolocation API&lt;/title&gt;   <br>
+&lt;/head&gt;   <br>
+&lt;body&gt;   <br>
+  &lt;h1&gt;Find your Current location&lt;/h1&gt;   <br>
+&lt;button onclick="getlocation()"&gt;Click me&lt;/button&gt;   <br>
+&lt;div id="location"&gt;&lt;/div&gt;   <br>
+&lt;script&gt;   <br>
+    var x= document .getElementById("location");   <br>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <br>
+    function getlocation() {   <br>
+        if(navigator. geolocation){   <br>
+            alert("your browser is supporting Geolocation API")   <br>
+        }   <br>
+        else   <br>
+        {   <br>
+            alert("Sorry! your browser is not supporting")   <br>
+        }   <br>
+    }   <br>
+&lt;/script&gt;   <br>
+&lt;/body&gt;   <br>
+&lt;/html&gt; <br>
+            </p>
+        </div>
+    </div>
+
+    <br><hr>
+    <h2>Getting the User's current position:</h2>
+    <p>To get the user's current location,
+        getCurrentPosition() method of
+        the navigator.geolocation object
+        is used. This method aCcepts
+        three parameters:</p>
+    <ul>
+        <li>success: A success callback
+            function to get the location
+            of the user</li>
+        <li>error: An error callback
+            function which takes
+            "Position Error" object as
+            input.</li>
+        <li> options: It defines various
+            options for getting the
+            location.</li>
+    </ul>    
+    <br>
+    <hr>
+    <h2>Handling Errors and Rejections: Using an Error callback function</h2>
+    <p>
+        The second parameter of
+getCurrentPosition is an error
+Callback function. It is an optional
+parameter and used to handle
+errors and user rejection while
+getting the user's location. <br><br>
+Following are the possible options
+for invoking the error call back
+function:
+    </p>
+    <ul>
+        <li>Unknown random error
+            Occurred</li>
+        <li>If the user has denied for
+            sharing location</li>
+        <li>Location information is not
+            available</li>
+        <li>Request for location is
+            timed-out.</li>
+    </ul>
+    <h2>Example:</h2>
+
+    <div id="code_container">
+        <div id="code_header">
+            <div id="code_title">
+                <img src="code (1).svg"/>
+                <p>Code Example</p>
+            </div>
+        </div>
+        <div id="code_body">
+            <p>
+                function showError(error) {   <br>
+                    switch(error. code){   <br>
+                        case error. PERMISSION_DENIED:   <br>
+                        alert("User denied the request for Geolocation API.");   <br>
+                        break;   <br>
+                    case error. POSITION_UNAVAILABLE:   <br>
+                        alert("USer location information is unavailable.");   <br>
+                        break;   <br>
+                    case error. TIMEOUT:   <br>
+                        alert("The request to get user location timed out.");   <br>
+                        break;   <br>
+                    case error. UNKNOWN_ERROR:   <br>
+                        alert("An unknown error occurred.");   <br>
+                        break;   <br>
+                }   <br>
+                    } <br>
+            </p>
+        </div>
+    </div>
+    <br><hr>
+    <h2>Displaying location on Google Map</h2>
+    <p>
+        Till now, we have seen how to
+show your location using latitude
+and longitude values, but it is not
+sufficient. Hence we Can also
+show the exact location on
+Google map with this API.
+Following example showing the
+location using Google Map.
+    </p>
+    <br><hr>
+    <h2>Location Properties</h2>
+    <p>
+        The getCurrentPosition() method
+of Geolocation APl returns
+callback methods which retrieve
+the user location information. This
+callback method returns a
+Position Object which contains all
+location information and
+specifies different properties. It
+always returns latitude and
+longitude properties, but the
+following table describes some
+other properties of Position
+object.
+    </p>
+    <table border="1">
+        <tr><th>Properties</th><th>Description</th></tr>
+        <tr><td>coords.latitude</td><td>It returns latitude of user location as a decimal number.</td></tr>
+        <tr><td>coords.longitude</td><td>It returns longitude of user location as a decimal number.</td></tr>
+        <tr><td>coords.altitude</td><td>It returns altitude in meters above the sea level (Only if available).</td></tr>
+        <tr><td>coords.accuracy</td><td>It returns the accuracy of the user's position.</td></tr>
+        <tr><td>coords. altitude Accuracy</td><td>It returns the altitude accuracy of user location.</td></tr>
+        <tr><td>coords.heading</td><td>It returns heading as degree clockwise from North.</td></tr>
+        <tr><td>coords.speed</td><td>It returns the speed in meter per seconds.</td></tr>
+        <tr><td>timestamp</td><td>It returns data or time of response.</td></tr>
+    </table>
+    <br><hr>
+    <h2>Watching the current location:</h2>
+    <p>
+        If we want to know the user
+location while he is moving and
+want accurate location at every
+changed position, then it can be
+achieved by using
+watchPosition() callback
+function. <br><br>
+This function has all three
+parameters which
+getCurrentPosition() contains.
+<br><br>
+The watchPosition() method
+returns an ID that can be used to
+uniquely identifying the user?s
+position, and this ID can also be
+used with clearWatch() method
+to stop watching the location.
+    </p>
+
+
+
+</body>
+</html>

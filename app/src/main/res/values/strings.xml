@@ -5,5 +5,9 @@
     <string name="closeDrawer">Close navigation drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_id">ca-app-pub-2169151503632539~5431712158</string>
+    <string name="bannerUnitID">ca-app-pub-2169151503632539/1739879151</string>
+    <string name="inertial_ad_unit_id">ca-app-pub-2169151503632539/6886611663</string>
+
 
 </resources>

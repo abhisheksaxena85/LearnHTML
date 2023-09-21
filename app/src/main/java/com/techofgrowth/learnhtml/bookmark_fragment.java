@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import androidx.annotation.NonNull;
 import android.widget.LinearLayout;
 import java.util.ArrayList;
 
@@ -67,10 +68,9 @@ public class bookmark_fragment extends Fragment implements item_Listener{
 
     @Override
     public void onItemClicked(bookmark_modle modle){
-
         String title = modle.title;
         String file = modle.file;
-        Intent intent = new Intent(getContext(), card1_content.class);
+        Intent intent = new Intent(getContext(), faq_content.class);
         intent.putExtra("file",file);
         intent.putExtra("title",title);
         startActivity(intent);

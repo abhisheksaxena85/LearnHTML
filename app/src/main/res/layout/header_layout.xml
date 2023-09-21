@@ -5,18 +5,24 @@
     android:gravity="center_horizontal"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="35dp"
-        android:paddingBottom="8dp"
-        android:background="@color/toolbar_color"
+        android:layout_height="230dp"
+        android:background="@color/main_background_color"
         android:orientation="vertical"
         android:gravity="left">
+
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:src="@drawable/html_folder"/>
+            android:layout_height="220dp"
+            android:paddingTop="30dp"
+            android:src="@drawable/html_file" />
 
-    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#23000000"/>
+
+    </RelativeLayout>
 </LinearLayout>

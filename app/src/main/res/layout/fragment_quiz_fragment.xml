@@ -3,8 +3,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6CFF00"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".quiz_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/head_background"
+                android:layout_height="220dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alata"
+                            android:id="@+id/faq_mainText"
+                            android:text="Coding Quiz"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/white"
+                            android:textSize="29sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varelaroundregular"
+                            android:text="Let's play quiz together"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            tools:ignore="TextSizeCheck" />
+                    </LinearLayout>
+
+
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/quiz2"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="left">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardElevation="0dp"
+                    android:elevation="0dp"
+                    android:backgroundTint="#95FF8851"
+                    app:cardCornerRadius="35dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:src="@drawable/quiz"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/varela_round"
+                    android:gravity="left|center"
+                android:text="Quiz:"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4CD2D2D2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00D22020">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="center"
+                    android:text="Quizes are coming soon!!"
+                    android:textColor="@color/card_discription"
+                    android:textSize="35dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/doppio_one"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </FrameLayout>

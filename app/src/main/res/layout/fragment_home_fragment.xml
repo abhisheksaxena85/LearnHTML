@@ -259,7 +259,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/varelaroundregular"
-                            android:text="98 Lectures"
+                            android:text="97 Lectures"
                             android:textColor="#6F232323"
                             android:textSize="13sp" />
                     </LinearLayout>

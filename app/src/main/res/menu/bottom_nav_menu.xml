@@ -8,7 +8,7 @@
         android:id="@+id/faq"
         android:title="FAQ"
         android:tooltipText="FAQ"
-        android:icon="@drawable/baseline_question_answer_24"/>
+        android:icon="@drawable/question__1_"/>
 
     <item android:id="@+id/quiz"
         android:tooltipText="Quiz"

@@ -18,6 +18,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_weight="1"
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
@@ -655,4 +656,10 @@
 
         </LinearLayout>
     </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        app:adUnitId="@string/bannerUnitID"
+        app:adSize="BANNER"
+        android:id="@+id/banner_ad"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

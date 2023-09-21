@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web Storage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file_layout.css">
+    <style>
+        ul{
+          margin: 0;
+          align-items: left;
+          justify-content: left;
+          display: flex;
+          flex-direction:column;
+      }
+      ul li{
+          font-size: 18px;
+          text-align: left;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      th, td{
+        padding: 5px;
+      }
+      </style>
+
+</head>
+<body>
+    <p>
+        The Web Storage is one of the
+great features of HTML5. With the
+Web Storage feature, web
+applications can locally store
+data within the browser on the
+client side. It stores doata in the
+form of key/value pair on the
+browser. Web Storage sometimes
+also known as DOM storage. <br><br>
+Storing data with the help of web
+storage is similar to cookies, but it
+is better and faster than cookies. <br><br>
+In compared to cookies Web
+Storage has Following
+Advantages:
+    </p>
+    <ul>
+        <li>Web Storage can use
+            storage space upto 5MB per
+            domain. (The browser
+            software may prompt the
+            user if the space limit is
+            reached).</li>
+        <li>It will not send data to the
+            server side, hence it is faster
+            than cookies storage.</li>
+        <li>The data stored by local
+            Storage never expires, but
+            cookies data expires after
+            Some time or session.</li>
+        <li>Web Storage is more secure
+            than cookies.</li>
+    </ul>
+    <br><hr>
+    <h2>Types of Web Storage</h2>
+    <p>There are two types of web storage with different scope and lifetime.</p>
+    <ul>
+        <li>Local Storage: Local Storages
+            uses Windows.localStaorage
+            object which stores data and
+            available for every page. But
+            data persist even if the
+            browser is closed and
+            reopened (Stores data with
+            no Expiration).</li>
+        <li>Session Storage: Session
+            Storage uses
+            Windows.sessionStorage
+            object which stores data for
+            one session and data will be
+            lost if the window or browser
+            tab will be closed.</li>
+    </ul>
+    <br><hr>
+    <h2>Browser support for Web Storage</h2>
+    <p>Before learning for web Storage
+        we must check whether our
+        browser is supporting the web
+        Storage or not. </p>
+
+    <hr>
+    <h2>Browser support for Web Storage</h2>    
+    <p>
+        The localStorage object stores
+data locally within the browser.
+The data stored by localStroage
+object does not have any
+expiration date. Hence the stored
+data will not be deleted if the
+browser is closed or reopened. <br><br>
+Each piece of data is stored in
+simple key-value pairs. The key/
+values are always stored as
+String, and can be accessed with
+localstorage.getitem() and
+localStorage.setitem() methods.
+    </p>
+    <hr>
+    <h2>The sessionStorage Object:</h2>
+    <p>The sessionStorage object is
+        same as the localStorage object,
+        but the difference is that it stores
+        data only for one session. If you
+        close the browser, then data will
+        be lost or deleted.</p>
+    <hr>
+    <h2>Remove Web Storage:</h2>    
+    <p>
+        As we have seen the session
+storage data will automatically
+deleted, when you close the
+browser but the data saved by
+local storage will remain in the
+browser even if you clOse it. <br><br>
+Hence to delete the local storage
+data, you need to call two
+methods:
+    </p>
+    <ul>
+        <li>localStorage.removeltem(ke
+            y): If yu want to delete the
+            value on a particular key,
+            then you can use the "key,"
+            and that value will be
+            deleted.</li>
+        <li>localstorage.clear(): If you
+            Want to delete or clear all
+            settings with key/value pair,
+            then yOu can call this
+            method.</li>
+    </ul>
+    
+</body>
+</html>

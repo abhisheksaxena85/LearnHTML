@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.google.android.gms.ads.AdView;
+
 public class card5_activity extends AppCompatActivity {
 Toolbar toolbar;
 CardView card1,card2,card3,card4,card5;
@@ -54,6 +56,10 @@ String t1,t2,t3,t4,t5;
         contentIntent(card4,file4,t4);
         contentIntent(card5,file5,t5);
 
+
+        AdView banner = findViewById(R.id.banner_ad);
+        allFunctions allfunctions_obj = new allFunctions();
+        allfunctions_obj.bannerAd(banner);
 
 
     }

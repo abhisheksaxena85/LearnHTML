@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class card1_content extends AppCompatActivity {
@@ -27,6 +28,12 @@ Toolbar toolbar;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card1_content);
+
+
+        AdView banner = findViewById(R.id.banner_ad);
+        allFunctions allfunctions_obj = new allFunctions();
+        allfunctions_obj.bannerAd(banner);
+
 
 
         bookmarkDBhelper dBhelper = new bookmarkDBhelper(this);
@@ -74,7 +81,6 @@ Toolbar toolbar;
                         editor.apply();
                         bookmarkImg.setImageResource(R.drawable.baseline_bookmark_add_24);
                         View view = getLayoutInflater().inflate(R.layout.custom_toast_second,findViewById(R.id.customToast));
-
 
                         Toast toast = new Toast(getApplicationContext());
                         TextView toast_title = view.findViewById(R.id.second_toast_title);
@@ -172,6 +178,10 @@ Toolbar toolbar;
     }
 
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

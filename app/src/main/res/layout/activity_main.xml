@@ -10,21 +10,22 @@
     android:id="@+id/drawerLayout"
     tools:context=".MainActivity">
 
-    <include layout="@layout/home_activity" />
+    <include layout="@layout/home_activity"/>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:id="@+id/navigationView"
-        app:itemTextColor="#494949"
+        app:itemTextColor="#2B2B2B"
         android:tooltipText="@string/app_name"
         app:subheaderTextAppearance="@style/Widget.MaterialComponents.Slider"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:itemIconSize="25dp"
+        app:menu="@menu/drawer_nav_menu"
+        app:itemIconPadding="19dp"
+        app:itemIconSize="26dp"
+        app:itemIconTint="#9C5FDA"
         app:itemVerticalPadding="13dp"
         app:headerLayout="@layout/header_layout"
         android:fitsSystemWindows="true"/>
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -1,6 +1,6 @@
 package com.techofgrowth.learnhtml;
-
 import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
@@ -15,6 +15,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 public class card1_activity extends AppCompatActivity {
 String file;
@@ -194,6 +197,11 @@ TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,
         contentIntent(card37,"file:///android_asset/html_url_encode.html","HTML URL Encode");
 
 
+        AdView banner = findViewById(R.id.banner_ad);
+
+
+        allFunctions allfunctions_obj = new allFunctions();
+        allfunctions_obj.bannerAd(banner);
 
 
 

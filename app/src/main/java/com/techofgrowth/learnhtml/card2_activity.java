@@ -9,6 +9,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.google.android.gms.ads.AdView;
+
 public class card2_activity extends AppCompatActivity {
 Toolbar toolbar;
 CardView card1, card2;
@@ -48,6 +50,14 @@ String card1_title, card2_title, file1, file2;
             content_intent.putExtra("file",file2);
             startActivity(content_intent);
         });
+
+
+
+
+
+        AdView banner = findViewById(R.id.banner_ad);
+        allFunctions allfunctions_obj = new allFunctions();
+        allfunctions_obj.bannerAd(banner);
 
 
 

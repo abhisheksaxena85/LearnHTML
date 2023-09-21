@@ -11,5 +11,5 @@
     <color name="card_text_color">#000000</color>
     <color name="card_theme_color">#FF0000</color>
     <color name="toolbar_color">#9051FF</color>
-    <color name="bottomNav_icon_color">#B5494949</color>
+    <color name="bottomNav_icon_color">#B4828282</color>
 </resources>
