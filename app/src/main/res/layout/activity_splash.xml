@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/toolbar_color"
+    android:layout_height="match_parent"
+    tools:context=".Splash_activity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="75dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    app:lottie_rawRes="@raw/html_animation"
+                    android:layout_weight="1"
+                    android:id="@+id/splash_html_animation"
+                    app:lottie_autoPlay="true"
+                    app:lottie_colorFilter="@color/white"
+                    app:lottie_loop="false"
+                    app:lottie_speed=".9"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:id="@+id/anim_text"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aldrich"
+                    android:textColor="#FFFFFF"
+                    android:text="Learn HTML Coding"
+                    android:layout_alignParentEnd="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:id="@+id/anim_text2"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/varelaroundregular"
+                    android:textColor="#88FFFFFF"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Start learning HTML from basic to advance"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>

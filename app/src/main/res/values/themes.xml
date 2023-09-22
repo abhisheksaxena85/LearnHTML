@@ -8,5 +8,9 @@
 <!--        <item name="android:windowLightStatusBar" >false</item>-->
     </style>
 
+    <style name="Splsh_HTML_Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:tagetApi="21">@color/white</item>
+    </style>
+
     <style name="Theme.LearnHTML" parent="Base.Theme.LearnHTML" />
 </resources>

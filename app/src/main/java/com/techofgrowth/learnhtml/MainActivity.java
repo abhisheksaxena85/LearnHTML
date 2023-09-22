@@ -99,7 +99,68 @@ InterstitialAd inter_ad;
                     inter_ad.show(MainActivity.this);
                 }
             }
-        },10000);
+        },20000);
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                InterstitialAd.load(getApplicationContext(), getString(R.string.inertial_ad_unit_id), ad_request, new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        super.onAdFailedToLoad(loadAdError);
+
+                    }
+
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        super.onAdLoaded(interstitialAd);
+                        inter_ad = interstitialAd;
+
+                        inter_ad.setFullScreenContentCallback(new FullScreenContentCallback() {
+                            @Override
+                            public void onAdClicked() {
+                                super.onAdClicked();
+                            }
+
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                super.onAdFailedToShowFullScreenContent(adError);
+                            }
+
+                            @Override
+                            public void onAdImpression() {
+                                super.onAdImpression();
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                super.onAdShowedFullScreenContent();
+                                inter_ad = null;
+                            }
+                        });
+                    }
+
+
+                });
+            }
+        },90000);
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if(inter_ad!=null){
+                    inter_ad.show(MainActivity.this);
+                }
+            }
+        },100000);
+
 
 
 
@@ -166,14 +227,14 @@ InterstitialAd inter_ad;
                     startActivity(intent);
                 }
                 else if(id==R.id.rating){
-                    Uri uri = Uri.parse("market://details?id=" + "com.techofgrowth.bcanotes2");//here will be the package name of live app
+                    Uri uri = Uri.parse("market://details?id=" + "com.techofgrowth.learnhtml");//here will be the package name of live app
                     Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
                     goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
                     try {
                         startActivity(goToMarket);
                     } catch (ActivityNotFoundException anfe) {
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://play.google.com/store/apps/details?id=com.techofgrowth.bcanotes2")));
+                                Uri.parse("https://play.google.com/store/apps/details?id=com.techofgrowth.learnhtml")));
                 }
                 }else if(id==R.id.moreapps){
                     try {
@@ -189,11 +250,15 @@ InterstitialAd inter_ad;
                     Intent email_intent = new Intent(Intent.ACTION_SEND);
                     email_intent.setType("message/rfc822");
                     email_intent.putExtra(Intent.EXTRA_EMAIL,new String[]{"abhisheksaxena904411@gmail.com","abhisheksaxena852828@gamil.com"});
-                    email_intent.putExtra(Intent.EXTRA_SUBJECT,"BCA Notes Application Related Query...");
+                    email_intent.putExtra(Intent.EXTRA_SUBJECT,"HTML Learning App related query...");
                     email_intent.putExtra(Intent.EXTRA_TEXT,"Please! write here your message..");
                     startActivity(email_intent);
                 }else if(id==R.id.shareapp){
-                    Toast.makeText(MainActivity.this, "Sharing app", Toast.LENGTH_SHORT).show();
+                    Intent intent_share = new Intent(Intent.ACTION_SEND);
+                    intent_share.setType("text/plain");
+                    intent_share.putExtra(Intent.EXTRA_SUBJECT,"Download HTML Learning App");
+                    intent_share.putExtra(Intent.EXTRA_TEXT,"Hi! Your friend just shared this HTML Learning App, Which can help You to learn coding for Webdevelopment. \n\n Get this app for free on PlayStore. \n https://play.google.com/store/apps/details?id=com.techofgrowth.learnhtml");
+                    startActivity(Intent.createChooser(intent_share,"Share"));
                 }
 
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -236,6 +301,7 @@ InterstitialAd inter_ad;
 
                         @Override
                         public void onAdDismissedFullScreenContent() {
+                            MainActivity.super.onBackPressed();
                             super.onAdDismissedFullScreenContent();
                         }
 
@@ -301,5 +367,13 @@ InterstitialAd inter_ad;
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.frameLayout, fragment);
         ft.commit();
+    }
+
+    @Override
+    protected void onResume() {
+        if(inter_ad!=null){
+            inter_ad.show(MainActivity.this);
+        }
+        super.onResume();
     }
 }

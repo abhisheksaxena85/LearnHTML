@@ -354,7 +354,7 @@
                     <ImageView
                         android:layout_width="70dp"
                         android:src="@drawable/html_logo"
-                        android:layout_height="50dp"/>
+                        android:layout_height="45dp"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -411,8 +411,8 @@
                     android:layout_marginLeft="12dp">
                     <ImageView
                         android:layout_width="70dp"
-                        android:src="@drawable/extention"
-                        android:layout_height="50dp"/>
+                        android:src="@drawable/html_main_title"
+                        android:layout_height="60dp"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"

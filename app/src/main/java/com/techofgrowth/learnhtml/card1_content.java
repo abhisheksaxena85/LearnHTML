@@ -19,11 +19,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class card1_content extends AppCompatActivity {
 Toolbar toolbar;
+InterstitialAd inter_ad;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +42,8 @@ Toolbar toolbar;
         allFunctions allfunctions_obj = new allFunctions();
         allfunctions_obj.bannerAd(banner);
 
-
+        //Calling Intertitial Ad fucntion
+        InterAd();
 
         bookmarkDBhelper dBhelper = new bookmarkDBhelper(this);
 
@@ -89,6 +98,10 @@ Toolbar toolbar;
                         toast_title.setText("'"+title+"'"+" removed from bookmark");
                         toast.setView(view);
                         toast.show();
+
+                        if(inter_ad!=null){
+                            inter_ad.show(card1_content.this);
+                        }
                     } else {
                         //When if Delete failed or row not found
                         Toast.makeText(this, "Delete failed!", Toast.LENGTH_SHORT).show();
@@ -114,6 +127,11 @@ Toolbar toolbar;
                     toast_title.setText("'"+title+"'"+" added to bookmark");
                     toast.setView(view);
                     toast.show();
+
+                    if(inter_ad!=null){
+                        inter_ad.show(card1_content.this);
+                    }
+
                 }
                 if(count[0] >=2){
                     count[0] =0;
@@ -144,6 +162,10 @@ Toolbar toolbar;
                     toast.setView(view);
                     toast.show();
 
+                    if(inter_ad!=null){
+                        inter_ad.show(card1_content.this);
+                    }
+
                 } else if (count[0] ==2) {
 
 
@@ -161,6 +183,10 @@ Toolbar toolbar;
                         toast_title.setText("'"+title+"'"+" removed from bookmark");
                         toast.setView(view);
                         toast.show();
+
+                        if(inter_ad!=null){
+                            inter_ad.show(card1_content.this);
+                        }
 
                     } else {
                         Toast.makeText(this, "Delete Failed!", Toast.LENGTH_SHORT).show();
@@ -187,5 +213,62 @@ Toolbar toolbar;
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onBackPressed();
         return super.onOptionsItemSelected(item);
+    }
+
+    public void InterAd(){
+        //Intertitial Ad View
+        AdRequest ad_request = new AdRequest.Builder().build();
+        InterstitialAd.load(this, getString(R.string.inertial_ad_unit_id), ad_request, new InterstitialAdLoadCallback() {
+            @Override
+            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                super.onAdFailedToLoad(loadAdError);
+
+            }
+
+            @Override
+            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                super.onAdLoaded(interstitialAd);
+                inter_ad = interstitialAd;
+
+                inter_ad.setFullScreenContentCallback(new FullScreenContentCallback() {
+                    @Override
+                    public void onAdClicked() {
+                        super.onAdClicked();
+                    }
+
+                    @Override
+                    public void onAdDismissedFullScreenContent() {
+                        super.onAdDismissedFullScreenContent();
+                    }
+
+                    @Override
+                    public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                        super.onAdFailedToShowFullScreenContent(adError);
+                    }
+
+                    @Override
+                    public void onAdImpression() {
+                        super.onAdImpression();
+                    }
+
+                    @Override
+                    public void onAdShowedFullScreenContent() {
+                        super.onAdShowedFullScreenContent();
+                        inter_ad = null;
+                    }
+                });
+            }
+
+
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(inter_ad!=null){
+            inter_ad.show(card1_content.this);
+        }else {
+        }
     }
 }
